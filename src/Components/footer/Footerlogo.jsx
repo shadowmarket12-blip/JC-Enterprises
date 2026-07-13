@@ -22,10 +22,10 @@ export default function FooterLogo() {
           {COMPANY_INFO.logoText}
         </motion.h2>
       </Link>
-      <p className="text-sm text-black/70 dark:text-white/70 max-w-xs mx-auto md:mx-0">
+      <p className="text-sm text-white dark:text-white max-w-xs mx-auto md:mx-0">
         {COMPANY_INFO.tagline}
       </p>
-      <p className="text-sm text-black/60 dark:text-white/60">
+      <p className="text-sm text-white dark:text-white">
         {COMPANY_INFO.address}
       </p>
     </motion.div>

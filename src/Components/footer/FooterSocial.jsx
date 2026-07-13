@@ -13,9 +13,7 @@ const socialLinks = [
 export default function FooterSocial() {
   return (
     <div>
-      <h3 className="font-semibold text-lg mb-4" style={{ color: "#082d4a" }}>
-        Follow Us
-      </h3>
+      <h3 className="font-semibold text-lg mb-4 text-white">Follow Us</h3>
       <div className="flex space-x-4 justify-center md:justify-start">
         {socialLinks.map((social, index) => {
           const Icon = social.icon;
@@ -25,7 +23,6 @@ export default function FooterSocial() {
               href={social.href}
               className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
               aria-label={social.label}
-              style={{ color: "#082d4a" }}
             >
               <Icon size={18} />
             </Link>

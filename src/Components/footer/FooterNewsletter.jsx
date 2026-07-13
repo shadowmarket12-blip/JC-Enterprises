@@ -28,10 +28,10 @@ export default function FooterNewsletter() {
       viewport={{ once: true }}
       className="space-y-4"
     >
-      <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+      <h4 className="text-lg font-semibold text-white dark:text-gray-200">
         Newsletter
       </h4>
-      <p className="text-sm text-gray-600 dark:text-gray-400">
+      <p className="text-sm text-white dark:text-gray-400">
         Subscribe to get special offers, free giveaways, and exclusive deals.
       </p>
       <form onSubmit={handleSubmit} className="space-y-3">

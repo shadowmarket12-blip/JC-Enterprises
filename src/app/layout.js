@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "JC Enterprises — Premium Quality Products",
+  title: "JC Enterprises",
   description:
     "JC Enterprises — premium quality products for your home and business.",
 };

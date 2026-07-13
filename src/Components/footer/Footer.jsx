@@ -13,7 +13,7 @@ import FooterNewsletter from "./FooterNewsletter";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <footer className="relative overflow-hidden bg-[#082d4a] border-t border-gray-200 dark:border-gray-800">
       {/* Animated Background Orbs - Smooth animation */}
       <motion.div
         className="absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl"
@@ -59,7 +59,6 @@ export default function Footer() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <FooterSupport />
-              {/* Newsletter removed */}
               <FooterNewsletter />
             </div>
           </div>

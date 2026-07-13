@@ -14,15 +14,13 @@ const categories = [
 export default function FooterCategories() {
   return (
     <div>
-      <h3 className="font-semibold text-lg mb-4" style={{ color: "#082d4a" }}>
-        Categories
-      </h3>
+      <h3 className="font-semibold text-lg mb-4 text-white">Categories</h3>
       <ul className="space-y-2">
         {categories.map((category, index) => (
           <li key={index}>
             <Link
               href={category.href}
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+              className="text-white dark:text-white hover:text-white dark:hover:text-white transition-colors duration-200 text-light"
             >
               {category.label}
             </Link>

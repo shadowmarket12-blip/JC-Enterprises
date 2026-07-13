@@ -13,15 +13,13 @@ const supportLinks = [
 export default function FooterSupport() {
   return (
     <div>
-      <h3 className="font-semibold text-lg mb-4" style={{ color: "#082d4a" }}>
-        Support
-      </h3>
+      <h3 className="font-semibold text-lg mb-4 text-white">Support</h3>
       <ul className="space-y-2">
         {supportLinks.map((link, index) => (
           <li key={index}>
             <Link
               href={link.href}
-              className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+              className="text-white dark:text-white hover:text-white dark:hover:text-white transition-colors duration-200"
             >
               {link.label}
             </Link>
