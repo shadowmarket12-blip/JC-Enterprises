@@ -1,54 +1,68 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiChevronDown, FiSearch, FiShoppingCart, FiX } from "react-icons/fi";
-import { COMPANY_INFO, NAV_LINKS } from "@/constants";
+import { NAV_LINKS } from "@/constants";
+import SearchSuggestions from "./SearchSuggestions";
 
 const listVariants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.05, delayChildren: 0.1 } },
+  visible: { transition: { staggerChildren: 0.07, delayChildren: 0.2 } },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, x: 24 },
+  hidden: { opacity: 0, x: 30 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { type: "spring", stiffness: 300, damping: 28 },
+    transition: { type: "spring", stiffness: 200, damping: 24, mass: 0.8 },
   },
 };
 
-export default function MobileMenu({ open, onClose, cartCount = 0 }) {
+export default function MobileMenu({
+  open,
+  onClose,
+  cartCount = 0,
+  focusSearch = false,
+}) {
   const [expanded, setExpanded] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [mounted, setMounted] = useState(false);
   const closeButtonRef = useRef(null);
   const searchInputRef = useRef(null);
   const pathname = usePathname();
   const router = useRouter();
 
-  // Lock body scroll while the drawer is open
+  // Only portal once we're on the client
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Lock body scroll (both axes) while the drawer is open
   useEffect(() => {
     if (!open) return;
-    const previous = document.body.style.overflow;
+    const { overflow, overflowX } = document.body.style;
     document.body.style.overflow = "hidden";
-    closeButtonRef.current?.focus();
+    document.body.style.overflowX = "hidden";
     return () => {
-      document.body.style.overflow = previous;
+      document.body.style.overflow = overflow;
+      document.body.style.overflowX = overflowX;
     };
   }, [open]);
 
-  // Focus search input when mobile menu opens
+  // Focus search input when mobile menu opens with search intent
   useEffect(() => {
-    if (open && searchInputRef.current) {
-      setTimeout(() => {
+    if (open && focusSearch && searchInputRef.current) {
+      const timer = setTimeout(() => {
         searchInputRef.current?.focus();
-      }, 400);
+      }, 420);
+      return () => clearTimeout(timer);
     }
-  }, [open]);
+  }, [open, focusSearch]);
 
   useEffect(() => {
     if (!open) return;
@@ -62,7 +76,6 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
   const isActive = (href) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  // Handle search submission
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
@@ -72,62 +85,73 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
     }
   };
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {open && (
         <>
+          {/* Backdrop */}
           <motion.div
+            key="mobile-menu-backdrop"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             onClick={onClose}
             aria-hidden="true"
-            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-[110] bg-black/40 backdrop-blur-sm lg:hidden"
           />
 
+          {/* Drawer */}
           <motion.aside
+            key="mobile-menu-drawer"
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 z-50 flex w-[85%] max-w-sm flex-col overflow-y-auto rounded-l-3xl border-l border-white/40 bg-white/95 shadow-[-20px_0_60px_rgba(0,0,0,0.2)] backdrop-blur-lg dark:border-white/10 dark:bg-neutral-950/95 lg:hidden will-change-transform"
+            transition={{
+              duration: 0.55,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            onAnimationComplete={() => closeButtonRef.current?.focus()}
+            className="fixed inset-y-0 right-0 z-[120] flex w-[85%] max-w-sm flex-col overflow-x-hidden overflow-y-auto overscroll-contain rounded-l-3xl border-l border-white/40 bg-white/95 shadow-[-20px_0_60px_rgba(0,0,0,0.2)] backdrop-blur-lg dark:border-white/10 dark:bg-neutral-950/95 lg:hidden will-change-transform"
           >
-            {/* Header */}
-            <div className="flex items-center justify-between border-b border-neutral-200/60 px-5 py-4 dark:border-white/10">
-              <Link
-                href="/"
-                onClick={onClose}
-                className="flex items-center gap-3"
-                aria-label={`${COMPANY_INFO.name} home`}
-              >
-                <Image
-                  src={COMPANY_INFO.logo}
-                  alt=""
-                  width={48}
-                  height={56}
-                  className="h-10 w-auto rounded-lg object-contain"
-                />
-                <span className="text-lg font-bold tracking-tight text-[#082d4a]">
-                  {COMPANY_INFO.name}
-                </span>
-              </Link>
+            {/* Header with Close Button Only */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: 0.2,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="flex items-center justify-end border-b border-neutral-200/60 px-5 py-4 dark:border-white/10"
+            >
               <button
                 ref={closeButtonRef}
                 type="button"
                 onClick={onClose}
                 aria-label="Close menu"
-                className="flex h-10 w-10 items-center justify-center rounded-full text-[#082d4a] transition-colors duration-200 hover:bg-[#082d4a]/10 active:scale-95 dark:text-neutral-300 dark:hover:bg-white/10"
+                className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-[#082d4a] transition-colors duration-200 hover:bg-[#082d4a]/10 active:scale-95 dark:text-neutral-300 dark:hover:bg-white/10"
               >
                 <FiX size={22} />
               </button>
-            </div>
+            </motion.div>
 
             {/* Mobile Search Bar */}
-            <div className="px-5 pt-4">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: 0.3,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="px-5 pt-4"
+            >
               <form onSubmit={handleSearch}>
                 <div className="relative flex items-center gap-3 rounded-xl border-2 border-[#082d4a]/10 bg-[#082d4a]/[0.03] px-4 py-3 transition-all duration-300 focus-within:border-[#082d4a] focus-within:bg-[#082d4a]/[0.06] focus-within:shadow-lg dark:border-white/10 dark:bg-white/5 dark:focus-within:border-[#082d4a] dark:focus-within:bg-white/10">
                   <FiSearch
@@ -165,7 +189,27 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
                   )}
                 </div>
               </form>
-            </div>
+
+              <AnimatePresence>
+                {searchQuery.trim() && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.25 }}
+                    className="mt-2 overflow-hidden rounded-xl border border-[#082d4a]/10 bg-white dark:border-white/10 dark:bg-neutral-900"
+                  >
+                    <SearchSuggestions
+                      query={searchQuery}
+                      onNavigate={() => {
+                        setSearchQuery("");
+                        onClose();
+                      }}
+                    />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
 
             {/* Navigation Links */}
             <motion.ul
@@ -189,7 +233,7 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
                       <motion.span
                         aria-hidden="true"
                         animate={{ rotate: expanded === link.label ? 180 : 0 }}
-                        transition={{ duration: 0.25 }}
+                        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                         className="text-[#082d4a]/60"
                       >
                         <FiChevronDown size={18} />
@@ -203,8 +247,8 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{
-                            duration: 0.28,
-                            ease: [0.22, 1, 0.36, 1],
+                            duration: 0.5,
+                            ease: [0.25, 0.46, 0.45, 0.94],
                           }}
                           className="overflow-hidden"
                         >
@@ -250,7 +294,16 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
             </motion.ul>
 
             {/* Cart Button */}
-            <div className="border-t border-neutral-200/60 p-5 dark:border-white/10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: 0.4,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="border-t border-neutral-200/60 p-5 dark:border-white/10"
+            >
               <Link
                 href="/cart"
                 onClick={onClose}
@@ -259,10 +312,11 @@ export default function MobileMenu({ open, onClose, cartCount = 0 }) {
                 <FiShoppingCart size={18} aria-hidden="true" />
                 Cart ({cartCount})
               </Link>
-            </div>
+            </motion.div>
           </motion.aside>
         </>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body,
   );
 }

@@ -1,58 +1,204 @@
 "use client";
 
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const RANGE = [
   {
-    label: "Fans",
+    label: "Switches & Accessories",
+    categoryId: "switches-accessories",
     color: "#06b6d4",
     svg: (
       <svg viewBox="0 0 80 80" className="w-full h-full">
-        <motion.circle
-          cx="40"
-          cy="40"
-          r="32"
+        <motion.rect
+          x="28"
+          y="22"
+          width="24"
+          height="36"
+          rx="6"
           stroke="currentColor"
-          strokeWidth="1.5"
+          strokeWidth="2.5"
           fill="none"
           initial={false}
           whileHover={{
-            rotate: 360,
-            scale: [1, 1.05, 1],
-            transition: { duration: 3, repeat: Infinity, ease: "linear" },
+            rotate: [0, -3, 3, 0],
+            transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
           }}
         />
+        <motion.rect
+          x="34"
+          y="30"
+          width="12"
+          height="6"
+          rx="3"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.1, 1],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+        <motion.circle
+          cx="40"
+          cy="44"
+          r="4"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.2, 1],
+            opacity: [1, 0.5, 1],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.circle
+          cx="40"
+          cy="52"
+          r="2.5"
+          fill="currentColor"
+          opacity="0.6"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.3, 1],
+            transition: { duration: 1, repeat: Infinity, delay: 0.3 },
+          }}
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Electrical Wires & Cables",
+    categoryId: "electrical-wires-cables",
+    color: "#f97316",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
         <motion.g
           initial={false}
-          whileHover={{ rotate: 360 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          whileHover={{ rotate: [0, 10, -10, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           style={{ transformOrigin: "40px 40px" }}
         >
-          {[0, 72, 144, 216, 288].map((angle, i) => (
-            <motion.path
-              key={i}
-              d="M40 40 L40 16 Q45 8 52 12 Q46 20 40 30"
-              fill="currentColor"
-              opacity="0.85"
-              style={{ transformOrigin: "40px 40px", rotate: angle }}
-            />
-          ))}
+          <motion.path
+            d="M15 32 Q30 12 40 32 Q50 52 65 32"
+            stroke="currentColor"
+            strokeWidth="3"
+            fill="none"
+            strokeLinecap="round"
+            initial={false}
+            whileHover={{
+              d: [
+                "M15 32 Q30 12 40 32 Q50 52 65 32",
+                "M15 32 Q30 48 40 32 Q50 16 65 32",
+                "M15 32 Q30 12 40 32 Q50 52 65 32",
+              ],
+            }}
+            transition={{ duration: 2, repeat: Infinity }}
+          />
+          <motion.path
+            d="M15 48 Q30 28 40 48 Q50 68 65 48"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            opacity="0.5"
+            initial={false}
+            whileHover={{
+              d: [
+                "M15 48 Q30 28 40 48 Q50 68 65 48",
+                "M15 48 Q30 64 40 48 Q50 32 65 48",
+                "M15 48 Q30 28 40 48 Q50 68 65 48",
+              ],
+            }}
+            transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+          />
         </motion.g>
         <motion.circle
           cx="40"
           cy="40"
-          r="8"
+          r="5"
           fill="currentColor"
           initial={false}
-          whileHover={{ scale: [1, 1.2, 1] }}
+          whileHover={{ scale: [1, 1.5, 1] }}
           transition={{ duration: 1, repeat: Infinity }}
         />
-        <circle cx="40" cy="40" r="3" fill="white" opacity="0.8" />
+      </svg>
+    ),
+  },
+  {
+    label: "MCBs & Protection",
+    categoryId: "mcbs-protection",
+    color: "#ef4444",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
+        <motion.rect
+          x="18"
+          y="20"
+          width="44"
+          height="44"
+          rx="6"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.02, 1],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.path
+          d="M28 38 L35 38 L38 32 L42 48 L45 38 L52 38"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          initial={false}
+          whileHover={{
+            strokeWidth: [2.5, 3.5, 2.5],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+        <motion.circle
+          cx="40"
+          cy="30"
+          r="3"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.3, 1],
+            opacity: [1, 0.6, 1],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.line
+          x1="22"
+          y1="28"
+          x2="26"
+          y2="28"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          initial={false}
+          whileHover={{ x: [0, 3, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
+        <motion.line
+          x1="54"
+          y1="28"
+          x2="58"
+          y2="28"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          initial={false}
+          whileHover={{ x: [0, -3, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
       </svg>
     ),
   },
   {
     label: "Lighting",
+    categoryId: "lighting",
     color: "#f59e0b",
     svg: (
       <svg viewBox="0 0 80 80" className="w-full h-full">
@@ -108,7 +254,57 @@ const RANGE = [
     ),
   },
   {
-    label: "Water Heaters",
+    label: "Fans",
+    categoryId: "fans",
+    color: "#06b6d4",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
+        <motion.circle
+          cx="40"
+          cy="40"
+          r="32"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            rotate: 360,
+            scale: [1, 1.05, 1],
+            transition: { duration: 3, repeat: Infinity, ease: "linear" },
+          }}
+        />
+        <motion.g
+          initial={false}
+          whileHover={{ rotate: 360 }}
+          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          style={{ transformOrigin: "40px 40px" }}
+        >
+          {[0, 72, 144, 216, 288].map((angle, i) => (
+            <motion.path
+              key={i}
+              d="M40 40 L40 16 Q45 8 52 12 Q46 20 40 30"
+              fill="currentColor"
+              opacity="0.85"
+              style={{ transformOrigin: "40px 40px", rotate: angle }}
+            />
+          ))}
+        </motion.g>
+        <motion.circle
+          cx="40"
+          cy="40"
+          r="8"
+          fill="currentColor"
+          initial={false}
+          whileHover={{ scale: [1, 1.2, 1] }}
+          transition={{ duration: 1, repeat: Infinity }}
+        />
+        <circle cx="40" cy="40" r="3" fill="white" opacity="0.8" />
+      </svg>
+    ),
+  },
+  {
+    label: "Water Pumps & Heaters",
+    categoryId: "water-pumps-heaters",
     color: "#ef4444",
     svg: (
       <svg viewBox="0 0 80 80" className="w-full h-full">
@@ -187,453 +383,627 @@ const RANGE = [
     ),
   },
   {
-    label: "Exhaust Fans",
+    label: "Pipes & Fittings",
+    categoryId: "pipes-fittings",
     color: "#8b5cf6",
     svg: (
       <svg viewBox="0 0 80 80" className="w-full h-full">
-        <motion.rect
-          x="12"
-          y="12"
-          width="56"
-          height="56"
-          rx="8"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          fill="none"
+        <motion.g
           initial={false}
           whileHover={{ rotate: [0, 5, -5, 0] }}
-          transition={{ duration: 3, repeat: Infinity }}
-        />
-        <motion.g
-          initial={false}
-          whileHover={{ rotate: -360 }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
-          style={{ transformOrigin: "40px 40px" }}
-        >
-          {[0, 60, 120, 180, 240, 300].map((angle, i) => (
-            <path
-              key={i}
-              d="M40 40 L40 22 Q44 18 48 22 Q46 28 40 34"
-              stroke="currentColor"
-              strokeWidth="2"
-              fill="currentColor"
-              opacity="0.6"
-              style={{ transformOrigin: "40px 40px", rotate: angle }}
-            />
-          ))}
-        </motion.g>
-        <motion.circle
-          cx="40"
-          cy="40"
-          r="7"
-          fill="currentColor"
-          initial={false}
-          whileHover={{ scale: [1, 1.15, 1] }}
-          transition={{ duration: 1, repeat: Infinity }}
-        />
-        <circle cx="40" cy="40" r="2.5" fill="white" opacity="0.9" />
-        <motion.g
-          initial={false}
-          whileHover={{ opacity: [0.3, 0.7, 0.3] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <line
-            x1="18"
-            y1="40"
-            x2="28"
-            y2="40"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            opacity="0.4"
-          />
-          <line
-            x1="52"
-            y1="40"
-            x2="62"
-            y2="40"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            opacity="0.4"
-          />
-        </motion.g>
-      </svg>
-    ),
-  },
-  {
-    label: "Irons",
-    color: "#ec4899",
-    svg: (
-      <svg viewBox="0 0 80 80" className="w-full h-full">
-        <motion.g
-          initial={false}
-          whileHover={{ x: [0, 4, -2, 0], y: [0, -2, 2, 0] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <motion.path
-            d="M18 40 Q18 30 28 28 L62 28 Q70 30 72 38 L72 48 Q70 55 62 56 L28 56 Q18 55 18 48 Z"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            fill="none"
-          />
-          <path
-            d="M28 28 L38 18 Q42 16 45 19 L52 28"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            fill="none"
-            strokeLinecap="round"
-          />
-          <motion.g
-            initial={false}
-            whileHover={{ opacity: [0, 0.8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
-            {[35, 42, 49].map((x, i) => (
-              <motion.path
-                key={i}
-                d={`M${x} 40 Q${x + 3} 34 ${x} 28`}
-                stroke="currentColor"
-                strokeWidth="1.5"
-                fill="none"
-                strokeLinecap="round"
-                initial={false}
-                whileHover={{ y: [-2, 0, -2] }}
-                transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.3 }}
-              />
-            ))}
-          </motion.g>
-        </motion.g>
-      </svg>
-    ),
-  },
-  {
-    label: "Mixer Grinders",
-    color: "#10b981",
-    svg: (
-      <svg viewBox="0 0 80 80" className="w-full h-full">
-        <motion.path
-          d="M25 42 L22 26 Q24 20 30 18 L50 18 Q56 20 58 26 L55 42 Z"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          fill="none"
-          initial={false}
-          whileHover={{
-            rotate: [0, -5, 5, 0],
-            transition: { duration: 1.5, repeat: Infinity },
-          }}
-        />
-        <path
-          d="M26 20 L28 15 Q30 12 35 12 L45 12 Q50 12 52 15 L54 20"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
-        <motion.g
-          initial={false}
-          whileHover={{ rotate: 720 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          style={{ transformOrigin: "40px 40px" }}
-        >
-          <path
-            d="M40 40 L34 30 M40 40 L46 30 M40 40 L40 28"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </motion.g>
-        <rect
-          x="30"
-          y="52"
-          width="20"
-          height="6"
-          rx="2"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
-        <motion.g
-          initial={false}
-          whileHover={{ opacity: [0, 1, 0] }}
-          transition={{ duration: 1, repeat: Infinity }}
-        >
-          <line
-            x1="15"
-            y1="38"
-            x2="22"
-            y2="38"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-        </motion.g>
-      </svg>
-    ),
-  },
-  {
-    label: "Kitchen Chimneys",
-    color: "#6366f1",
-    svg: (
-      <svg viewBox="0 0 80 80" className="w-full h-full">
-        <motion.path
-          d="M18 46 L22 26 Q24 18 30 16 L50 16 Q56 18 58 26 L62 46 Z"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          fill="none"
-          initial={false}
-          whileHover={{ scaleY: [1, 1.05, 1] }}
-          style={{ transformOrigin: "40px 40px" }}
-          transition={{ duration: 2, repeat: Infinity }}
-        />
-        <motion.rect
-          x="32"
-          y="6"
-          width="16"
-          height="12"
-          rx="2"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-          initial={false}
-          whileHover={{ y: [-2, 2, -2] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        />
-        <motion.g
-          initial={false}
-          whileHover={{ opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          {[0, 6, 12].map((y, i) => (
-            <line
-              key={i}
-              x1={28 - i * 2}
-              y1={30 + y}
-              x2={52 + i * 2}
-              y2={30 + y}
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              opacity={1 - i * 0.25}
-            />
-          ))}
-        </motion.g>
-        <motion.g
-          initial={false}
-          whileHover={{ y: [-5, -15, -5], opacity: [1, 0, 1] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <circle cx="38" cy="6" r="2" fill="currentColor" opacity="0.4" />
-          <circle cx="42" cy="4" r="1.5" fill="currentColor" opacity="0.3" />
-        </motion.g>
-      </svg>
-    ),
-  },
-  {
-    label: "Wires & Cables",
-    color: "#f97316",
-    svg: (
-      <svg viewBox="0 0 80 80" className="w-full h-full">
-        <motion.g
-          initial={false}
-          whileHover={{ rotate: [0, 10, -10, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           style={{ transformOrigin: "40px 40px" }}
         >
           <motion.path
-            d="M15 32 Q30 12 40 32 Q50 52 65 32"
+            d="M20 40 L60 40"
             stroke="currentColor"
-            strokeWidth="3"
-            fill="none"
+            strokeWidth="8"
             strokeLinecap="round"
-            initial={false}
-            whileHover={{
-              d: [
-                "M15 32 Q30 12 40 32 Q50 52 65 32",
-                "M15 32 Q30 48 40 32 Q50 16 65 32",
-                "M15 32 Q30 12 40 32 Q50 52 65 32",
-              ],
-            }}
-            transition={{ duration: 2, repeat: Infinity }}
           />
           <motion.path
-            d="M15 48 Q30 28 40 48 Q50 68 65 48"
+            d="M40 20 L40 60"
             stroke="currentColor"
-            strokeWidth="2"
-            fill="none"
+            strokeWidth="8"
             strokeLinecap="round"
-            opacity="0.5"
-            initial={false}
-            whileHover={{
-              d: [
-                "M15 48 Q30 28 40 48 Q50 68 65 48",
-                "M15 48 Q30 64 40 48 Q50 32 65 48",
-                "M15 48 Q30 28 40 48 Q50 68 65 48",
-              ],
-            }}
-            transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+          />
+          <motion.circle
+            cx="40"
+            cy="40"
+            r="10"
+            fill="white"
+            stroke="currentColor"
+            strokeWidth="3"
           />
         </motion.g>
         <motion.circle
           cx="40"
           cy="40"
-          r="5"
+          r="4"
           fill="currentColor"
           initial={false}
-          whileHover={{ scale: [1, 1.5, 1] }}
-          transition={{ duration: 1, repeat: Infinity }}
+          whileHover={{
+            scale: [1, 1.5, 1],
+            transition: { duration: 1, repeat: Infinity },
+          }}
         />
       </svg>
     ),
   },
   {
-    label: "Inverters & Batteries",
-    color: "#14b8a6",
+    label: "Industrial Electrical",
+    categoryId: "industrial-electrical-products",
+    color: "#10b981",
     svg: (
       <svg viewBox="0 0 80 80" className="w-full h-full">
         <motion.rect
-          x="25"
-          y="28"
-          width="30"
-          height="38"
+          x="18"
+          y="16"
+          width="44"
+          height="52"
           rx="5"
           stroke="currentColor"
           strokeWidth="2.5"
           fill="none"
           initial={false}
           whileHover={{
-            filter: [
-              "drop-shadow(0 0 4px currentColor)",
-              "drop-shadow(0 0 12px currentColor)",
-              "drop-shadow(0 0 4px currentColor)",
-            ],
+            scale: [1, 1.03, 1],
             transition: { duration: 2, repeat: Infinity },
           }}
         />
         <motion.path
-          d="M34 23 L34 28 M46 23 L46 28"
+          d="M30 30 L40 22 L50 30"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          initial={false}
+          whileHover={{
+            y: [-2, 2, -2],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.g
+          initial={false}
+          whileHover={{ rotate: 360 }}
+          transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+          style={{ transformOrigin: "40px 44px" }}
+        >
+          <circle
+            cx="40"
+            cy="44"
+            r="8"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+          <line
+            x1="40"
+            y1="36"
+            x2="40"
+            y2="40"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+          <line
+            x1="40"
+            y1="48"
+            x2="40"
+            y2="52"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+          <line
+            x1="32"
+            y1="44"
+            x2="36"
+            y2="44"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+          <line
+            x1="44"
+            y1="44"
+            x2="48"
+            y2="44"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+        </motion.g>
+        <motion.line
+          x1="22"
+          y1="22"
+          x2="28"
+          y2="22"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          initial={false}
+          whileHover={{ x: [0, 3, 0], opacity: [1, 0.5, 1] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Electrical Tools",
+    categoryId: "electrical-tools-accessories",
+    color: "#6366f1",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
+        <motion.g
+          initial={false}
+          whileHover={{ rotate: [0, -10, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          style={{ transformOrigin: "40px 40px" }}
+        >
+          <motion.path
+            d="M25 55 L25 25 Q25 18 32 18 L48 18 Q55 18 55 25 L55 55"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            fill="none"
+            strokeLinecap="round"
+          />
+          <motion.path
+            d="M35 18 L35 12 Q35 10 40 10 Q45 10 45 12 L45 18"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            fill="none"
+            strokeLinecap="round"
+          />
+        </motion.g>
+        <motion.rect
+          x="32"
+          y="30"
+          width="16"
+          height="3"
+          rx="1.5"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            width: [16, 20, 16],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+        <motion.rect
+          x="32"
+          y="38"
+          width="16"
+          height="3"
+          rx="1.5"
+          fill="currentColor"
+          opacity="0.7"
+          initial={false}
+          whileHover={{
+            width: [16, 20, 16],
+            transition: { duration: 1, repeat: Infinity, delay: 0.2 },
+          }}
+        />
+        <motion.rect
+          x="32"
+          y="46"
+          width="16"
+          height="3"
+          rx="1.5"
+          fill="currentColor"
+          opacity="0.5"
+          initial={false}
+          whileHover={{
+            width: [16, 20, 16],
+            transition: { duration: 1, repeat: Infinity, delay: 0.4 },
+          }}
+        />
+        <motion.circle
+          cx="40"
+          cy="24"
+          r="3"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.3, 1],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Earthing Materials",
+    categoryId: "earthing-materials",
+    color: "#84cc16",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
+        <motion.rect
+          x="36"
+          y="12"
+          width="8"
+          height="44"
+          rx="2"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.02, 1],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.path
+          d="M24 56 L56 56"
           stroke="currentColor"
           strokeWidth="2.5"
           strokeLinecap="round"
           initial={false}
-          whileHover={{ y: [-1, 1, -1] }}
-          transition={{ duration: 1, repeat: Infinity }}
+          whileHover={{
+            y: [0, -2, 0],
+            transition: { duration: 1, repeat: Infinity },
+          }}
         />
-        <motion.g
-          initial={false}
-          whileHover={{ y: [0, -2, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <rect
-            x="30"
-            y="48"
-            width="20"
-            height="4"
-            rx="1"
-            fill="currentColor"
-          />
-          <rect
-            x="30"
-            y="43"
-            width="20"
-            height="4"
-            rx="1"
-            fill="currentColor"
-            opacity="0.7"
-          />
-          <rect
-            x="30"
-            y="38"
-            width="20"
-            height="4"
-            rx="1"
-            fill="currentColor"
-            opacity="0.5"
-          />
-        </motion.g>
         <motion.path
-          d="M42 30 L38 40 L42 40 L38 50 L46 38 L42 38 L46 30 Z"
-          fill="currentColor"
+          d="M20 64 L60 64"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          opacity="0.7"
           initial={false}
           whileHover={{
-            opacity: [0, 1, 0],
-            scale: [0.8, 1.2, 0.8],
+            y: [0, -2, 0],
+            transition: { duration: 1, repeat: Infinity, delay: 0.2 },
+          }}
+        />
+        <motion.path
+          d="M16 72 L64 72"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          opacity="0.4"
+          initial={false}
+          whileHover={{
+            y: [0, -2, 0],
+            transition: { duration: 1, repeat: Infinity, delay: 0.4 },
+          }}
+        />
+        <motion.path
+          d="M44 16 L38 34 L44 34 L38 52"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          initial={false}
+          whileHover={{
+            opacity: [0.5, 1, 0.5],
+            filter: [
+              "drop-shadow(0 0 2px currentColor)",
+              "drop-shadow(0 0 8px currentColor)",
+              "drop-shadow(0 0 2px currentColor)",
+            ],
           }}
           transition={{ duration: 1.5, repeat: Infinity }}
         />
+        <motion.circle
+          cx="40"
+          cy="56"
+          r="4"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.3, 1],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Home Appliance",
+    categoryId: "home-appliance",
+    color: "#ec4899",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
+        <motion.path
+          d="M16 68 L16 38 L40 18 L64 38 L64 68 Z"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          strokeLinejoin="round"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.03, 1],
+            transition: { duration: 2, repeat: Infinity },
+          }}
+        />
+        <motion.path
+          d="M12 38 L40 14 L68 38"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          strokeLinejoin="round"
+          initial={false}
+          whileHover={{
+            y: [-1, 1, -1],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.rect
+          x="33"
+          y="44"
+          width="14"
+          height="24"
+          rx="1"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.02, 1],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+        <motion.circle
+          cx="44"
+          cy="56"
+          r="1.5"
+          fill="currentColor"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.5, 1],
+            transition: { duration: 0.8, repeat: Infinity },
+          }}
+        />
+        <motion.rect
+          x="48"
+          y="42"
+          width="10"
+          height="10"
+          rx="1"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            opacity: [0.5, 1, 0.5],
+            transition: { duration: 2, repeat: Infinity },
+          }}
+        />
+        <line
+          x1="53"
+          y1="42"
+          x2="53"
+          y2="52"
+          stroke="currentColor"
+          strokeWidth="1"
+        />
+        <line
+          x1="48"
+          y1="47"
+          x2="58"
+          y2="47"
+          stroke="currentColor"
+          strokeWidth="1"
+        />
+        <motion.rect
+          x="24"
+          y="46"
+          width="8"
+          height="10"
+          rx="1.5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            rotate: [0, 5, -5, 0],
+            transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+          }}
+          style={{ transformOrigin: "28px 51px" }}
+        />
+        <circle cx="26" cy="49" r="1" fill="currentColor" />
+        <circle cx="30" cy="49" r="1" fill="currentColor" />
+        <motion.rect
+          x="44"
+          y="18"
+          width="8"
+          height="10"
+          rx="1"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            y: [-1, 1, -1],
+            transition: { duration: 1, repeat: Infinity },
+          }}
+        />
+      </svg>
+    ),
+  },
+  {
+    label: "Aquagard",
+    categoryId: "aquagard",
+    color: "#06b6d4",
+    svg: (
+      <svg viewBox="0 0 80 80" className="w-full h-full">
+        <motion.rect
+          x="28"
+          y="22"
+          width="24"
+          height="36"
+          rx="8"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.03, 1],
+            transition: { duration: 2, repeat: Infinity },
+          }}
+        />
+        <motion.rect
+          x="26"
+          y="18"
+          width="28"
+          height="8"
+          rx="4"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          fill="none"
+          initial={false}
+          whileHover={{
+            y: [-1, 1, -1],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <motion.g
+          initial={false}
+          whileHover={{ y: [0, 4, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          <motion.path
+            d="M36 62 Q36 56 40 52 Q44 56 44 62 Q44 66 40 66 Q36 66 36 62 Z"
+            fill="currentColor"
+            opacity="0.6"
+            initial={false}
+            whileHover={{
+              opacity: [0.4, 0.8, 0.4],
+              transition: { duration: 1, repeat: Infinity },
+            }}
+          />
+        </motion.g>
+        <motion.g
+          initial={false}
+          whileHover={{ y: [0, 4, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, delay: 0.3 }}
+        >
+          <motion.path
+            d="M34 68 Q34 64 36 62 Q38 64 38 68 Q38 71 36 71 Q34 71 34 68 Z"
+            fill="currentColor"
+            opacity="0.4"
+          />
+          <motion.path
+            d="M42 68 Q42 64 44 62 Q46 64 46 68 Q46 71 44 71 Q42 71 42 68 Z"
+            fill="currentColor"
+            opacity="0.4"
+          />
+        </motion.g>
+        <motion.path
+          d="M34 34 Q38 30 40 34 Q42 38 46 34"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          strokeLinecap="round"
+          opacity="0.7"
+          initial={false}
+          whileHover={{
+            d: [
+              "M34 34 Q38 30 40 34 Q42 38 46 34",
+              "M34 34 Q38 38 40 34 Q42 30 46 34",
+              "M34 34 Q38 30 40 34 Q42 38 46 34",
+            ],
+          }}
+          transition={{ duration: 2, repeat: Infinity }}
+        />
+        <motion.path
+          d="M34 40 Q38 36 40 40 Q42 44 46 40"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
+          strokeLinecap="round"
+          opacity="0.5"
+          initial={false}
+          whileHover={{
+            d: [
+              "M34 40 Q38 36 40 40 Q42 44 46 40",
+              "M34 40 Q38 44 40 40 Q42 36 46 40",
+              "M34 40 Q38 36 40 40 Q42 44 46 40",
+            ],
+          }}
+          transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+        />
+        <motion.circle
+          cx="40"
+          cy="48"
+          r="5"
+          fill="currentColor"
+          opacity="0.3"
+          initial={false}
+          whileHover={{
+            scale: [1, 1.2, 1],
+            opacity: [0.2, 0.5, 0.2],
+            transition: { duration: 1.5, repeat: Infinity },
+          }}
+        />
+        <circle cx="40" cy="48" r="2" fill="currentColor" opacity="0.8" />
       </svg>
     ),
   },
 ];
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.08 } },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, ease: "easeOut" },
-  },
-};
-
 export default function ShopByCategory() {
   return (
-    <>
-      <style>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
-      <section className="relative max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-6 sm:mb-10"
-        >
-          <h2
-            className="text-2xl sm:text-3xl lg:text-4xl font-medium"
-            style={{ color: "#082d4a" }}
-          >
-            Explore Our Category
-          </h2>
-        </motion.div>
+    <section className="relative max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-6 sm:mb-10"
+      >
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black">
+          Shop by Category
+        </h1>
+        <h2 className="text-sm mt-5">Everything You Need, in One Place</h2>
+      </motion.div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          className="hide-scrollbar flex justify-start lg:justify-center items-start gap-3 sm:gap-4 md:gap-6 lg:gap-8 flex-nowrap overflow-x-auto pb-2 px-2 sm:px-0"
-        >
-          {RANGE.map(({ label, svg, color }, i) => (
-            <motion.a
-              key={label}
-              href="#"
-              variants={item}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex flex-col items-center gap-2 group cursor-pointer flex-shrink-0"
-            >
-              <span
-                className="block w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 transition-all duration-300"
-                style={{ color: color }}
-              >
-                {svg}
-              </span>
-              <span className="text-[10px] sm:text-xs md:text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors duration-300 whitespace-nowrap">
-                {label}
-              </span>
-            </motion.a>
-          ))}
-        </motion.div>
-      </section>
-    </>
+      {/* Single Line Marquee - All Devices */}
+      <div className="relative">
+        {/* Gradient Fade Edges */}
+        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-12 lg:w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-12 lg:w-20 bg-gradient-to-r from-transparent to-white z-10 pointer-events-none" />
+
+        {/* Single Marquee Row - Left to Right */}
+        <div className="relative overflow-hidden">
+          <motion.div
+            className="flex gap-3 sm:gap-4 md:gap-6 lg:gap-8"
+            animate={{
+              x: ["0%", "-50%"],
+            }}
+            transition={{
+              x: {
+                duration: 25,
+                repeat: Infinity,
+                ease: "linear",
+              },
+            }}
+          >
+            {[...RANGE, ...RANGE].map(
+              ({ label, categoryId, svg, color }, index) => (
+                <Link
+                  key={`${label}-${index}`}
+                  href={`/products?category=${categoryId}`}
+                  className="flex-shrink-0"
+                >
+                  <motion.span
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex flex-col items-center gap-2 group cursor-pointer"
+                  >
+                    <span
+                      className="block w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 transition-all duration-300"
+                      style={{ color: color }}
+                    >
+                      {svg}
+                    </span>
+                    <span className="text-[10px] sm:text-xs md:text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors duration-300 whitespace-nowrap">
+                      {label}
+                    </span>
+                  </motion.span>
+                </Link>
+              ),
+            )}
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 }

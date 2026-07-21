@@ -1,7 +1,10 @@
+import { Suspense } from "react";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Footer from "@/Components/footer/Footer";
 import Navbar from "@/Components/navbar/Navbar";
+import { CartProvider } from "@/Components/providers/CartProvider";
+import Footer from "@/Components/footer/Footer";
+import ScrollToTop from "@/Components/ScrollToTop";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -19,9 +22,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body className="min-h-full flex flex-col font-poppins">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <Suspense fallback={null}>
+          <ScrollToTop />
+        </Suspense>
+        <CartProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

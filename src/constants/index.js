@@ -5,15 +5,13 @@ export const PHONE_NUMBER = "+1234567890";
 export const COMPANY_INFO = {
   name: "JC Enterprises",
   logoText: "JC Enterprises",
-  logo: "/images/logo-mark.png",
+  logo: "/images/logo-cropped.png",
   tagline: "Premium Quality Products",
   phone: PHONE_NUMBER,
   email: "info@growyld.com",
   address: "123 Business Street, New York, NY 10001",
 };
 
-// Consumed by Navbar.jsx / MobileMenu.jsx — `icon` on dropdown items must
-// match a key in ResourcesDropdown.jsx's iconMap
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
@@ -34,7 +32,7 @@ export const NAV_LINKS = [
       },
       {
         label: "About Us",
-        href: "/about",
+        href: "/about-us",
         description: "Our story & mission",
         icon: "FiInfo",
       },
@@ -74,12 +72,3 @@ export const FOOTER_LINKS = {
     { label: "Terms of Service", href: "/terms" },
   ],
 };
-
-// Consumed by FooterSocial.jsx — `icon` must match a key in its iconMap
-export const SOCIAL_LINKS = [
-  { label: "Facebook", icon: "FaFacebook", href: "https://facebook.com" },
-  { label: "Twitter", icon: "FaTwitter", href: "https://twitter.com" },
-  { label: "Instagram", icon: "FaInstagram", href: "https://instagram.com" },
-  { label: "LinkedIn", icon: "FaLinkedin", href: "https://linkedin.com" },
-  { label: "YouTube", icon: "FaYoutube", href: "https://youtube.com" },
-];
