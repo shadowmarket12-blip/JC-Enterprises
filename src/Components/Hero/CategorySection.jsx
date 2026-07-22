@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 const RANGE = [
   {
@@ -940,6 +941,53 @@ const RANGE = [
 ];
 
 export default function ShopByCategory() {
+  const trackRef = useRef(null);
+  const offsetRef = useRef(0);
+  const velocityRef = useRef(0);
+  const halfWidthRef = useRef(0);
+  const isHoveringRef = useRef(false);
+
+  // Tuning knobs
+  const IDLE_SPEED = 0.4; // px/frame drift speed when nothing is hovered
+  const EASE = 0.08; // how quickly velocity eases toward its target (0-1, lower = smoother/slower stop)
+
+  // Measure the width of a single (non-duplicated) set once mounted
+  useEffect(() => {
+    if (trackRef.current) {
+      halfWidthRef.current = trackRef.current.scrollWidth / 2;
+    }
+  }, []);
+
+  // Single rAF loop: eases velocity toward target (0 when hovering, IDLE_SPEED otherwise)
+  useEffect(() => {
+    let frameId;
+
+    const tick = () => {
+      const targetVelocity = isHoveringRef.current ? 0 : IDLE_SPEED;
+
+      // Smoothly ease current velocity toward the target — this is what
+      // makes the marquee glide to a gentle stop instead of snapping.
+      velocityRef.current += (targetVelocity - velocityRef.current) * EASE;
+
+      offsetRef.current -= velocityRef.current;
+
+      const half = halfWidthRef.current;
+      if (half > 0) {
+        if (offsetRef.current <= -half) offsetRef.current += half;
+        if (offsetRef.current > 0) offsetRef.current -= half;
+      }
+
+      if (trackRef.current) {
+        trackRef.current.style.transform = `translateX(${offsetRef.current}px)`;
+      }
+
+      frameId = requestAnimationFrame(tick);
+    };
+
+    frameId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameId);
+  }, []);
+
   return (
     <section className="relative max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 overflow-hidden">
       <motion.div
@@ -963,18 +1011,9 @@ export default function ShopByCategory() {
 
         {/* Single Marquee Row - Left to Right */}
         <div className="relative overflow-hidden">
-          <motion.div
-            className="flex gap-3 sm:gap-4 md:gap-6 lg:gap-8"
-            animate={{
-              x: ["0%", "-50%"],
-            }}
-            transition={{
-              x: {
-                duration: 25,
-                repeat: Infinity,
-                ease: "linear",
-              },
-            }}
+          <div
+            ref={trackRef}
+            className="flex gap-3 sm:gap-4 md:gap-6 lg:gap-8 w-max will-change-transform"
           >
             {[...RANGE, ...RANGE].map(
               ({ label, categoryId, svg, color }, index) => (
@@ -982,11 +1021,13 @@ export default function ShopByCategory() {
                   key={`${label}-${index}`}
                   href={`/products?category=${categoryId}`}
                   className="flex-shrink-0"
+                  onMouseEnter={() => (isHoveringRef.current = true)}
+                  onMouseLeave={() => (isHoveringRef.current = false)}
                 >
                   <motion.span
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex flex-col items-center gap-2 group cursor-pointer"
+                    className="flex flex-col items-center gap-2 group cursor-pointer w-16 sm:w-20 md:w-24"
                   >
                     <span
                       className="block w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 transition-all duration-300"
@@ -994,14 +1035,14 @@ export default function ShopByCategory() {
                     >
                       {svg}
                     </span>
-                    <span className="text-[10px] sm:text-xs md:text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors duration-300 whitespace-nowrap">
+                    <span className="text-[10px] sm:text-xs md:text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors duration-300 text-center leading-tight break-words">
                       {label}
                     </span>
                   </motion.span>
                 </Link>
               ),
             )}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

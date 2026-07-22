@@ -26,38 +26,6 @@ const CustomerReviews = () => {
   const [activeTab, setActiveTab] = useState("all");
   const [hoveredCard, setHoveredCard] = useState(null);
 
-  // Stats data
-  const stats = [
-    {
-      icon: HiUserGroup,
-      value: "50,000+",
-      label: "Happy Customers",
-      sublabel: "Across Odisha",
-      color: "from-blue-500 to-cyan-500",
-    },
-    {
-      icon: HiShieldCheck,
-      value: "35+",
-      label: "Years of Trust",
-      sublabel: "Since 1989",
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      icon: HiTruck,
-      value: "100,000+",
-      label: "Orders Delivered",
-      sublabel: "On Time",
-      color: "from-orange-500 to-amber-500",
-    },
-    {
-      icon: HiStar,
-      value: "4.8/5",
-      label: "Customer Rating",
-      sublabel: "Consistently",
-      color: "from-yellow-500 to-orange-500",
-    },
-  ];
-
   // Customer testimonials data
   const testimonials = [
     {
@@ -186,123 +154,15 @@ const CustomerReviews = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Trusted by Thousands{" "}
-            <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-[#082d4a] to-[#0d4f7c] bg-clip-text text-transparent">
-                Across Odisha
-              </span>
-              <motion.div
-                animate={{ scaleX: [1, 1.05, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#082d4a] to-[#0d4f7c] rounded-full"
-              />
-            </span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-3 text-black">
+            Trusted by Thousands Across Odisha
           </h2>
 
-          <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-black text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
             For 35+ years, JC Enterprises has earned customer trust through
             genuine products, fair pricing, and dependable service — from
             individual homeowners to large contractors.
           </p>
-        </motion.div>
-
-        {/* Stats Grid */}
-        <motion.div
-          {...fadeInUp}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16 sm:mb-20"
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5, scale: 1.02 }}
-              className="group relative bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 overflow-hidden"
-            >
-              {/* Gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#082d4a]/0 to-[#082d4a]/0 group-hover:from-[#082d4a]/[0.02] group-hover:to-[#082d4a]/[0.05] transition-all duration-300" />
-
-              <div className="relative">
-                <div
-                  className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <stat.icon className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl sm:text-3xl font-black text-gray-900 mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm font-semibold text-gray-700">
-                  {stat.label}
-                </div>
-                <div className="text-xs text-gray-500 mt-1">
-                  {stat.sublabel}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Review Widget Placeholder */}
-        <motion.div
-          {...fadeInUp}
-          className="mb-16 sm:mb-20 bg-gradient-to-br from-[#082d4a] to-[#0d4f7c] rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden"
-        >
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: `radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px)`,
-                backgroundSize: "50px 50px",
-              }}
-            />
-          </div>
-
-          <div className="relative">
-            <motion.div
-              animate={{ scale: [1, 1.1, 1] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="inline-flex items-center gap-1 mb-6"
-            >
-              {[...Array(5)].map((_, i) => (
-                <HiStar
-                  key={i}
-                  className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-400"
-                />
-              ))}
-            </motion.div>
-
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Share Your Experience
-            </h3>
-            <p className="text-white/70 text-sm sm:text-base max-w-2xl mx-auto mb-8">
-              Your feedback helps us serve you better. Leave a review on Google
-              and help others make informed decisions.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://g.page/r/your-place-id/review"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#082d4a] font-semibold rounded-2xl hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl"
-              >
-                <HiStar className="w-5 h-5" />
-                Write a Google Review
-                <HiArrowRight className="w-5 h-5" />
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/10 transition-all"
-              >
-                <HiPhone className="w-5 h-5" />
-                Contact Us
-              </Link>
-            </div>
-          </div>
         </motion.div>
 
         {/* Filter Tabs */}

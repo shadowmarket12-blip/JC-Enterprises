@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useDeferredValue, useMemo, useState } from "react";
+import { memo, useDeferredValue, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import ProductCard from "./ProductCard";
@@ -42,7 +42,7 @@ const CATEGORY_ICONS = {
   HiBeaker: HiBeaker,
 };
 
-const BRAND_FILTERS = [
+const ALL_BRAND_FILTERS = [
   { id: "all", label: "All Brands", icon: HiSparkles },
   ...BRANDS.map((brand) => ({ id: brand, label: brand, icon: HiTag })),
 ];
@@ -136,6 +136,7 @@ const CategoryChips = memo(function CategoryChips({
 });
 
 const BrandChips = memo(function BrandChips({
+  brandFilters,
   selectedBrand,
   setSelectedBrand,
 }) {
@@ -148,29 +149,36 @@ const BrandChips = memo(function BrandChips({
       }}
     >
       <div className="flex flex-nowrap gap-2 sm:flex-wrap w-max sm:w-full">
-        {BRAND_FILTERS.map((brand) => {
-          const Icon = brand.icon;
-          const isActive = selectedBrand === brand.id;
-          return (
-            <motion.button
-              key={brand.id}
-              type="button"
-              onClick={() => setSelectedBrand(brand.id)}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap flex-shrink-0 transition-all duration-300"
-              style={{
-                backgroundColor: isActive ? "#082d4a" : "#f3f4f6",
-                color: isActive ? "white" : "#6b7280",
-                boxShadow: isActive
-                  ? "0 10px 25px -5px rgba(8, 45, 74, 0.3)"
-                  : "none",
-              }}
-            >
-              <Icon className="text-sm sm:text-base" />
-              {brand.label}
-            </motion.button>
-          );
-        })}
+        <AnimatePresence mode="popLayout" initial={false}>
+          {brandFilters.map((brand) => {
+            const Icon = brand.icon;
+            const isActive = selectedBrand === brand.id;
+            return (
+              <motion.button
+                key={brand.id}
+                type="button"
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+                onClick={() => setSelectedBrand(brand.id)}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap flex-shrink-0 transition-all duration-300"
+                style={{
+                  backgroundColor: isActive ? "#082d4a" : "#f3f4f6",
+                  color: isActive ? "white" : "#6b7280",
+                  boxShadow: isActive
+                    ? "0 10px 25px -5px rgba(8, 45, 74, 0.3)"
+                    : "none",
+                }}
+              >
+                <Icon className="text-sm sm:text-base" />
+                {brand.label}
+              </motion.button>
+            );
+          })}
+        </AnimatePresence>
       </div>
     </div>
   );
@@ -200,6 +208,30 @@ export default function ProductGrid({
     });
     return counts;
   }, []);
+
+  // Brands that actually exist within the currently selected category.
+  // When category is "all", every brand is available.
+  const brandFilters = useMemo(() => {
+    if (selectedCategory === "all") return ALL_BRAND_FILTERS;
+
+    const brandsInCategory = new Set(
+      products
+        .filter((product) => product.categoryId === selectedCategory)
+        .map((product) => product.brand),
+    );
+
+    return ALL_BRAND_FILTERS.filter(
+      (brand) => brand.id === "all" || brandsInCategory.has(brand.id),
+    );
+  }, [selectedCategory]);
+
+  // If the currently selected brand doesn't exist in the newly selected
+  // category's brand list, fall back to "all" instead of showing 0 results.
+  useEffect(() => {
+    if (!brandFilters.some((b) => b.id === selectedBrand)) {
+      setSelectedBrand("all");
+    }
+  }, [brandFilters, selectedBrand]);
 
   const filteredProducts = useMemo(() => {
     if (isPreview) return products.slice(0, limit);
@@ -253,7 +285,7 @@ export default function ProductGrid({
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium">
                 Featured Products
               </h2>
-              <p className="text-gray-500 text-sm sm:text-base mt-2">
+              <p className="text-black text-sm sm:text-base mt-2">
                 Handpicked picks just for you
               </p>
             </motion.div>
@@ -289,7 +321,7 @@ export default function ProductGrid({
             <div className="min-w-0 flex-1">
               {/* Filters — solid, professional sticky bar, snapped to navbar height */}
               <div
-                className="sticky top-16 sm:top-[68px] z-30 -mx-4 sm:-mx-6 bg-white px-4 pt-3 pb-4 mb-6 shadow-sm border-b border-gray-100 lg:relative lg:top-auto lg:mx-0 lg:bg-transparent lg:px-0 lg:pt-0 lg:pb-0 lg:mb-8 lg:shadow-none lg:border-none"
+                className="sticky top-16 sm:top-[68px] lg:top-24 z-30 -mx-4 sm:-mx-6 lg:mx-0 bg-white px-4 pt-3 pb-4 mb-6 lg:px-0 lg:pt-0 lg:pb-0 lg:mb-8 shadow-sm border-b border-gray-100"
                 style={{ willChange: "transform" }}
               >
                 <div className="flex flex-col gap-3 sm:gap-4 w-full min-w-0">
@@ -340,8 +372,9 @@ export default function ProductGrid({
                     />
                   </div>
 
-                  {/* Quick brand filters - all screens */}
+                  {/* Quick brand filters - all screens - scoped to selected category */}
                   <BrandChips
+                    brandFilters={brandFilters}
                     selectedBrand={selectedBrand}
                     setSelectedBrand={setSelectedBrand}
                   />
@@ -371,7 +404,7 @@ export default function ProductGrid({
                       from{" "}
                       <span className="font-medium">
                         {
-                          BRAND_FILTERS.find((b) => b.id === selectedBrand)
+                          ALL_BRAND_FILTERS.find((b) => b.id === selectedBrand)
                             ?.label
                         }
                       </span>

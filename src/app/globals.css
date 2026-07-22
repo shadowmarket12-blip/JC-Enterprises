@@ -494,3 +494,49 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+/* Marquee animation for ShopByCategory - append to your globals.css */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Hero signature animations — append to globals.css */
+
+@keyframes circuit-flow {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+.circuit-trace {
+  stroke-dasharray: 6 10;
+  animation: circuit-flow 1.8s linear infinite;
+}
+
+@keyframes dial-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.dial-ring {
+  animation: dial-spin 26s linear infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circuit-trace,
+  .dial-ring {
+    animation: none;
+  }
+}

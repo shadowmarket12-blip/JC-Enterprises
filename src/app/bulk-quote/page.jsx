@@ -156,7 +156,7 @@ export default function BulkQuotePage() {
       `City: ${formData.city}%0A` +
       `Pincode: ${formData.pincode}`;
 
-    const whatsappNumber = "916370365515"; // Your WhatsApp number with country code
+    const whatsappNumber = "918280547730";
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
   };

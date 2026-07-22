@@ -1,5 +1,6 @@
 "use client";
 
+import AboutSection from "@/Components/Hero/AboutContent";
 import ShopByCategory from "@/Components/Hero/CategorySection";
 import CtaHome from "@/Components/Hero/CtaHome";
 import CustomerReviews from "@/Components/Hero/CustomerReview";
@@ -17,6 +18,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       <main>
         <HeroSlider />
+        <AboutSection />
         <TrustBar />
         <BrandShowcase />
         <ShopByCategory />
