@@ -6,27 +6,67 @@ import { motion } from "framer-motion";
 import { HiShieldCheck } from "react-icons/hi2";
 
 const brands = [
-  { name: "Anchor", logo: "/images/brand/crompton.png", slug: "anchor" },
-  { name: "Polycab", logo: "/images/brand/OrientLogo.png", slug: "polycab" },
-  { name: "Havells", logo: "/images/brand/crompton.png", slug: "havells" },
-  { name: "RR Kabel", logo: "/images/brand/crompton.png", slug: "rr-kabel" },
-  { name: "KEI", logo: "/images/brand/crompton.png", slug: "kei" },
-  { name: "Finolex", logo: "/images/brand/crompton.png", slug: "finolex" },
-  { name: "Philips", logo: "/images/brand/crompton.png", slug: "philips" },
-  { name: "Jaguar", logo: "/images/brand/crompton.png", slug: "jaguar" },
-  { name: "Crompton", logo: "/images/brand/crompton.png", slug: "crompton" },
-  { name: "Bajaj", logo: "/images/brand/crompton.png", slug: "bajaj" },
-  { name: "Orient", logo: "/images/brand/crompton.png", slug: "orient" },
-  { name: "Atomberg", logo: "/images/brand/crompton.png", slug: "atomberg" },
-  { name: "Usha", logo: "/images/brand/crompton.png", slug: "usha" },
-  { name: "Kuhl", logo: "/images/brand/crompton.png", slug: "kuhl" },
-  { name: "McCoy", logo: "/images/brand/crompton.png", slug: "mccoy" },
-  { name: "V-Guard", logo: "/images/brand/crompton.png", slug: "v-guard" },
-  { name: "Lister", logo: "/images/brand/crompton.png", slug: "lister" },
-  { name: "Legrand", logo: "/images/brand/crompton.png", slug: "legrand" },
+  { name: "Anchor", logo: "/BrandLogo/Anchor.webp", slug: "anchor" },
+  { name: "Polycab", logo: "/BrandLogo/Polycab.webp", slug: "polycab" },
+  { name: "Havells", logo: "/BrandLogo/Havells.webp", slug: "havells" },
+  { name: "RR Kabel", logo: "/BrandLogo/RR.webp", slug: "rr-kabel" },
+  { name: "KEI", logo: "/BrandLogo/Kei.webp", slug: "kei" },
+  { name: "Finolex", logo: "/BrandLogo/Finolex.webp", slug: "finolex" },
+  { name: "Jaguar", logo: "/BrandLogo/Jaguar.webp", slug: "jaguar" },
+  { name: "Crompton", logo: "/BrandLogo/Crompton.webp", slug: "crompton" },
+  { name: "Bajaj", logo: "/BrandLogo/Bajaj.webp", slug: "bajaj" },
+  { name: "Orient", logo: "/BrandLogo/Orient.webp", slug: "orient" },
+  { name: "Atomberg", logo: "/BrandLogo/Atomberg.webp", slug: "atomberg" },
+  { name: "Usha", logo: "/BrandLogo/Usha.webp", slug: "usha" },
+  { name: "Kuhl", logo: "/BrandLogo/Kuhl.webp", slug: "kuhl" },
+  { name: "V-Guard", logo: "/BrandLogo/Vguard.webp", slug: "v-guard" },
+  { name: "Lister", logo: "/BrandLogo/Lister.webp", slug: "lister" },
+  { name: "Legrand", logo: "/BrandLogo/Legrand.webp", slug: "legrand" },
 ];
 
+// Fallback component for failed images
+function BrandFallback({ name, className = "" }) {
+  return (
+    <span className={`text-xs lg:text-sm font-bold text-gray-400 ${className}`}>
+      {name}
+    </span>
+  );
+}
+
 export default function BrandShowcase() {
+  // Handle image error safely
+  const handleImageError = (e, brandName) => {
+    const target = e.currentTarget;
+    const parent = target.parentElement;
+
+    // Hide the image
+    target.style.display = "none";
+
+    // Only modify parent if it exists
+    if (parent) {
+      // Create a span element instead of using innerHTML
+      const span = document.createElement("span");
+      span.className = "text-xs lg:text-sm font-bold text-gray-400";
+      span.textContent = brandName;
+      parent.appendChild(span);
+    }
+  };
+
+  // Specific handler for mobile grid images
+  const handleMobileImageError = (e, brandName) => {
+    const target = e.currentTarget;
+    const parent = target.parentElement;
+
+    target.style.display = "none";
+
+    if (parent) {
+      const span = document.createElement("span");
+      span.className = "text-[10px] sm:text-xs font-bold text-gray-400";
+      span.textContent = brandName;
+      parent.appendChild(span);
+    }
+  };
+
   return (
     <section className="relative py-10 sm:py-14 md:py-16 lg:py-20 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,10 +131,7 @@ export default function BrandShowcase() {
                     width={100}
                     height={100}
                     className="w-auto h-8 sm:h-10 md:h-12 object-contain group-hover:scale-110 transition-transform duration-500 ease-out filter group-hover:brightness-110"
-                    onError={(e) => {
-                      e.target.style.display = "none";
-                      e.target.parentElement.innerHTML = `<span class="text-[10px] sm:text-xs font-bold text-gray-400">${brand.name}</span>`;
-                    }}
+                    onError={(e) => handleMobileImageError(e, brand.name)}
                   />
                 </div>
 
@@ -146,10 +183,7 @@ export default function BrandShowcase() {
                         width={120}
                         height={120}
                         className="w-auto h-10 lg:h-12 xl:h-14 object-contain group-hover:scale-110 transition-transform duration-500 ease-out filter group-hover:brightness-110 group-hover:saturate-150"
-                        onError={(e) => {
-                          e.target.style.display = "none";
-                          e.target.parentElement.innerHTML = `<span class="text-xs lg:text-sm font-bold text-gray-400">${brand.name}</span>`;
-                        }}
+                        onError={(e) => handleImageError(e, brand.name)}
                       />
                     </div>
 
@@ -196,10 +230,7 @@ export default function BrandShowcase() {
                         width={120}
                         height={120}
                         className="w-auto h-10 lg:h-12 xl:h-14 object-contain group-hover:scale-110 transition-transform duration-500 ease-out filter group-hover:brightness-110 group-hover:saturate-150"
-                        onError={(e) => {
-                          e.target.style.display = "none";
-                          e.target.parentElement.innerHTML = `<span class="text-xs lg:text-sm font-bold text-gray-400">${brand.name}</span>`;
-                        }}
+                        onError={(e) => handleImageError(e, brand.name)}
                       />
                     </div>
 
@@ -212,43 +243,6 @@ export default function BrandShowcase() {
             </motion.div>
           </div>
         </div>
-
-        {/* View All Brands Button */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-10 sm:mt-12"
-        >
-          <Link
-            href="/brands"
-            className="group relative inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-[#082d4a] to-[#0f4c7a] text-white text-sm sm:text-base font-semibold overflow-hidden transition-all duration-300 hover:scale-105"
-          >
-       
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-
-            <span className="relative z-10 flex items-center gap-2">
-              View All Brands
-              <svg
-                className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </span>
-
-      
-            <div className="absolute inset-0 rounded-full shadow-lg shadow-[#082d4a]/30 group-hover:shadow-xl group-hover:shadow-[#082d4a]/40 transition-all duration-300" />
-          </Link>
-        </motion.div> */}
       </div>
     </section>
   );

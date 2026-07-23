@@ -15,6 +15,26 @@ export function ProductGalleryProvider({ product, children }) {
     : [product.image];
   const activeImage = images[selectedImageIndex] || images[0];
 
+  // Per-color price is optional — falls back to the product's base price
+  // whenever a color doesn't set its own `price` / `originalPrice`.
+  const activePrice = activeColor?.price ?? product.price;
+  const activeOriginalPrice =
+    activeColor?.originalPrice ?? product.originalPrice;
+
+  // Discount is always derived from the active price pair rather than a
+  // stored field, so it can never drift out of sync when a color has its
+  // own price/originalPrice.
+  const activeDiscount =
+    activeOriginalPrice && activeOriginalPrice > activePrice
+      ? Math.round(
+          ((activeOriginalPrice - activePrice) / activeOriginalPrice) * 100,
+        )
+      : 0;
+
+  // Per-color stock is optional — falls back to the product's base stock
+  // whenever a color doesn't set its own `stock`.
+  const activeStock = activeColor?.stock ?? product.stock ?? null;
+
   const setSelectedIndex = useCallback((index) => {
     setSelectedIndexState(index);
     setSelectedImageIndex(0);
@@ -30,6 +50,10 @@ export function ProductGalleryProvider({ product, children }) {
       selectedImageIndex,
       setSelectedImageIndex,
       activeImage,
+      activePrice,
+      activeOriginalPrice,
+      activeDiscount,
+      activeStock,
     }),
     [
       colors,
@@ -39,6 +63,10 @@ export function ProductGalleryProvider({ product, children }) {
       images,
       selectedImageIndex,
       activeImage,
+      activePrice,
+      activeOriginalPrice,
+      activeDiscount,
+      activeStock,
     ],
   );
 

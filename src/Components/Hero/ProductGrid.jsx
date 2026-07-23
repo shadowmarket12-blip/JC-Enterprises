@@ -146,9 +146,15 @@ const BrandChips = memo(function BrandChips({
       style={{
         WebkitOverflowScrolling: "touch",
         overscrollBehaviorX: "contain",
+        // Lock a minimum height equal to one row of chips so that switching
+        // categories (which changes how many brand chips render) never
+        // shrinks/grows this row. A resizing sticky bar shoves the page's
+        // scroll position around for a frame, which reads as the fixed
+        // navbar "flickering" or jumping on tab switch.
+        minHeight: "2.5rem",
       }}
     >
-      <div className="flex flex-nowrap gap-2 sm:flex-wrap w-max sm:w-full">
+      <div className="flex flex-nowrap gap-2 sm:flex-wrap w-max sm:w-full items-center">
         <AnimatePresence mode="popLayout" initial={false}>
           {brandFilters.map((brand) => {
             const Icon = brand.icon;
@@ -157,7 +163,6 @@ const BrandChips = memo(function BrandChips({
               <motion.button
                 key={brand.id}
                 type="button"
-                layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
@@ -171,6 +176,7 @@ const BrandChips = memo(function BrandChips({
                   boxShadow: isActive
                     ? "0 10px 25px -5px rgba(8, 45, 74, 0.3)"
                     : "none",
+                  willChange: "transform, opacity",
                 }}
               >
                 <Icon className="text-sm sm:text-base" />
@@ -300,8 +306,8 @@ export default function ProductGrid({
           </>
         ) : (
           <div className="lg:flex lg:items-start lg:gap-8">
-            {/* Sidebar - desktop - sticky */}
-            <aside className="hidden lg:block lg:w-64 lg:flex-shrink-0 lg:sticky lg:top-24 lg:self-start">
+            {/* Sidebar - desktop - sticks in place while the right side scrolls */}
+            <aside className="hidden lg:block lg:w-64 lg:flex-shrink-0 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
               <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
                 <h3
                   className="mb-3 px-1 text-sm font-bold uppercase tracking-wider"
@@ -319,65 +325,99 @@ export default function ProductGrid({
 
             {/* Content */}
             <div className="min-w-0 flex-1">
-              {/* Filters — solid, professional sticky bar, snapped to navbar height */}
-              <div
-                className="sticky top-16 sm:top-[68px] lg:top-24 z-30 -mx-4 sm:-mx-6 lg:mx-0 bg-white px-4 pt-3 pb-4 mb-6 lg:px-0 lg:pt-0 lg:pb-0 lg:mb-8 shadow-sm border-b border-gray-100"
-                style={{ willChange: "transform" }}
-              >
-                <div className="flex flex-col gap-3 sm:gap-4 w-full min-w-0">
-                  {/* Search and Sort */}
-                  <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-                    <div className="relative w-full sm:w-64 lg:w-72">
-                      <HiMagnifyingGlass className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-gray-400 text-base sm:text-lg" />
-                      <input
-                        type="text"
-                        placeholder="Search products..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-full pl-9 sm:pl-11 pr-10 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl border border-gray-200 focus:border-gray-400 focus:ring-2 focus:ring-gray-100 outline-none transition-all duration-300 bg-white text-sm"
-                        style={{ color: "#082d4a" }}
-                      />
-                      {searchTerm && (
-                        <button
-                          onClick={() => setSearchTerm("")}
-                          className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              {/*
+                Filters - sticky wrapper with negative margins to offset section padding.
+
+                FIX NOTES (mobile sticky bug):
+                1. z-[999] + isolate -> guarantees this sits above any sticky/fixed
+                   site header and creates its own stacking context so animated
+                   sibling elements (product cards using layout/AnimatePresence)
+                   can never render on top of it.
+                2. `sticky` + `top-0` only work if NO ancestor between this div and
+                   the scrolling viewport has `overflow: hidden/auto/scroll`,
+                   `transform`, `filter`, `perspective`, `contain`, or
+                   `will-change: transform`. The single most common cause in
+                   Next.js + Framer Motion apps is a <motion.div> page-transition
+                   wrapper in layout.js/template.js that animates x/y/scale on the
+                   whole page - remove/relocate that animation if present.
+              */}
+              <div className="sticky top-16 sm:top-[68px] lg:static lg:top-0 z-40 lg:z-auto -mx-4 sm:-mx-6 lg:mx-0 -mt-8 sm:-mt-12 lg:mt-0">
+                <div
+                  className="px-4 pt-4 pb-4 mb-6 lg:pt-0 lg:px-0 lg:pb-0 lg:mb-8 border-b border-gray-100"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    boxShadow:
+                      "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+                    // GPU layer promotion lives on this inner element, NOT on
+                    // the sticky element itself. Putting transform/will-change
+                    // directly on a position:sticky element makes mobile
+                    // Safari/Chrome recompute the sticky offset and the
+                    // compositor layer against each other every scroll frame,
+                    // which is what caused the visible vibrate/shake.
+                    transform: "translateZ(0)",
+                    WebkitTransform: "translateZ(0)",
+                    backfaceVisibility: "hidden",
+                    WebkitBackfaceVisibility: "hidden",
+                  }}
+                >
+                  <div className="flex flex-col gap-3 sm:gap-4 w-full min-w-0">
+                    {/* Search and Sort */}
+                    <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+                      <div className="relative w-full sm:w-64 lg:w-72">
+                        <HiMagnifyingGlass className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-gray-400 text-base sm:text-lg" />
+                        <input
+                          type="text"
+                          placeholder="Search products..."
+                          value={searchTerm}
+                          onChange={(e) => setSearchTerm(e.target.value)}
+                          className="w-full pl-9 sm:pl-11 pr-10 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl border border-gray-200 focus:border-gray-400 focus:ring-2 focus:ring-gray-100 outline-none transition-all duration-300 bg-white text-sm"
+                          style={{ color: "#082d4a" }}
+                        />
+                        {searchTerm && (
+                          <button
+                            onClick={() => setSearchTerm("")}
+                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                          >
+                            <HiXMark className="text-base sm:text-lg" />
+                          </button>
+                        )}
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <HiAdjustmentsHorizontal className="text-gray-400 text-base sm:text-lg flex-shrink-0" />
+                        <select
+                          value={sortBy}
+                          onChange={(e) => setSortBy(e.target.value)}
+                          className="py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl sm:rounded-2xl border border-gray-200 focus:border-gray-400 focus:ring-2 focus:ring-gray-100 outline-none text-sm bg-white w-full"
+                          style={{ color: "#082d4a" }}
                         >
-                          <HiXMark className="text-base sm:text-lg" />
-                        </button>
-                      )}
+                          <option value="featured">Featured</option>
+                          <option value="price-low">Price: Low to High</option>
+                          <option value="price-high">Price: High to Low</option>
+                          <option value="rating">Highest Rated</option>
+                          <option value="discount">Biggest Discount</option>
+                        </select>
+                      </div>
                     </div>
 
-                    <div className="flex items-center gap-2">
-                      <HiAdjustmentsHorizontal className="text-gray-400 text-base sm:text-lg flex-shrink-0" />
-                      <select
-                        value={sortBy}
-                        onChange={(e) => setSortBy(e.target.value)}
-                        className="py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl sm:rounded-2xl border border-gray-200 focus:border-gray-400 focus:ring-2 focus:ring-gray-100 outline-none text-sm bg-white w-full"
-                        style={{ color: "#082d4a" }}
-                      >
-                        <option value="featured">Featured</option>
-                        <option value="price-low">Price: Low to High</option>
-                        <option value="price-high">Price: High to Low</option>
-                        <option value="rating">Highest Rated</option>
-                        <option value="discount">Biggest Discount</option>
-                      </select>
+                    {/* Category chips - mobile/tablet only */}
+                    <div
+                      className="lg:hidden w-full min-w-0"
+                      style={{ minHeight: "2.25rem" }}
+                    >
+                      <CategoryChips
+                        selectedCategory={selectedCategory}
+                        setSelectedCategory={setSelectedCategory}
+                      />
                     </div>
-                  </div>
 
-                  {/* Category chips - mobile/tablet only */}
-                  <div className="lg:hidden w-full min-w-0">
-                    <CategoryChips
-                      selectedCategory={selectedCategory}
-                      setSelectedCategory={setSelectedCategory}
+                    {/* Quick brand filters - all screens - scoped to selected category */}
+                    <BrandChips
+                      brandFilters={brandFilters}
+                      selectedBrand={selectedBrand}
+                      setSelectedBrand={setSelectedBrand}
                     />
                   </div>
-
-                  {/* Quick brand filters - all screens - scoped to selected category */}
-                  <BrandChips
-                    brandFilters={brandFilters}
-                    selectedBrand={selectedBrand}
-                    setSelectedBrand={setSelectedBrand}
-                  />
                 </div>
               </div>
 
@@ -423,7 +463,8 @@ export default function ProductGrid({
               <motion.div
                 layout="position"
                 transition={{ duration: 0.25, ease: "easeOut" }}
-                className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 lg:gap-6"
+                className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 relative"
+                style={{ zIndex: 1, contain: "layout paint" }}
               >
                 <AnimatePresence mode="popLayout">
                   {filteredProducts.map((product) => (

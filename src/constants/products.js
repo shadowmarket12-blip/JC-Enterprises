@@ -71,21 +71,6 @@ export const BRANDS = [
   "Legrand",
 ];
 
-// NOTE ON `colors`:
-// Each entry is { name, hex, images }. `images` is an array of photo
-// paths for that color — the first entry becomes the main photo AND
-// the first thumbnail as soon as the color is selected, and every
-// other entry becomes an additional thumbnail below it (aim for 7-8
-// once real per-color photography exists). Selecting a different
-// color swaps the whole thumbnail row + main image over to that
-// color's `images` array and resets back to its first image
-// automatically; clicking any thumbnail just swaps the main image.
-// Products below only have one photo available right now, so each
-// color's `images` array has a single placeholder entry — push more
-// real photos into the array as you shoot them, no other code needs
-// to change. Products with no realistic color variant (MCBs, pumps,
-// pipes, tools, sockets) simply omit `colors`, and the color picker +
-// thumbnail row automatically hide themselves.
 const RAW_PRODUCTS = [
   // Switches & Accessories
   {
@@ -98,6 +83,7 @@ const RAW_PRODUCTS = [
     price: 249,
     originalPrice: 329,
     discount: 24,
+    stock: 140,
     rating: 4.8,
     reviews: 2345,
     image: "/images/productimages/2.png",
@@ -107,19 +93,24 @@ const RAW_PRODUCTS = [
         name: "White",
         hex: "#f5f5f4",
         images: ["/images/productimages/2.png", "/images/productimages/2.png"],
+        stock: 140,
       },
       {
         name: "Ivory",
         hex: "#f0e6d2",
-        // DEMO STAND-IN: not the real Ivory photo, just proves the color-swap
-        // works end to end. Replace with the actual Ivory photo when shot.
         images: ["/images/productimages/2.png", "/images/productimages/2.png"],
+        price: 269,
+        originalPrice: 349,
+        stock: 6,
       },
       {
         name: "Black",
         hex: "#1c1c1c",
         // DEMO STAND-IN: not the real Black photo, same reason as above.
         images: ["/images/productimages/2.png", "/images/productimages/2.png"],
+        price: 279,
+        originalPrice: 359,
+        stock: 2,
       },
     ],
     description:
@@ -142,6 +133,7 @@ const RAW_PRODUCTS = [
     price: 89,
     originalPrice: 119,
     discount: 25,
+    stock: 320,
     rating: 4.7,
     reviews: 1432,
     image: "/images/productimages/3.webp",
@@ -180,6 +172,7 @@ const RAW_PRODUCTS = [
     price: 1899,
     originalPrice: 2399,
     discount: 21,
+    stock: 54,
     rating: 4.9,
     reviews: 1823,
     image: "/images/productimages/p.jpg",
@@ -213,6 +206,7 @@ const RAW_PRODUCTS = [
     price: 2799,
     originalPrice: 3499,
     discount: 20,
+    stock: 38,
     rating: 4.6,
     reviews: 1567,
     image: "/images/productimages/p1.png",
@@ -247,6 +241,7 @@ const RAW_PRODUCTS = [
     price: 349,
     originalPrice: 449,
     discount: 22,
+    stock: 210,
     rating: 4.7,
     reviews: 892,
     image: "/images/productimages/p3.jpg",
@@ -271,6 +266,7 @@ const RAW_PRODUCTS = [
     price: 1299,
     originalPrice: 1699,
     discount: 24,
+    stock: 65,
     rating: 4.8,
     reviews: 532,
     image: "/images/productimages/p4.webp",
@@ -297,6 +293,7 @@ const RAW_PRODUCTS = [
     price: 249,
     originalPrice: 349,
     discount: 29,
+    stock: 480,
     rating: 4.7,
     reviews: 4521,
     image: "/images/productimages/7.webp",
@@ -333,6 +330,7 @@ const RAW_PRODUCTS = [
     price: 399,
     originalPrice: 549,
     discount: 27,
+    stock: 96,
     rating: 4.6,
     reviews: 1876,
     image: "/images/productimages/8.jpg",
@@ -371,6 +369,7 @@ const RAW_PRODUCTS = [
     price: 17999,
     originalPrice: 25999,
     discount: 23,
+    stock: 14,
     rating: 4.7,
     reviews: 987,
     image: "/images/productimages/atomeberg.jpg",
@@ -380,22 +379,28 @@ const RAW_PRODUCTS = [
         name: "Amberlight Teak",
         hex: "#f5f5f4",
         images: ["/images/productimages/atomeberg.jpg"],
+        price: 17999,
+        originalPrice: 25999,
       },
       {
         name: "Pearl White",
         hex: "#6b4426",
         images: ["/images/productimages/atombergwhite.jpg"],
+        price: 16999,
+        originalPrice: 24999,
       },
       {
         name: "Lava Grey",
         hex: "#f0e6d2",
         images: ["/images/productimages/9.jpg"],
+        price: 16999,
+        originalPrice: 24999,
       },
     ],
     description:
       "Energy-efficient ceiling fan with remote control, delivering superior air delivery and silent operation.",
     features: [
-      "1200mm sweep size",
+      "1280",
       "Remote control operation",
       "350 RPM motor speed",
       "Double ball bearing",
@@ -404,28 +409,33 @@ const RAW_PRODUCTS = [
   },
   {
     id: 10,
-    name: "Usha Striker 400mm High Speed Table Fan",
+    name: "Emperion Linea",
     category: "Fans",
     categoryId: "fans",
     brand: "Usha",
     tag: "Featured",
-    price: 1799,
-    originalPrice: 2299,
+    price: 17999,
+    originalPrice: 25999,
     discount: 22,
+    stock: 72,
     rating: 4.5,
     reviews: 654,
     image: "/images/productimages/10.jpg",
     badge: "Featured",
     colors: [
       {
-        name: "White",
+        name: "Antique Gold Leaf",
         hex: "#f5f5f4",
         images: ["/images/productimages/10.jpg"],
+        price: 17999,
+        originalPrice: 25999,
       },
       {
-        name: "Blue",
+        name: "Pearl White, Lava Grey",
         hex: "#2c5f8a",
         images: ["/images/productimages/10.jpg"],
+        price: 16999,
+        originalPrice: 24999,
       },
     ],
     description:
@@ -450,6 +460,7 @@ const RAW_PRODUCTS = [
     price: 5499,
     originalPrice: 6999,
     discount: 21,
+    stock: 41,
     rating: 4.6,
     reviews: 1234,
     image: "/images/productimages/11.webp",
@@ -474,6 +485,7 @@ const RAW_PRODUCTS = [
     price: 3299,
     originalPrice: 4199,
     discount: 21,
+    stock: 27,
     rating: 4.5,
     reviews: 421,
     image: "/images/productimages/12.webp",
@@ -500,6 +512,7 @@ const RAW_PRODUCTS = [
     price: 899,
     originalPrice: 1099,
     discount: 18,
+    stock: 115,
     rating: 4.7,
     reviews: 743,
     image: "/images/productimages/13.webp",
@@ -524,6 +537,7 @@ const RAW_PRODUCTS = [
     price: 3499,
     originalPrice: 4499,
     discount: 22,
+    stock: 19,
     rating: 4.8,
     reviews: 356,
     image: "/images/productimages/14.jpg",
@@ -562,6 +576,7 @@ const RAW_PRODUCTS = [
     price: 649,
     originalPrice: 799,
     discount: 19,
+    stock: 88,
     rating: 4.5,
     reviews: 876,
     image: "/images/productimages/15.png",
@@ -586,6 +601,7 @@ const RAW_PRODUCTS = [
     price: 2199,
     originalPrice: 2799,
     discount: 21,
+    stock: 33,
     rating: 4.8,
     reviews: 612,
     image: "/images/productimages/16.jpg",
@@ -624,6 +640,7 @@ const RAW_PRODUCTS = [
     price: 799,
     originalPrice: 999,
     discount: 20,
+    stock: 156,
     rating: 4.6,
     reviews: 543,
     image: "/images/productimages/17.jpg",
@@ -648,6 +665,7 @@ const RAW_PRODUCTS = [
     price: 549,
     originalPrice: 699,
     discount: 21,
+    stock: 60,
     rating: 4.4,
     reviews: 298,
     image: "/images/productimages/18.jpeg",

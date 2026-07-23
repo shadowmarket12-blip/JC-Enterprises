@@ -16,6 +16,7 @@ import AddToCartButton from "@/Components/Hero/AddToCartButton";
 import ThumbnailScroller from "@/Components/ThumbnailScroller";
 import MainProductImage from "@/Components/MainProductImage";
 import ColorSwatches from "@/Components/ColorSwatches";
+import ProductPrice from "@/Components/ProductPrice";
 import { ProductGalleryProvider } from "@/Components/ProductGalleryContext";
 
 export function generateStaticParams() {
@@ -135,26 +136,7 @@ export default async function ProductPage({ params }) {
               <ColorSwatches />
 
               {/* Price Section */}
-              <div className="bg-gradient-to-r from-[#082d4a]/5 to-transparent rounded-xl sm:rounded-2xl p-4 sm:p-5">
-                <div className="flex items-baseline gap-3 sm:gap-4 flex-wrap">
-                  <span className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#082d4a] to-[#0f4c7a] bg-clip-text text-transparent">
-                    ₹{product.price}
-                  </span>
-                  {product.originalPrice && (
-                    <>
-                      <span className="text-lg sm:text-xl text-gray-400 line-through">
-                        ₹{product.originalPrice}
-                      </span>
-                      <span className="text-sm sm:text-base font-semibold text-green-600">
-                        You save ₹{product.originalPrice - product.price}
-                      </span>
-                    </>
-                  )}
-                </div>
-                <p className="text-xs sm:text-sm text-green-600 mt-1.5 sm:mt-2">
-                  Inclusive of all taxes
-                </p>
-              </div>
+              <ProductPrice />
 
               {/* Description */}
               <div>

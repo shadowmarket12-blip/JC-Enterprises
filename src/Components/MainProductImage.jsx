@@ -5,7 +5,7 @@ import ProductImageActions from "@/Components/ProductImageActions";
 import { useProductGallery } from "./ProductGalleryContext";
 
 export default function MainProductImage({ product }) {
-  const { activeImage, activeColor } = useProductGallery();
+  const { activeImage, activeColor, activeDiscount } = useProductGallery();
 
   return (
     <div className="relative group">
@@ -24,10 +24,10 @@ export default function MainProductImage({ product }) {
         <ProductImageActions />
 
         {/* Badges */}
-        {product.discount && (
+        {activeDiscount > 0 && (
           <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
             <span className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold text-white bg-gradient-to-r from-red-500 to-pink-500 shadow-lg animate-pulse">
-              -{product.discount}%
+              -{activeDiscount}%
             </span>
           </div>
         )}
