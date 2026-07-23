@@ -7,7 +7,8 @@ import { useProductGallery } from "@/Components/ProductGalleryContext";
 
 export default function AddToCartButton({ product }) {
   const { addToCart } = useCart();
-  const { activePrice, activeColor, activeStock } = useProductGallery();
+  const { activePrice, activeColor, activeStock, activeName, activeImage, activeSku } =
+    useProductGallery();
   const [added, setAdded] = useState(false);
 
   const outOfStock = activeStock !== null && activeStock <= 0;
@@ -16,8 +17,11 @@ export default function AddToCartButton({ product }) {
     if (outOfStock) return;
     addToCart({
       ...product,
+      name: activeName,
+      image: activeImage,
       price: activePrice,
       color: activeColor?.name,
+      sku: activeSku,
     });
     setAdded(true);
     setTimeout(() => setAdded(false), 1800);

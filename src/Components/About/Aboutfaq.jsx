@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown, FiHelpCircle, FiMessageCircle } from "react-icons/fi";
 import Link from "next/link";
 
-const FAQSection = () => {
+const AboutFaq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -15,80 +15,23 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Can I buy electrical products online in Bhubaneswar?",
+      question:
+        "Which is considered as one of the best electrical shops in Bhubaneswar?",
       answer:
-        "Yes. You can browse a wide range of electrical and industrial products on JC Enterprises website and place your order online. We offer doorstep delivery across Bhubaneswar.",
+        "With 35+ years of experience, genuine branded products, competitive pricing, retail and wholesale expertise, and online ordering with home delivery, JC Enterprises has earned the trust of thousands of customers as one of the best electrical shops in Bhubaneswar.",
       category: "Ordering",
     },
     {
-      question:
-        "Does JC Enterprises provide home delivery for electrical products?",
+      question: "Can I buy electrical products online in Bhubaneswar?",
       answer:
-        "Yes. We provide convenient home delivery across Bhubaneswar, making it easy to purchase electrical products without visiting the store.",
+        "Yes. Our online store allows customers to browse products, place orders, and get doorstep delivery across Bhubaneswar.",
       category: "Delivery",
     },
     {
-      question: "Can I place bulk orders for electrical materials?",
+      question: "Do you provide bulk electrical supplies?",
       answer:
-        "Absolutely, JC Enterprises supplies electrical products in bulk for contractors, builders, industries, institutions, offices, and commercial projects. Contact us for customised pricing and assistance.",
+        "Yes. We supply bulk electrical products for contractors, builders, industries, institutions, and commercial projects.",
       category: "Bulk Orders",
-    },
-    {
-      question:
-        "Are all the electrical products sold by JC Enterprises genuine?",
-      answer:
-        "Yes, We supply only genuine products sourced from trusted brands such as Polycab, Havells, Anchor, RR Kabel, KEI, Finolex, Legrand, Schneider Electric, Crompton, Philips, Orient, Bajaj, Wipro, Hager, and more.",
-      category: "Products",
-    },
-    {
-      question: "Which electrical brands are available at JC Enterprises?",
-      answer:
-        "We stock products from many leading Indian and international electrical brands, including Polycab, Havells, Anchor, RR Kabel, KEI, Finolex, Legrand, Schneider Electric, Philips, Crompton, Bajaj, Orient, V-Guard, Wipro, Hager, McCoy, and other reputed manufacturers.",
-      category: "Products",
-    },
-    {
-      question:
-        "Does JC Enterprises sell products for both homes and industrial projects?",
-      answer:
-        "Yes. We supply electrical products suitable for residential homes, apartments, commercial buildings, offices, industries, factories, hospitals, educational institutions, hotels, and infrastructure projects.",
-      category: "Products",
-    },
-    {
-      question: "What payment methods are available?",
-      answer:
-        "Customers can securely pay using UPI, debit cards, credit cards, net banking and COD options during checkout.",
-      category: "Payment",
-    },
-    {
-      question: "Do you provide GST invoices for orders?",
-      answer:
-        "Yes, GST invoices are provided for eligible purchases, making it convenient for businesses, contractors, and commercial customers.",
-      category: "Billing",
-    },
-    {
-      question: "Can electricians and contractors get special pricing?",
-      answer:
-        "Yes, We offer dedicated support and competitive pricing for electricians, contractors, builders, and bulk buyers. Contact our team to discuss your project requirements.",
-      category: "Pricing",
-    },
-    {
-      question: "How do I choose the right electrical product for my project?",
-      answer:
-        "Our experienced team can help you select suitable products based on your residential, commercial, or industrial requirements. Simply contact us for product guidance before placing your order.",
-      category: "Support",
-    },
-    {
-      question: "Do you accept returns or replacements?",
-      answer:
-        "Products may be eligible for returns or replacements according to our return policy and the manufacturer's guidelines. Please review our policy or contact customer support for assistance.",
-      category: "Returns",
-    },
-    {
-      question:
-        "Why should I choose JC Enterprises over other electrical shops in Bhubaneswar?",
-      answer:
-        "JC Enterprises combines 35+ years of industry experience, genuine branded products, retail and wholesale expertise, competitive pricing, online ordering, home delivery across Bhubaneswar, and dedicated customer support—making it a trusted choice for homeowners, electricians, contractors, builders, and businesses.",
-      category: "About Us",
     },
   ];
 
@@ -293,4 +236,4 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection;
+export default AboutFaq;

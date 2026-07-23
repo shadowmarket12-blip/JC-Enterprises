@@ -9,7 +9,6 @@ import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
-  FaLinkedinIn,
   FaYoutube,
   FaPhoneAlt,
   FaEnvelope,
@@ -56,27 +55,22 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: FaFacebookF,
-      href: "https://facebook.com/growwyld",
+      href: "https://www.facebook.com/profile.php?id=61591562384032",
       label: "Facebook",
     },
     {
       icon: FaTwitter,
-      href: "https://twitter.com/growwyld",
+      href: "https://x.com/jcenterprise0",
       label: "Twitter",
     },
     {
       icon: FaInstagram,
-      href: "https://instagram.com/growwyld",
+      href: "https://www.instagram.com/jcenterprises955/",
       label: "Instagram",
     },
     {
-      icon: FaLinkedinIn,
-      href: "https://linkedin.com/company/growwyld",
-      label: "LinkedIn",
-    },
-    {
       icon: FaYoutube,
-      href: "https://youtube.com/@growwyld",
+      href: "https://www.youtube.com/channel/UCo2ZNcL2W5cZ2afu3hfBsnw",
       label: "YouTube",
     },
   ];

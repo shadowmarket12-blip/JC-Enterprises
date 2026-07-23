@@ -35,6 +35,34 @@ export function ProductGalleryProvider({ product, children }) {
   // whenever a color doesn't set its own `stock`.
   const activeStock = activeColor?.stock ?? product.stock ?? null;
 
+  // Every other variant-specific field follows the same override pattern:
+  // a color can set its own `title` / `description` / `features` /
+  // `specifications` / `sku`, and anything it doesn't set falls back to the
+  // base product's value.
+  const activeName = activeColor?.title ?? product.name;
+  const activeDescription = activeColor?.description ?? product.description;
+  const activeFeatures = activeColor?.features?.length
+    ? activeColor.features
+    : product.features;
+
+  // Specifications are merged rather than replaced, so a color can override
+  // just a couple of rows (e.g. Color, Finish) without having to restate
+  // every spec the base product already defines.
+  const activeSpecifications = activeColor?.specifications
+    ? { ...product.specifications, ...activeColor.specifications }
+    : product.specifications;
+
+  const activeSku = useMemo(() => {
+    if (activeColor?.sku) return activeColor.sku;
+    const baseSku = product.sku || `JCE-${String(product.id).padStart(4, "0")}`;
+    if (!activeColor?.name) return baseSku;
+    const colorCode = activeColor.name
+      .replace(/[^A-Za-z0-9]+/g, "")
+      .slice(0, 3)
+      .toUpperCase();
+    return colorCode ? `${baseSku}-${colorCode}` : baseSku;
+  }, [activeColor, product.sku, product.id]);
+
   const setSelectedIndex = useCallback((index) => {
     setSelectedIndexState(index);
     setSelectedImageIndex(0);
@@ -54,6 +82,11 @@ export function ProductGalleryProvider({ product, children }) {
       activeOriginalPrice,
       activeDiscount,
       activeStock,
+      activeName,
+      activeDescription,
+      activeFeatures,
+      activeSpecifications,
+      activeSku,
     }),
     [
       colors,
@@ -67,6 +100,11 @@ export function ProductGalleryProvider({ product, children }) {
       activeOriginalPrice,
       activeDiscount,
       activeStock,
+      activeName,
+      activeDescription,
+      activeFeatures,
+      activeSpecifications,
+      activeSku,
     ],
   );
 

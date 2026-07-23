@@ -24,7 +24,7 @@ import {
 } from "react-icons/hi2";
 import { useCart } from "@/Components/providers/CartProvider";
 
-const WHATSAPP_NUMBER = "917008308543";
+const WHATSAPP_NUMBER = "918280547730";
 
 // Optimized animation variants (using GPU-accelerated properties only)
 const containerVariants = {

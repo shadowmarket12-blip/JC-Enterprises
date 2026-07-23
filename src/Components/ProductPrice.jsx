@@ -3,12 +3,8 @@
 import { useProductGallery } from "./ProductGalleryContext";
 
 export default function ProductPrice() {
-  const { activePrice, activeOriginalPrice, activeDiscount, activeStock } =
+  const { activePrice, activeOriginalPrice, activeDiscount, activeSku } =
     useProductGallery();
-
-  const stockKnown = activeStock !== null && activeStock !== undefined;
-  const outOfStock = stockKnown && activeStock <= 0;
-  const lowStock = stockKnown && activeStock > 0 && activeStock <= 10;
 
   return (
     <div className="bg-gradient-to-r from-[#082d4a]/5 to-transparent rounded-xl sm:rounded-2xl p-4 sm:p-5">
@@ -35,21 +31,9 @@ export default function ProductPrice() {
       <p className="text-xs sm:text-sm text-green-600 mt-1.5 sm:mt-2">
         Inclusive of all taxes
       </p>
-      {stockKnown && (
-        <p
-          className={`text-xs sm:text-sm font-medium mt-1 ${
-            outOfStock
-              ? "text-red-600"
-              : lowStock
-                ? "text-amber-600"
-                : "text-gray-500"
-          }`}
-        >
-          {outOfStock
-            ? "Out of stock"
-            : lowStock
-              ? `Only ${activeStock} left in stock — order soon`
-              : "In stock"}
+      {activeSku && (
+        <p className="text-xs sm:text-sm text-gray-400 mt-2 sm:mt-3">
+          SKU: {activeSku}
         </p>
       )}
     </div>

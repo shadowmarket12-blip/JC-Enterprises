@@ -1,386 +1,339 @@
-// components/Hero/HeroSection.jsx
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  motion,
   AnimatePresence,
-  useScroll,
-  useTransform,
+  motion,
+  useMotionValue,
+  useReducedMotion,
   useSpring,
+  useTransform,
 } from "framer-motion";
-import { ChevronLeft, ChevronRight, ArrowRight, Zap } from "lucide-react";
 
-/* -------------------------------------------------------------------------- */
-/*  DATA — replace src paths with your own product photography.               */
-/*  Same array powers both the carousel (left) and the bento grid (right).    */
-/* -------------------------------------------------------------------------- */
+const AUTOPLAY_MS = 6500;
 
-const HERO_ITEMS = [
+const SLIDES = [
   {
-    id: "switches",
-    label: "Switches & Accessories",
-    tag: "New Range",
-    src: "/images/productimages/atomeberg.jpg",
+    id: "slide-1",
+    image: "/homeslide/1.png",
   },
   {
-    id: "wiring",
-    label: "Premium Wiring",
-    tag: "Best Seller",
-    src: "/images/productimages/atomeberg.jpg",
+    id: "slide-2",
+    image: "/homeslide/2.png",
   },
   {
-    id: "protection",
-    label: "Circuit Protection",
-    tag: "Certified Safe",
-    src: "/images/productimages/atomeberg.jpg",
+    id: "slide-3",
+    image: "/homeslide/3.png",
   },
   {
-    id: "lighting",
-    label: "Smart Lighting",
-    tag: "Energy Saver",
-    src: "/images/productimages/atomeberg.jpg",
-  },
-  {
-    id: "cooling",
-    label: "Cooling Solutions",
-    tag: "Trending",
-    src: "/images/productimages/2.png",
-  },
-  {
-    id: "pumps",
-    label: "Water Pumps",
-    tag: "Industrial Grade",
-    src: "/images/productimages/2.png",
+    id: "slide-4",
+    image: "/homeslide/4.png",
   },
 ];
 
-const AUTOPLAY_INTERVAL = 5000;
-
-/* -------------------------------------------------------------------------- */
-/*  ANIMATION VARIANTS                                                        */
-/* -------------------------------------------------------------------------- */
-
-const containerStagger = {
+const containerVariants = {
   hidden: {},
-  show: {
-    transition: { staggerChildren: 0.08, delayChildren: 0.06 },
-  },
+  visible: { transition: { staggerChildren: 0.12, delayChildren: 0.35 } },
 };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 16 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
-  },
+const lineVariants = {
+  hidden: { y: "100%" },
+  visible: { y: "0%", transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } },
 };
 
-const slideVariants = {
-  enter: (direction) => ({
-    opacity: 0,
-    x: direction > 0 ? 32 : -32,
-    scale: 1.02,
-  }),
-  center: {
-    opacity: 1,
-    x: 0,
-    scale: 1,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-  },
-  exit: (direction) => ({
-    opacity: 0,
-    x: direction > 0 ? -32 : 32,
-    scale: 0.99,
-    transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
-  }),
+const fadeUpVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 };
 
-/* -------------------------------------------------------------------------- */
-/*  MAIN COMPONENT                                                            */
-/* -------------------------------------------------------------------------- */
-
-export default function HeroSection() {
-  const sectionRef = useRef(null);
-  const [[activeIndex, direction], setActive] = useState([0, 0]);
-  const [isPaused, setIsPaused] = useState(false);
-
-  // Parallax on scroll — spring-smoothed so it glides instead of
-  // jittering on every scroll-event tick (the main source of "lag").
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-  const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 120,
-    damping: 24,
-    mass: 0.4,
-  });
-
-  // Small, subtle ranges — large parallax offsets are what make scroll
-  // feel heavy, especially combined with blur/backdrop-blur layers.
-  const yLeft = useTransform(smoothProgress, [0, 1], [0, -18]);
-  const yRight = useTransform(smoothProgress, [0, 1], [0, -34]);
-  const bgY = useTransform(smoothProgress, [0, 1], [0, 50]);
-
-  const paginate = useCallback((newDirection) => {
-    setActive(([current]) => {
-      const next =
-        (current + newDirection + HERO_ITEMS.length) % HERO_ITEMS.length;
-      return [next, newDirection];
-    });
-  }, []);
-
-  const goTo = useCallback((index) => {
-    setActive(([current]) => [index, index > current ? 1 : -1]);
-  }, []);
-
-  // Autoplay
-  useEffect(() => {
-    if (isPaused) return;
-    const timer = setInterval(() => paginate(1), AUTOPLAY_INTERVAL);
-    return () => clearInterval(timer);
-  }, [isPaused, paginate]);
-
-  const active = HERO_ITEMS[activeIndex];
-
+function ArrowIcon({ direction = "right" }) {
   return (
-    <section
-      ref={sectionRef}
-      className="relative flex min-h-[70vh] items-center overflow-hidden bg-white px-4 py-8 sm:px-6 sm:py-10 lg:px-10 lg:py-12"
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      className={direction === "left" ? "rotate-180" : ""}
+      aria-hidden="true"
     >
-      {/* ---------------------------------------------------------------- */}
-      {/* Ambient gradient background — lighter blur = cheaper repaints    */}
-      {/* ---------------------------------------------------------------- */}
-      <motion.div
-        style={{ y: bgY, willChange: "transform" }}
-        className="pointer-events-none absolute inset-0 -z-10 transform-gpu"
-        aria-hidden="true"
-      >
-        <div className="absolute -top-24 left-1/4 h-72 w-72 rounded-full bg-blue-100/80 blur-[70px]" />
-        <div className="absolute -bottom-20 right-1/4 h-64 w-64 rounded-full bg-amber-100/60 blur-[70px]" />
-        <svg
-          className="absolute inset-0 h-full w-full opacity-[0.04]"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <pattern
-            id="circuit-grid"
-            width="64"
-            height="64"
-            patternUnits="userSpaceOnUse"
-          >
-            <path
-              d="M0 32H24M40 32H64M32 0V24M32 40V64"
-              stroke="#1e293b"
-              strokeWidth="1"
-              fill="none"
-            />
-            <circle cx="32" cy="32" r="2.5" fill="#1e293b" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#circuit-grid)" />
-        </svg>
-      </motion.div>
-
-      {/* ---------------------------------------------------------------- */}
-      {/* Content grid — stacked on mobile, split 12-col on desktop         */}
-      {/* ---------------------------------------------------------------- */}
-      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-5">
-        {/* ============================= LEFT: CAROUSEL ============================= */}
-        <motion.div
-          style={{ y: yLeft, willChange: "transform" }}
-          className="relative transform-gpu lg:col-span-7"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          <div className="group relative h-[34vh] min-h-[240px] w-full overflow-hidden rounded-2xl sm:h-[38vh] lg:h-[42vh] shadow-lg shadow-gray-200/50">
-            {/* breathing glow ring — subtle on white background */}
-            <motion.div
-              className="pointer-events-none absolute -inset-px rounded-2xl ring-1 ring-blue-400/30"
-              animate={{ opacity: [0.3, 0.7, 0.3] }}
-              transition={{
-                duration: 3.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-
-            {/* image slides */}
-            <AnimatePresence
-              initial={false}
-              custom={direction}
-              mode="popLayout"
-            >
-              <motion.div
-                key={active.id}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                className="absolute inset-0 transform-gpu"
-              >
-                <Image
-                  src={active.src}
-                  alt={active.label}
-                  fill
-                  priority={activeIndex === 0}
-                  sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-black/5" />
-              </motion.div>
-            </AnimatePresence>
-
-            {/* overlaid copy */}
-            <motion.div
-              variants={containerStagger}
-              initial="hidden"
-              animate="show"
-              className="absolute inset-x-0 bottom-0 z-10 flex flex-col gap-2.5 p-4 sm:gap-3 sm:p-6"
-            >
-              <motion.span
-                variants={fadeUp}
-                className="inline-flex w-fit items-center gap-1.5 rounded-full border border-white/20 bg-white/15 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm"
-              >
-                <Zap className="h-3 w-3 text-amber-400" strokeWidth={2.5} />
-                Powering every home &amp; industry
-              </motion.span>
-
-              <motion.h1
-                variants={fadeUp}
-                className="max-w-md text-xl font-semibold leading-[1.1] tracking-tight text-white sm:text-2xl lg:text-3xl"
-              >
-                Electrical essentials,
-                <br />
-                engineered to last.
-              </motion.h1>
-
-              <motion.p
-                variants={fadeUp}
-                className="hidden max-w-xs text-xs leading-relaxed text-white/80 sm:block sm:text-sm"
-              >
-                Certified components, trusted by electricians and homeowners
-                nationwide.
-              </motion.p>
-
-              <motion.div
-                variants={fadeUp}
-                className="flex flex-wrap items-center gap-2 pt-1"
-              >
-                <Link
-                  href="/products"
-                  className="group/btn inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-semibold text-gray-900 shadow-lg shadow-black/10 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-black/20 active:scale-[0.98] sm:px-5 sm:py-2.5 sm:text-sm"
-                >
-                  Shop Now
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                </Link>
-                <Link
-                  href="/products?category=all"
-                  className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-medium text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 sm:px-5 sm:py-2.5 sm:text-sm"
-                >
-                  Explore
-                </Link>
-              </motion.div>
-            </motion.div>
-
-            {/* nav arrows */}
-            <button
-              type="button"
-              onClick={() => paginate(-1)}
-              aria-label="Previous slide"
-              className="absolute left-3 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/30 bg-white/15 p-1.5 text-white/90 opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-white/30 hover:text-white group-hover:opacity-100"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <button
-              type="button"
-              onClick={() => paginate(1)}
-              aria-label="Next slide"
-              className="absolute right-3 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/30 bg-white/15 p-1.5 text-white/90 opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-white/30 hover:text-white group-hover:opacity-100"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </button>
-
-            {/* dots */}
-            <div className="absolute right-4 top-4 z-10 flex gap-1.5 sm:right-6 sm:top-6">
-              {HERO_ITEMS.map((item, i) => (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => goTo(i)}
-                  aria-label={`Go to ${item.label}`}
-                  className="group/dot relative h-1.5 w-5 overflow-hidden rounded-full bg-white/30"
-                >
-                  {i === activeIndex && (
-                    <motion.span
-                      layoutId="active-dot"
-                      className="absolute inset-0 rounded-full bg-white"
-                    />
-                  )}
-                </button>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-
-        {/* ============================= RIGHT: BENTO GRID ============================= */}
-        <motion.div
-          style={{ y: yRight, willChange: "transform" }}
-          variants={containerStagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid h-[34vh] min-h-[340px] transform-gpu grid-cols-4 grid-rows-4 gap-2 sm:h-[38vh] lg:col-span-5 lg:h-[42vh]"
-        >
-          {HERO_ITEMS.map((item, i) => (
-            <BentoTile
-              key={item.id}
-              item={item}
-              index={i}
-              onSelect={() => goTo(i)}
-            />
-          ))}
-        </motion.div>
-      </div>
-    </section>
+      <path
+        d="M5 12h14M13 6l6 6-6 6"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  BENTO TILE — image only, no text overlay                                  */
-/* -------------------------------------------------------------------------- */
+export default function HeroCarousel() {
+  const [index, setIndex] = useState(0);
+  const [progressKey, setProgressKey] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const reduceMotion = useReducedMotion();
+  const timeoutRef = useRef(null);
+  const total = SLIDES.length;
+  const slide = SLIDES[index];
 
-const TILE_SPANS = [
-  "col-span-2 row-span-3", // 0 — large left block
-  "col-span-2 row-span-2", // 1 — top right
-  "col-span-1 row-span-1", // 2 — bottom right small
-  "col-span-1 row-span-1", // 3 — bottom right small
-  "col-span-4 row-span-1", // 4 — wide strip
-  "col-span-4 row-span-1", // 5 — extra wide strip (wraps to new implicit row)
-];
+  const mvX = useMotionValue(0);
+  const mvY = useMotionValue(0);
+  const springX = useSpring(mvX, { stiffness: 45, damping: 20 });
+  const springY = useSpring(mvY, { stiffness: 45, damping: 20 });
+  const bgX = useTransform(springX, [-0.5, 0.5], [-18, 18]);
+  const bgY = useTransform(springY, [-0.5, 0.5], [-12, 12]);
 
-function BentoTile({ item, index, onSelect }) {
+  const goTo = useCallback(
+    (i) => {
+      setIndex(((i % total) + total) % total);
+      setProgressKey((k) => k + 1);
+    },
+    [total],
+  );
+
+  const paginate = useCallback((delta) => goTo(index + delta), [goTo, index]);
+
+  useEffect(() => {
+    if (isPaused || reduceMotion) return undefined;
+    timeoutRef.current = setTimeout(() => paginate(1), AUTOPLAY_MS);
+    return () => clearTimeout(timeoutRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, isPaused, reduceMotion]);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    mvX.set((e.clientX - rect.left) / rect.width - 0.5);
+    mvY.set((e.clientY - rect.top) / rect.height - 0.5);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "ArrowRight") paginate(1);
+    if (e.key === "ArrowLeft") paginate(-1);
+  };
+
+  const handleDragEnd = (_e, info) => {
+    if (info.offset.x < -80 || info.velocity.x < -500) paginate(1);
+    else if (info.offset.x > 80 || info.velocity.x > 500) paginate(-1);
+  };
+
   return (
-    <motion.button
-      type="button"
-      onClick={onSelect}
-      variants={fadeUp}
-      whileHover={{ scale: 0.98 }}
-      className={`group relative min-h-[56px] transform-gpu overflow-hidden rounded-xl shadow-sm shadow-gray-200/70 ring-1 ring-gray-200/50 ${TILE_SPANS[index] ?? "col-span-1 row-span-1"}`}
+    <section
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Featured collections"
+      tabIndex={0}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+      onFocus={() => setIsPaused(true)}
+      onBlur={() => setIsPaused(false)}
+      onMouseMove={handleMouseMove}
+      onKeyDown={handleKeyDown}
+      className="relative w-full h-[60vh] sm:h-[70vh] min-h-[400px] max-h-[800px] overflow-hidden bg-[#0B0B0C] text-[#F5F1EA] select-none outline-none"
     >
-      <Image
-        src={item.src}
-        alt={item.label}
-        fill
-        sizes="(max-width: 1024px) 50vw, 25vw"
-        className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-      />
+      {/* sr-only live announcement */}
+      <div className="sr-only" aria-live="polite">
+        {`Slide ${index + 1} of ${total}`}
+      </div>
 
-      {/* Subtle overlay on hover only — keeps images clean by default */}
-      <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
-    </motion.button>
+      {/* autoplay progress bar */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] z-30 bg-white/10">
+        {!reduceMotion && (
+          <motion.div
+            key={progressKey}
+            className="h-full bg-[#C9A961]"
+            initial={{ width: "0%" }}
+            animate={{ width: isPaused ? "0%" : "100%" }}
+            transition={{
+              duration: isPaused ? 0.2 : AUTOPLAY_MS / 1000,
+              ease: "linear",
+            }}
+          />
+        )}
+      </div>
+
+      {/* slides */}
+      <AnimatePresence mode="popLayout">
+        <motion.div
+          key={slide.id}
+          className="absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 0.9, ease: "easeInOut" },
+          }}
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.5, ease: "easeInOut" },
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.15}
+          onDragEnd={handleDragEnd}
+        >
+          {/* background image w/ mouse parallax + ken-burns */}
+          <div className="absolute inset-0 overflow-hidden">
+            <motion.div
+              style={{ x: bgX, y: bgY }}
+              className="absolute -inset-[5%]"
+            >
+              <motion.div
+                className="relative w-full h-full"
+                initial={{ scale: 1 }}
+                animate={{ scale: reduceMotion ? 1 : 1.12 }}
+                transition={{ duration: 9, ease: "linear" }}
+              >
+                <Image
+                  src={slide.image}
+                  alt={`Banner ${index + 1}`}
+                  fill
+                  priority={index === 0}
+                  sizes="100vw"
+                  className="object-cover"
+                  quality={90}
+                />
+              </motion.div>
+            </motion.div>
+            {/* Reduced overlay opacity for better image visibility */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/15 to-transparent" />
+          </div>
+
+          {/* Text content - Top Left */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="absolute top-6 sm:top-10 md:top-16 left-4 sm:left-8 md:left-12 lg:left-20 right-4 sm:right-8 md:right-12 z-20 max-w-full sm:max-w-xl md:max-w-2xl"
+          >
+            {/* Eyebrow */}
+            <motion.p
+              variants={fadeUpVariants}
+              className="text-[10px] sm:text-[11px] md:text-xs tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#C9A961] mb-2 sm:mb-3 text-center sm:text-left"
+            >
+              Welcome to JC Enterprises
+            </motion.p>
+
+            {/* Main Heading */}
+            <h1 className="text-[clamp(1.5rem,5vw,2.5rem)] sm:text-[clamp(2rem,5vw,3rem)] md:text-[clamp(2.5rem,5vw,3.5rem)] leading-[1.1] sm:leading-[1.1] font-bold mb-3 sm:mb-4 text-center sm:text-left text-white drop-shadow-lg">
+              <span className="block overflow-hidden">
+                <motion.span variants={lineVariants} className="block">
+                  Best Electrical Shop
+                </motion.span>
+              </span>
+              <span className="block overflow-hidden">
+                <motion.span variants={lineVariants} className="block">
+                  in Bhubaneswar
+                </motion.span>
+              </span>
+            </h1>
+
+            {/* Features List */}
+            <motion.div
+              variants={fadeUpVariants}
+              className="flex flex-wrap justify-center sm:justify-start items-center gap-x-3 sm:gap-x-4 gap-y-1.5 sm:gap-y-2 text-xs sm:text-sm md:text-base text-white/90 mb-4 sm:mb-5 md:mb-6"
+            >
+              <span className="flex items-center gap-1 sm:gap-1.5">
+                <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-[#C9A961] flex-shrink-0" />
+                <span className="whitespace-nowrap">35+ Years of Trust</span>
+              </span>
+              <span className="flex items-center gap-1 sm:gap-1.5">
+                <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-[#C9A961] flex-shrink-0" />
+                <span className="whitespace-nowrap">
+                  Genuine Branded Products
+                </span>
+              </span>
+              <span className="flex items-center gap-1 sm:gap-1.5">
+                <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-[#C9A961] flex-shrink-0" />
+                <span className="whitespace-nowrap">Retail & Wholesale</span>
+              </span>
+              <span className="flex items-center gap-1 sm:gap-1.5">
+                <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-[#C9A961] flex-shrink-0" />
+                <span className="whitespace-nowrap">
+                  Home Delivery Across Bhubaneswar
+                </span>
+              </span>
+            </motion.div>
+
+            {/* CTA Buttons */}
+            <motion.div
+              variants={fadeUpVariants}
+              className="flex flex-wrap justify-center sm:justify-start items-center gap-2 sm:gap-3"
+            >
+              <Link
+                href="/products"
+                className="group inline-flex items-center gap-1.5 sm:gap-2 bg-[#F5F1EA] text-[#0B0B0C] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-medium tracking-wide transition-colors duration-300 hover:bg-[#C9A961] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A961]"
+              >
+                Shop Now
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <ArrowIcon />
+                </span>
+              </Link>
+              <Link
+                href="/products"
+                className="inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium text-white/90 border border-white/30 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full backdrop-blur-sm transition-colors duration-300 hover:bg-white/10 hover:border-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Explore Brands
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* bottom control bar: tick-rail pagination + arrows */}
+      <div className="absolute inset-x-0 bottom-0 z-30 flex items-center justify-between gap-4 sm:gap-6 px-4 sm:px-6 md:px-12 lg:px-20 pb-3 sm:pb-4 md:pb-6">
+        <div
+          role="tablist"
+          aria-label="Slide navigation"
+          className="flex items-center gap-2 sm:gap-3 md:gap-4"
+        >
+          {SLIDES.map((s, i) => (
+            <button
+              key={s.id}
+              role="tab"
+              aria-selected={i === index}
+              aria-label={`Go to slide ${i + 1}`}
+              onClick={() => goTo(i)}
+              className="group flex items-center gap-1.5 sm:gap-2 py-1.5 sm:py-2"
+            >
+              <span
+                className={`font-mono text-[10px] sm:text-[11px] tracking-wider transition-colors duration-300 ${
+                  i === index
+                    ? "text-[#C9A961]"
+                    : "text-white/40 group-hover:text-white/70"
+                }`}
+              >
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span
+                className={`h-[2px] rounded-full transition-all duration-500 ${
+                  i === index
+                    ? "w-6 sm:w-8 md:w-10 bg-[#C9A961]"
+                    : "w-3 sm:w-4 bg-white/25 group-hover:bg-white/50"
+                }`}
+              />
+            </button>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-2 sm:gap-3">
+          <button
+            aria-label="Previous slide"
+            onClick={() => paginate(-1)}
+            className="h-8 w-8 sm:h-10 sm:w-10 md:h-11 md:w-11 rounded-full border border-white/25 flex items-center justify-center text-white transition-colors duration-300 hover:bg-white/10 hover:border-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          >
+            <ArrowIcon direction="left" />
+          </button>
+          <button
+            aria-label="Next slide"
+            onClick={() => paginate(1)}
+            className="h-8 w-8 sm:h-10 sm:w-10 md:h-11 md:w-11 rounded-full border border-white/25 flex items-center justify-center text-white transition-colors duration-300 hover:bg-white/10 hover:border-white/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          >
+            <ArrowIcon direction="right" />
+          </button>
+        </div>
+      </div>
+    </section>
   );
 }

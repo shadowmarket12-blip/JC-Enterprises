@@ -9,48 +9,41 @@ import {
   FiPlay,
   FiPause,
   FiArrowRight,
+  FiShoppingBag,
 } from "react-icons/fi";
-import sliderimage from "../../../public/images/banner1.jpg";
-import sliderimage2 from "../../../public/images/banner1.jpg";
-import sliderimage3 from "../../../public/images/banner1.jpg";
-import sliderimage4 from "../../../public/images/banner1.jpg";
 
 const carouselImages = [
   {
     id: 1,
-    src: sliderimage,
+    src: "/homeslide/1.png",
     title: "Summer Collection 2024",
     subtitle: "Discover the latest trends in fashion and style",
     cta: "Shop Collection",
     tag: "New Arrival",
-    theme: "from-rose-500 via-pink-500 to-orange-400",
   },
   {
     id: 2,
-    src: sliderimage2,
+    src: "/homeslide/2.png",
     title: "Tech Essentials",
     subtitle: "Upgrade your digital lifestyle with cutting-edge gadgets",
     cta: "Explore Tech",
     tag: "Hot Deal",
-    theme: "from-blue-500 via-indigo-500 to-purple-600",
   },
   {
     id: 3,
-    src: sliderimage3,
+    src: "/homeslide/3.png",
     title: "Premium Audio Experience",
     subtitle: "Immerse yourself in crystal clear sound quality",
     cta: "Listen Now",
     tag: "Premium",
-    theme: "from-purple-500 via-violet-500 to-fuchsia-500",
   },
   {
     id: 4,
-    src: sliderimage4,
+    src: "/homeslide/4.png",
     title: "Smart Living Solutions",
     subtitle: "Transform your home with intelligent automation",
     cta: "Discover More",
     tag: "Smart",
-    theme: "from-emerald-500 via-teal-500 to-cyan-500",
   },
 ];
 
@@ -74,36 +67,36 @@ export default function ProductShowcase() {
     enter: (direction) => ({
       x: direction > 0 ? "100%" : "-100%",
       opacity: 0,
-      scale: 1.05,
+      scale: 1.1,
     }),
     center: {
       x: 0,
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.8,
-        ease: [0.4, 0, 0.2, 1],
+        duration: 0.9,
+        ease: [0.25, 0.46, 0.45, 0.94],
       },
     },
     exit: (direction) => ({
       x: direction > 0 ? "-100%" : "100%",
       opacity: 0,
-      scale: 0.95,
+      scale: 1.05,
       transition: {
-        duration: 0.8,
-        ease: [0.4, 0, 0.2, 1],
+        duration: 0.7,
+        ease: [0.25, 0.46, 0.45, 0.94],
       },
     }),
   };
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
-      {/* Full Width Carousel */}
-      <div className="w-full px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 lg:pt-10">
+    <div className="w-full bg-white">
+      {/* Carousel Container */}
+      <div className="w-full px-0 sm:px-4 lg:px-6 pt-0 sm:pt-4 lg:pt-6">
         <div className="max-w-7xl mx-auto">
           <div className="relative group/carousel">
             <div
-              className="relative w-full aspect-[16/9] sm:aspect-[21/9] lg:aspect-[2.5/1] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-gray-400/30"
+              className="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[2.2/1] rounded-none sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl"
               onMouseEnter={() => setIsAutoPlaying(false)}
               onMouseLeave={() => setIsAutoPlaying(true)}
             >
@@ -125,73 +118,51 @@ export default function ProductShowcase() {
                     className="object-cover"
                     priority
                     sizes="100vw"
+                    quality={90}
                   />
 
-                  {/* Dynamic Gradient Overlay */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r ${carouselImages[currentSlide].theme} opacity-85`}
-                  />
-
-                  {/* Pattern Overlay */}
-                  <div className="absolute inset-0 opacity-10">
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        backgroundImage: `radial-gradient(circle at 25% 25%, white 1px, transparent 1px)`,
-                        backgroundSize: "50px 50px",
-                      }}
-                    />
-                  </div>
-
-                  {/* Decorative Geometric Shapes */}
-                  <div className="absolute top-0 right-0 w-72 h-72 sm:w-96 sm:h-96">
-                    <div className="absolute top-10 right-10 w-36 h-36 sm:w-48 sm:h-48 border-2 border-white/10 rounded-full" />
-                    <div className="absolute top-20 right-20 w-24 h-24 sm:w-32 sm:h-32 border-2 border-white/20 rounded-full animate-spin-slow" />
-                    <div className="absolute top-14 right-14 w-16 h-16 sm:w-24 sm:h-24 border border-white/30 rounded-full animate-pulse" />
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 w-56 h-56 sm:w-72 sm:h-72">
-                    <div className="absolute bottom-10 left-10 w-28 h-28 sm:w-36 sm:h-36 border-2 border-white/10 rounded-full" />
-                    <div className="absolute bottom-16 left-16 w-16 h-16 sm:w-20 sm:h-20 border border-white/20 rounded-full" />
-                  </div>
+                  {/* Subtle Dark Overlay for Text Readability */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
                   {/* Content */}
                   <div className="absolute inset-0 flex items-center">
-                    <div className="w-full max-w-2xl px-6 sm:px-12 lg:px-16 py-8 sm:py-12">
+                    <div className="w-full max-w-xl lg:max-w-2xl px-5 sm:px-10 lg:px-14 py-6 sm:py-10">
                       <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.4, duration: 0.7 }}
-                        className="space-y-3 sm:space-y-5"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6 }}
+                        className="space-y-3 sm:space-y-4 lg:space-y-5"
                       >
                         {/* Tag */}
                         <motion.span
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.2 }}
-                          className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-white/20 backdrop-blur-md rounded-full text-white text-xs sm:text-sm font-semibold border border-white/30"
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: 0.1, duration: 0.4 }}
+                          className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 bg-white/15 backdrop-blur-md rounded-full text-white text-[10px] sm:text-xs lg:text-sm font-semibold tracking-wide border border-white/20 shadow-lg"
                         >
                           {carouselImages[currentSlide].tag}
                         </motion.span>
 
                         {/* Title */}
-                        <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] sm:leading-tight tracking-tight drop-shadow-lg">
                           {carouselImages[currentSlide].title}
                         </h2>
 
                         {/* Subtitle */}
-                        <p className="text-white/80 text-sm sm:text-lg md:text-xl max-w-lg">
+                        <p className="text-white/85 text-xs sm:text-base md:text-lg lg:text-xl max-w-md font-light leading-relaxed">
                           {carouselImages[currentSlide].subtitle}
                         </p>
 
                         {/* CTA Button */}
                         <motion.button
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="group/btn px-5 sm:px-8 py-2.5 sm:py-4 bg-white text-gray-900 rounded-full font-semibold text-sm sm:text-base hover:shadow-2xl transition-all duration-300 flex items-center gap-2 sm:gap-3 w-fit"
+                          whileHover={{ scale: 1.03, y: -2 }}
+                          whileTap={{ scale: 0.97 }}
+                          className="group/btn inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-7 py-2.5 sm:py-3.5 bg-white text-gray-900 rounded-full font-semibold text-xs sm:text-sm lg:text-base shadow-xl hover:shadow-2xl transition-all duration-300"
                         >
+                          <FiShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5" />
                           {carouselImages[currentSlide].cta}
-                          <FiArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:translate-x-2 transition-transform duration-300" />
+                          <FiArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover/btn:translate-x-1.5 transition-transform duration-300" />
                         </motion.button>
                       </motion.div>
                     </div>
@@ -200,9 +171,9 @@ export default function ProductShowcase() {
               </AnimatePresence>
 
               {/* Navigation Arrows */}
-              <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between px-3 sm:px-6 opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-300">
+              <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between px-2 sm:px-4 lg:px-6 pointer-events-none">
                 <motion.button
-                  whileHover={{ scale: 1.1, x: -2 }}
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={() => {
                     setDirection(-1);
@@ -212,13 +183,13 @@ export default function ProductShowcase() {
                         carouselImages.length,
                     );
                   }}
-                  className="p-3 sm:p-4 rounded-full bg-white/10 backdrop-blur-xl text-white hover:bg-white/20 transition-all shadow-2xl border border-white/20"
+                  className="pointer-events-auto p-2 sm:p-3 lg:p-4 rounded-full bg-white/15 backdrop-blur-xl text-white hover:bg-white/30 transition-all shadow-xl border border-white/20 opacity-0 group-hover/carousel:opacity-100 translate-x-2 group-hover/carousel:translate-x-0 transition-all duration-300"
                 >
-                  <FiChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <FiChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </motion.button>
 
                 <motion.button
-                  whileHover={{ scale: 1.1, x: 2 }}
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={() => {
                     setDirection(1);
@@ -226,30 +197,17 @@ export default function ProductShowcase() {
                       (prev) => (prev + 1) % carouselImages.length,
                     );
                   }}
-                  className="p-3 sm:p-4 rounded-full bg-white/10 backdrop-blur-xl text-white hover:bg-white/20 transition-all shadow-2xl border border-white/20"
+                  className="pointer-events-auto p-2 sm:p-3 lg:p-4 rounded-full bg-white/15 backdrop-blur-xl text-white hover:bg-white/30 transition-all shadow-xl border border-white/20 opacity-0 group-hover/carousel:opacity-100 -translate-x-2 group-hover/carousel:translate-x-0 transition-all duration-300"
                 >
-                  <FiChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <FiChevronRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </motion.button>
               </div>
 
               {/* Bottom Controls Bar */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-black/50 to-transparent">
-                <div className="flex items-center gap-4">
-                  {/* Slide Counter */}
-                  <div className="flex items-center gap-1 text-white">
-                    <span className="text-xl sm:text-3xl font-bold">
-                      {String(currentSlide + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-white/40 text-lg sm:text-2xl font-light">
-                      /
-                    </span>
-                    <span className="text-white/40 text-lg sm:text-2xl font-light">
-                      {String(carouselImages.length).padStart(2, "0")}
-                    </span>
-                  </div>
-
+              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-5 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+                <div className="flex items-center gap-3 sm:gap-4">
                   {/* Progress Bars */}
-                  <div className="flex gap-2 flex-1">
+                  <div className="flex gap-1.5 sm:gap-2 flex-1">
                     {carouselImages.map((_, index) => (
                       <button
                         key={index}
@@ -257,7 +215,7 @@ export default function ProductShowcase() {
                           setDirection(index > currentSlide ? 1 : -1);
                           setCurrentSlide(index);
                         }}
-                        className="flex-1 h-1.5 rounded-full overflow-hidden bg-white/30"
+                        className="flex-1 h-1 sm:h-1.5 rounded-full overflow-hidden bg-white/25 hover:bg-white/40 transition-colors"
                       >
                         <motion.div
                           initial={false}
@@ -268,10 +226,21 @@ export default function ProductShowcase() {
                             duration: index === currentSlide ? 5 : 0.3,
                             ease: "linear",
                           }}
-                          className="h-full bg-gradient-to-r from-white to-white/80 rounded-full"
+                          className="h-full bg-white rounded-full"
                         />
                       </button>
                     ))}
+                  </div>
+
+                  {/* Slide Counter */}
+                  <div className="flex items-center gap-1 text-white/80">
+                    <span className="text-xs sm:text-sm font-bold tabular-nums">
+                      {String(currentSlide + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-white/40 text-xs sm:text-sm">/</span>
+                    <span className="text-white/40 text-xs sm:text-sm tabular-nums">
+                      {String(carouselImages.length).padStart(2, "0")}
+                    </span>
                   </div>
 
                   {/* Play/Pause Button */}
@@ -279,12 +248,12 @@ export default function ProductShowcase() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-                    className="p-2.5 rounded-full bg-white/10 backdrop-blur-xl text-white hover:bg-white/20 transition-all border border-white/20"
+                    className="p-1.5 sm:p-2 rounded-full bg-white/10 backdrop-blur-xl text-white hover:bg-white/25 transition-all border border-white/15"
                   >
                     {isAutoPlaying ? (
-                      <FiPause className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <FiPause className="w-3 h-3 sm:w-4 sm:h-4" />
                     ) : (
-                      <FiPlay className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <FiPlay className="w-3 h-3 sm:w-4 sm:h-4" />
                     )}
                   </motion.button>
                 </div>

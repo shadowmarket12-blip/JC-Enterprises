@@ -227,6 +227,7 @@ export default function ContactPage() {
 
     setIsSubmitting(true);
 
+    // Construct WhatsApp message
     const whatsappMessage =
       `*New Inquiry from JC Enterprises Website*%0A%0A` +
       `*Name:* ${formData.name}%0A` +
@@ -236,6 +237,7 @@ export default function ContactPage() {
       `*Inquiry Type:* ${inquiryTypes.find((t) => t.value === formData.inquiryType)?.label}%0A%0A` +
       `*Message:*%0A${formData.message}`;
 
+    // Open WhatsApp with the message - sending to 918280547730
     setTimeout(() => {
       window.open(
         `https://wa.me/918280547730?text=${whatsappMessage}`,
@@ -781,8 +783,8 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-3">
                     {[
-                      { day: "Monday - Saturday", time: "9:00 AM - 8:00 PM" },
-                      { day: "Sunday", time: "10:00 AM - 6:00 PM" },
+                      { day: "Monday - Saturday", time: "9:00 AM - 9:00 PM" },
+                      { day: "Sunday", time: "9:00 AM - 9:00 PM" },
                     ].map((item, i) => (
                       <div
                         key={i}
@@ -796,12 +798,6 @@ export default function ContactPage() {
                         </span>
                       </div>
                     ))}
-                  </div>
-                  <div className="mt-4 pt-4 border-t border-white/20">
-                    <p className="text-yellow-400 text-sm font-semibold flex items-center gap-1">
-                      <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                      Emergency: 24/7 Available
-                    </p>
                   </div>
                 </div>
               </div>
@@ -854,18 +850,16 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-5">
               <div className="lg:col-span-3 relative h-[350px] sm:h-[400px] lg:h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.123456789012!2d77.12345678901234!3d28.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA3JzI0LjQiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.512335226948!2d85.7483880746938!3d20.237576014483235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a90076919433%3A0x5bc641eb1c18076d!2sM%2FS%20JC%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1784807050476!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  allowFullScreen={true}
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Our Location"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   className="grayscale-[30%] hover:grayscale-0 transition-all duration-700"
-                />
+                  style={{ border: 0 }}
+                ></iframe>
               </div>
-
               <div className="lg:col-span-2 bg-gradient-to-br from-[#082d4a] to-[#0d4f7c] p-6 sm:p-8 lg:p-10 text-white flex flex-col justify-center relative overflow-hidden">
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/5 rounded-full" />
                 <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-yellow-400/10 rounded-full" />
@@ -893,8 +887,8 @@ export default function ContactPage() {
                       <div>
                         <p className="text-white/50 text-xs mb-0.5">Address</p>
                         <p className="text-white text-sm font-medium leading-relaxed">
-                          JC Enterprises, Main Road, Near Electrical Market, New
-                          Delhi - 110001
+                          Jiban Pattnaik Market Complex, Plot No- 655, Tamando
+                          Bazar, Tamando, Bijipur, Bhubaneswar, Odisha 752054
                         </p>
                       </div>
                     </div>

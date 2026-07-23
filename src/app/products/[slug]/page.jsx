@@ -17,6 +17,10 @@ import ThumbnailScroller from "@/Components/ThumbnailScroller";
 import MainProductImage from "@/Components/MainProductImage";
 import ColorSwatches from "@/Components/ColorSwatches";
 import ProductPrice from "@/Components/ProductPrice";
+import ProductSpecifications from "@/Components/ProductSpecifications";
+import ProductName from "@/Components/ProductName";
+import ProductDescription from "@/Components/ProductDescription";
+import ProductFeatures from "@/Components/ProductFeatures";
 import { ProductGalleryProvider } from "@/Components/ProductGalleryContext";
 
 export function generateStaticParams() {
@@ -108,9 +112,7 @@ export default async function ProductPage({ params }) {
                 <span className="inline-block px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-[#082d4a]/10 text-[#082d4a] mb-3">
                   {product.category}
                 </span>
-                <h1 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 leading-tight mb-2 sm:mb-3">
-                  {product.name}
-                </h1>
+                <ProductName />
 
                 {/* Rating */}
                 <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
@@ -122,12 +124,8 @@ export default async function ProductPage({ params }) {
                       />
                     ))}
                   </div>
-                  <span className="text-xs sm:text-sm font-medium text-gray-600">
+                  <span className="text-xs sm:text-sm font-medium text-black">
                     {product.rating}.0 ({product.reviews} reviews)
-                  </span>
-                  <span className="text-xs text-gray-400">|</span>
-                  <span className="text-xs sm:text-sm text-green-600 font-medium">
-                    {Math.floor(Math.random() * 100) + 50} sold in last 24h
                   </span>
                 </div>
               </div>
@@ -139,36 +137,13 @@ export default async function ProductPage({ params }) {
               <ProductPrice />
 
               {/* Description */}
-              <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
-                  Product Description
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-xs sm:text-sm lg:text-base">
-                  {product.description}
-                </p>
-              </div>
+              <ProductDescription />
 
               {/* Key Features */}
-              <div>
-                <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">
-                  Key Features
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                  {product.features.map((feature, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-lg sm:rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
-                    >
-                      <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#082d4a]/10 flex items-center justify-center flex-shrink-0">
-                        <HiCheckBadge className="text-[#082d4a] text-xs sm:text-sm" />
-                      </div>
-                      <span className="text-xs sm:text-sm text-gray-700">
-                        {feature}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <ProductFeatures />
+
+              {/* Specifications */}
+              <ProductSpecifications product={product} />
 
               {/* Trust Badges */}
               <div className="grid grid-cols-3 gap-2 sm:gap-3">
