@@ -1341,7 +1341,7 @@ const RAW_PRODUCTS = [
     stock: 14,
     rating: 4.7,
     reviews: 987,
-    image: "/fan/emperion_magna_1280_plis_amber_lightteak.webp",
+    image: "/Fan/emperion_magna_1280_plis_amber_lightteak.webp",
     badge: "Popular",
     colors: [
       {
