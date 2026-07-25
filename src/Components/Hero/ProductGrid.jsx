@@ -104,6 +104,20 @@ const normalize = (value) => (value ?? "").toString().trim().toLowerCase();
  * components. The animations now live as plain classes (.chip-fade-in,
  * .card-fade-in) in globals.css instead, which have no scoped hash and so
  * can never mismatch.
+ *
+ * NOTE ON THE DESKTOP BRAND-TAB CLICK FIX
+ * ------------------------------------------------
+ * `useHorizontalScroll` previously called `el.setPointerCapture()` on
+ * every single mousedown, even a plain click with zero movement. Capturing
+ * the pointer that early makes some browsers (Chrome in particular)
+ * retarget the resulting "click" event to the scroll container instead of
+ * whatever button was actually under the cursor - so brand/category chip
+ * buttons stopped firing onClick, but only with a mouse. Touch never runs
+ * this branch at all, which is why it worked fine on mobile. The fix adds
+ * a small movement threshold (DRAG_THRESHOLD) before treating the gesture
+ * as a drag and capturing the pointer - a plain click never crosses that
+ * threshold, so it reaches the button normally, while click-and-drag
+ * scrolling still works exactly as before.
  */
 
 /**
@@ -117,7 +131,9 @@ const normalize = (value) => (value ?? "").toString().trim().toLowerCase();
  *   normal page scrolling and native horizontal trackpad swipes still work
  *   untouched.
  * - `pointerdown/move/up`: adds click-and-drag scrolling for mouse users
- *   (a mouse has no swipe gesture at all otherwise).
+ *   (a mouse has no swipe gesture at all otherwise). Pointer capture only
+ *   kicks in once real movement is detected, so plain clicks on buttons
+ *   inside the row still work (see fix note above).
  */
 function useHorizontalScroll() {
   const ref = useRef(null);
@@ -133,32 +149,57 @@ function useHorizontalScroll() {
       el.scrollLeft += e.deltaY;
     };
 
+    // Minimum pixel movement before a mousedown is treated as a drag
+    // gesture instead of a plain click.
+    const DRAG_THRESHOLD = 5;
+
+    let isPointerDown = false;
     let isDragging = false;
     let startX = 0;
     let startScrollLeft = 0;
+    let activePointerId = null;
 
     const handlePointerDown = (e) => {
       if (e.pointerType !== "mouse") return; // touch/pen keep native behavior
-      isDragging = true;
+      isPointerDown = true;
+      isDragging = false;
       startX = e.clientX;
       startScrollLeft = el.scrollLeft;
-      el.setPointerCapture(e.pointerId);
-      el.style.cursor = "grabbing";
+      activePointerId = e.pointerId;
+      // No setPointerCapture / cursor change here - only once movement
+      // past DRAG_THRESHOLD is detected in handlePointerMove. This is what
+      // keeps plain clicks on chip buttons working on desktop.
     };
 
     const handlePointerMove = (e) => {
-      if (!isDragging) return;
-      el.scrollLeft = startScrollLeft - (e.clientX - startX);
+      if (!isPointerDown) return;
+
+      const delta = e.clientX - startX;
+
+      if (!isDragging) {
+        if (Math.abs(delta) < DRAG_THRESHOLD) return; // still just a click, not a drag yet
+        isDragging = true;
+        el.style.cursor = "grabbing";
+        try {
+          el.setPointerCapture(activePointerId);
+        } catch {
+          // ignore - pointer may already be gone
+        }
+      }
+
+      el.scrollLeft = startScrollLeft - delta;
     };
 
     const handlePointerUp = (e) => {
-      if (!isDragging) return;
-      isDragging = false;
-      el.style.cursor = "";
-      try {
-        el.releasePointerCapture(e.pointerId);
-      } catch {
-        // pointer capture may already be released - safe to ignore
+      isPointerDown = false;
+      if (isDragging) {
+        isDragging = false;
+        el.style.cursor = "";
+        try {
+          el.releasePointerCapture(e.pointerId);
+        } catch {
+          // pointer capture may already be released - safe to ignore
+        }
       }
     };
 

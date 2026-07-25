@@ -3,14 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-  useReducedMotion,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const AUTOPLAY_MS = 6500;
 
@@ -78,13 +71,6 @@ export default function HeroCarousel() {
   const total = SLIDES.length;
   const slide = SLIDES[index];
 
-  const mvX = useMotionValue(0);
-  const mvY = useMotionValue(0);
-  const springX = useSpring(mvX, { stiffness: 45, damping: 20 });
-  const springY = useSpring(mvY, { stiffness: 45, damping: 20 });
-  const bgX = useTransform(springX, [-0.5, 0.5], [-18, 18]);
-  const bgY = useTransform(springY, [-0.5, 0.5], [-12, 12]);
-
   const goTo = useCallback(
     (i) => {
       setIndex(((i % total) + total) % total);
@@ -93,20 +79,33 @@ export default function HeroCarousel() {
     [total],
   );
 
-  const paginate = useCallback((delta) => goTo(index + delta), [goTo, index]);
+  const paginate = useCallback(
+    (delta) => {
+      goTo(index + delta);
+    },
+    [goTo, index],
+  );
 
+  // Autoplay effect — shows slides one by one with fixed timing
   useEffect(() => {
-    if (isPaused || reduceMotion) return undefined;
-    timeoutRef.current = setTimeout(() => paginate(1), AUTOPLAY_MS);
-    return () => clearTimeout(timeoutRef.current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [index, isPaused, reduceMotion]);
+    if (isPaused || reduceMotion) {
+      return;
+    }
 
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    mvX.set((e.clientX - rect.left) / rect.width - 0.5);
-    mvY.set((e.clientY - rect.top) / rect.height - 0.5);
-  };
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      paginate(1);
+    }, AUTOPLAY_MS);
+
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [index, isPaused, reduceMotion, paginate]);
 
   const handleKeyDown = (e) => {
     if (e.key === "ArrowRight") paginate(1);
@@ -128,9 +127,8 @@ export default function HeroCarousel() {
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
-      onMouseMove={handleMouseMove}
       onKeyDown={handleKeyDown}
-      className="relative w-full h-[60vh] sm:h-[70vh] min-h-[400px] max-h-[800px] overflow-hidden bg-[#0B0B0C] text-[#F5F1EA] select-none outline-none"
+      className="relative w-full h-[60vh] sm:h-[76vh] min-h-[400px] max-h-[800px] overflow-hidden bg-[#0B0B0C] text-[#F5F1EA] select-none outline-none"
     >
       {/* sr-only live announcement */}
       <div className="sr-only" aria-live="polite">
@@ -172,30 +170,17 @@ export default function HeroCarousel() {
           dragElastic={0.15}
           onDragEnd={handleDragEnd}
         >
-          {/* background image w/ mouse parallax + ken-burns */}
+          {/* background image — full size, no parallax shifting */}
           <div className="absolute inset-0 overflow-hidden">
-            <motion.div
-              style={{ x: bgX, y: bgY }}
-              className="absolute -inset-[5%]"
-            >
-              <motion.div
-                className="relative w-full h-full"
-                initial={{ scale: 1 }}
-                animate={{ scale: reduceMotion ? 1 : 1.12 }}
-                transition={{ duration: 9, ease: "linear" }}
-              >
-                <Image
-                  src={slide.image}
-                  alt={`Banner ${index + 1}`}
-                  fill
-                  priority={index === 0}
-                  sizes="100vw"
-                  className="object-cover"
-                  quality={90}
-                />
-              </motion.div>
-            </motion.div>
-            {/* Reduced overlay opacity for better image visibility */}
+            <Image
+              src={slide.image}
+              alt={`Banner ${index + 1}`}
+              fill
+              priority={index === 0}
+              sizes="100vw"
+              className="object-cover"
+              quality={90}
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30" />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/15 to-transparent" />
           </div>

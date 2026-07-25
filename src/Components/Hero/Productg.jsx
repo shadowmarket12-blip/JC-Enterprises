@@ -3,47 +3,24 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import {
-  FiChevronLeft,
-  FiChevronRight,
-  FiPlay,
-  FiPause,
-  FiArrowRight,
-  FiShoppingBag,
-} from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight, FiPlay, FiPause } from "react-icons/fi";
 
 const carouselImages = [
   {
     id: 1,
     src: "/homeslide/1.png",
-    title: "Summer Collection 2024",
-    subtitle: "Discover the latest trends in fashion and style",
-    cta: "Shop Collection",
-    tag: "New Arrival",
   },
   {
     id: 2,
     src: "/homeslide/2.png",
-    title: "Tech Essentials",
-    subtitle: "Upgrade your digital lifestyle with cutting-edge gadgets",
-    cta: "Explore Tech",
-    tag: "Hot Deal",
   },
   {
     id: 3,
     src: "/homeslide/3.png",
-    title: "Premium Audio Experience",
-    subtitle: "Immerse yourself in crystal clear sound quality",
-    cta: "Listen Now",
-    tag: "Premium",
   },
   {
     id: 4,
     src: "/homeslide/4.png",
-    title: "Smart Living Solutions",
-    subtitle: "Transform your home with intelligent automation",
-    cta: "Discover More",
-    tag: "Smart",
   },
 ];
 
@@ -113,60 +90,13 @@ export default function ProductShowcase() {
                   {/* Background Image */}
                   <Image
                     src={carouselImages[currentSlide].src}
-                    alt={carouselImages[currentSlide].title}
+                    alt={`Slide ${currentSlide + 1}`}
                     fill
                     className="object-cover"
                     priority
                     sizes="100vw"
                     quality={90}
                   />
-
-                  {/* Subtle Dark Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-
-                  {/* Content */}
-                  <div className="absolute inset-0 flex items-center">
-                    <div className="w-full max-w-xl lg:max-w-2xl px-5 sm:px-10 lg:px-14 py-6 sm:py-10">
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.6 }}
-                        className="space-y-3 sm:space-y-4 lg:space-y-5"
-                      >
-                        {/* Tag */}
-                        <motion.span
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.1, duration: 0.4 }}
-                          className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 bg-white/15 backdrop-blur-md rounded-full text-white text-[10px] sm:text-xs lg:text-sm font-semibold tracking-wide border border-white/20 shadow-lg"
-                        >
-                          {carouselImages[currentSlide].tag}
-                        </motion.span>
-
-                        {/* Title */}
-                        <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] sm:leading-tight tracking-tight drop-shadow-lg">
-                          {carouselImages[currentSlide].title}
-                        </h2>
-
-                        {/* Subtitle */}
-                        <p className="text-white/85 text-xs sm:text-base md:text-lg lg:text-xl max-w-md font-light leading-relaxed">
-                          {carouselImages[currentSlide].subtitle}
-                        </p>
-
-                        {/* CTA Button */}
-                        <motion.button
-                          whileHover={{ scale: 1.03, y: -2 }}
-                          whileTap={{ scale: 0.97 }}
-                          className="group/btn inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-7 py-2.5 sm:py-3.5 bg-white text-gray-900 rounded-full font-semibold text-xs sm:text-sm lg:text-base shadow-xl hover:shadow-2xl transition-all duration-300"
-                        >
-                          <FiShoppingBag className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5" />
-                          {carouselImages[currentSlide].cta}
-                          <FiArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover/btn:translate-x-1.5 transition-transform duration-300" />
-                        </motion.button>
-                      </motion.div>
-                    </div>
-                  </div>
                 </motion.div>
               </AnimatePresence>
 
@@ -204,7 +134,7 @@ export default function ProductShowcase() {
               </div>
 
               {/* Bottom Controls Bar */}
-              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-5 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-5 bg-gradient-to-t from-black/40 to-transparent">
                 <div className="flex items-center gap-3 sm:gap-4">
                   {/* Progress Bars */}
                   <div className="flex gap-1.5 sm:gap-2 flex-1">
@@ -230,17 +160,6 @@ export default function ProductShowcase() {
                         />
                       </button>
                     ))}
-                  </div>
-
-                  {/* Slide Counter */}
-                  <div className="flex items-center gap-1 text-white/80">
-                    <span className="text-xs sm:text-sm font-bold tabular-nums">
-                      {String(currentSlide + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-white/40 text-xs sm:text-sm">/</span>
-                    <span className="text-white/40 text-xs sm:text-sm tabular-nums">
-                      {String(carouselImages.length).padStart(2, "0")}
-                    </span>
                   </div>
 
                   {/* Play/Pause Button */}
