@@ -11,105 +11,105 @@ export const CATEGORIES = [
     id: "all",
     label: "All Products",
     icon: "HiSquares2X2",
-    metaTitle: "Buy Electrical & Home Products Online – JC Enterprises",
-    metaDescription:
-      "Shop switches, wires, MCBs, lighting, fans, water pumps, pipes and more online in Bhubaneswar. Genuine brands, best prices, home delivery – JC Enterprises.",
+    // metaTitle: "Buy Electrical & Home Products Online – JC Enterprises",
+    // metaDescription:
+    //   "Shop switches, wires, MCBs, lighting, fans, water pumps, pipes and more online in Bhubaneswar. Genuine brands, best prices, home delivery – JC Enterprises.",
   },
   {
     id: "switches-accessories",
     label: "Switches & Accessories",
     icon: "HiAdjustmentsHorizontal",
-    metaTitle: "Switches & Accessories Price – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy modular switches, sockets and accessories online in Bhubaneswar. Genuine Myrah switches, fire-resistant, ISI certified. Home delivery – JC Enterprises.",
+    // metaTitle: "Switches & Accessories Price – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy modular switches, sockets and accessories online in Bhubaneswar. Genuine Myrah switches, fire-resistant, ISI certified. Home delivery – JC Enterprises.",
   },
   {
     id: "electrical-wires-cables",
     label: "Electrical Wires & Cables",
     icon: "HiBolt",
-    metaTitle: "Electrical Wires & Cables Price – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy FR/FRLS house wires and cables online in Bhubaneswar from Finolex, Havells, KEI, Polycab and RR Kabel. ISI marked, genuine – JC Enterprises.",
+    // metaTitle: "Electrical Wires & Cables Price – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy FR/FRLS house wires and cables online in Bhubaneswar from Finolex, Havells, KEI, Polycab and RR Kabel. ISI marked, genuine – JC Enterprises.",
   },
   {
     id: "mcbs-protection",
     label: "MCBs & Protection",
     icon: "HiShieldCheck",
-    metaTitle: "MCBs & Protection Devices – Buy Online in Bhubaneswar",
-    metaDescription:
-      "Buy MCBs, RCCBs and ELCBs online in Bhubaneswar from Havells, KEI and Polycab. ISI certified circuit protection, genuine, home delivery – JC Enterprises.",
+    // metaTitle: "MCBs & Protection Devices – Buy Online in Bhubaneswar",
+    // metaDescription:
+    //   "Buy MCBs, RCCBs and ELCBs online in Bhubaneswar from Havells, KEI and Polycab. ISI certified circuit protection, genuine, home delivery – JC Enterprises.",
   },
   {
     id: "lighting",
     label: "Lighting",
     icon: "HiLightBulb",
-    metaTitle: "LED Lighting & Bulbs Price – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy LED bulbs, panels, battens and strip lights online in Bhubaneswar from GreatWhite. Energy-efficient, BIS certified, home delivery – JC Enterprises.",
+    // metaTitle: "LED Lighting & Bulbs Price – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy LED bulbs, panels, battens and strip lights online in Bhubaneswar from GreatWhite. Energy-efficient, BIS certified, home delivery – JC Enterprises.",
   },
   {
     id: "fans",
     label: "Fans",
     icon: "HiArrowPath",
-    metaTitle: "Ceiling, BLDC & Exhaust Fans – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy Atomberg BLDC ceiling, designer, pedestal, wall and exhaust fans online in Bhubaneswar. Genuine, energy-efficient, home delivery – JC Enterprises.",
+    // metaTitle: "Ceiling, BLDC & Exhaust Fans – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy Atomberg BLDC ceiling, designer, pedestal, wall and exhaust fans online in Bhubaneswar. Genuine, energy-efficient, home delivery – JC Enterprises.",
   },
   {
     id: "water-pumps-heaters",
     label: "Water Pumps & Heaters",
     icon: "HiFire",
-    metaTitle: "Water Pumps & Heaters Price – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy water pumps, motors and water heaters online in Bhubaneswar. Reliable brands, genuine products, home delivery across Odisha – JC Enterprises.",
+    // metaTitle: "Water Pumps & Heaters Price – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy water pumps, motors and water heaters online in Bhubaneswar. Reliable brands, genuine products, home delivery across Odisha – JC Enterprises.",
   },
   {
     id: "pipes-fittings",
     label: "Pipes and Fittings",
     icon: "HiCube",
-    metaTitle: "Pipes & Fittings Price – Buy Online in Bhubaneswar",
-    metaDescription:
-      "Buy PVC, CPVC and UPVC pipes and fittings online in Bhubaneswar. Durable, pressure-rated, genuine products with home delivery – JC Enterprises.",
+    // metaTitle: "Pipes & Fittings Price – Buy Online in Bhubaneswar",
+    // metaDescription:
+    //   "Buy PVC, CPVC and UPVC pipes and fittings online in Bhubaneswar. Durable, pressure-rated, genuine products with home delivery – JC Enterprises.",
   },
   {
     id: "industrial-electrical-products",
     label: "Industrial Electrical Products",
     icon: "HiBuildingOffice2",
-    metaTitle: "Industrial Electrical Products – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy industrial electrical products online in Bhubaneswar — panels, drives and control gear. Genuine, reliable, home delivery – JC Enterprises.",
+    // metaTitle: "Industrial Electrical Products – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy industrial electrical products online in Bhubaneswar — panels, drives and control gear. Genuine, reliable, home delivery – JC Enterprises.",
   },
   {
     id: "electrical-tools-accessories",
     label: "Electrical Tools & Accessories",
     icon: "HiWrenchScrewdriver",
-    metaTitle: "Electrical Tools & Accessories – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy electrical tools, drills and accessories online in Bhubaneswar. Genuine branded tools for professionals and homes, home delivery – JC Enterprises.",
+    // metaTitle: "Electrical Tools & Accessories – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy electrical tools, drills and accessories online in Bhubaneswar. Genuine branded tools for professionals and homes, home delivery – JC Enterprises.",
   },
   {
     id: "earthing-materials",
     label: "Earthing Materials",
     icon: "HiGlobeAlt",
-    metaTitle: "Earthing Materials Price – Buy Online in Bhubaneswar",
-    metaDescription:
-      "Buy earthing rods, strips and accessories online in Bhubaneswar. Corrosion-resistant, standard-compliant earthing materials – JC Enterprises.",
+    // metaTitle: "Earthing Materials Price – Buy Online in Bhubaneswar",
+    // metaDescription:
+    //   "Buy earthing rods, strips and accessories online in Bhubaneswar. Corrosion-resistant, standard-compliant earthing materials – JC Enterprises.",
   },
   {
     id: "home-appliance",
     label: "Home Appliance",
     icon: "HiHome",
-    metaTitle: "Home Appliances Price – Buy Online in Bhubaneswar",
-    metaDescription:
-      "Buy home appliances online in Bhubaneswar. Genuine products, energy-efficient, best prices with home delivery across Odisha – JC Enterprises.",
+    // metaTitle: "Home Appliances Price – Buy Online in Bhubaneswar",
+    // metaDescription:
+    //   "Buy home appliances online in Bhubaneswar. Genuine products, energy-efficient, best prices with home delivery across Odisha – JC Enterprises.",
   },
   {
     id: "aquagard",
     label: "Aquagard",
     icon: "HiBeaker",
-    metaTitle: "Aquaguard Water Purifiers – Buy Online Bhubaneswar",
-    metaDescription:
-      "Buy genuine Aquaguard RO and UV water purifiers online in Bhubaneswar. Safe drinking water solutions with home delivery – JC Enterprises.",
+    // metaTitle: "Aquaguard Water Purifiers – Buy Online Bhubaneswar",
+    // metaDescription:
+    //   "Buy genuine Aquaguard RO and UV water purifiers online in Bhubaneswar. Safe drinking water solutions with home delivery – JC Enterprises.",
   },
 ];
 
@@ -1744,7 +1744,7 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/Fan2/Atomberg Aris Starlight 900 mm smart ceiling fan in Dark Teakwood – JC Enterprises Bhubaneswar - Copy.webp",
+      "/Fan2/Atomberg Aris Starlight 1400 mm smart ceiling fan in Dark Teakwood.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
@@ -1817,7 +1817,7 @@ const RAW_PRODUCTS = [
         name: "Marble White",
         hex: "#f2f0ec",
         images: [
-          "/Fan/Atomberg Aris Starlight 1200 mm smart ceiling fan in Marble White.webp",
+          "/Fan2/Atomberg Aris Starlight 1200 mm smart ceiling fan in Marble White.webp",
         ],
         price: 8499,
         originalPrice: 14300,
@@ -1835,7 +1835,7 @@ const RAW_PRODUCTS = [
         name: "Umber Brown",
         hex: "#5c3a21",
         images: [
-          "/Fan/Atomberg Aris Starlight 1200 mm smart ceiling fan in Umber Brown.webp",
+          "/Fan2/Atomberg Aris Starlight 1200 mm smart ceiling fan in Umber Brown.webp",
         ],
         price: 8499,
         originalPrice: 14300,
@@ -1844,7 +1844,7 @@ const RAW_PRODUCTS = [
         name: "Tuscan Gold",
         hex: "#b8860b",
         images: [
-          "/Fan/Atomberg Aris Starlight 1200 mm smart ceiling fan in Umber Brown.webp",
+          "/Fan2/Atomberg Aris Starlight 1200 mm smart ceiling fan in Umber Brown.webp",
         ],
         price: 8499,
         originalPrice: 14300,
@@ -2163,7 +2163,7 @@ const RAW_PRODUCTS = [
         name: "Marble White",
         hex: "#f2f0ec",
         images: [
-          "/Fan2/Atomberg Aris Contour 900 mm smart ceiling fan in Marble White – JC Enterprises Bhubaneswar - Copy  .webp",
+          "/Fan2/Atomberg Aris Contour 900 mm smart ceiling fan in Marble White – JC Enterprises Bhubaneswar - Copy.webp",
         ],
       },
     ],
@@ -2302,7 +2302,7 @@ const RAW_PRODUCTS = [
         name: "Aegean Blue",
         hex: "#2f5d78",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan aegean blue– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan aegean blue.webp",
         ],
       },
       {
