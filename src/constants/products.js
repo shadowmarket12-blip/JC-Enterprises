@@ -2288,7 +2288,7 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan misty teal– JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan aegean blue.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
@@ -2302,7 +2302,7 @@ const RAW_PRODUCTS = [
         name: "Aegean Blue",
         hex: "#2f5d78",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan aegean blue– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan aegean blue– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
