@@ -2557,7 +2557,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 41,
-    name: "Razon",
+    name: "Atomberg Razon BLDC Ceiling Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2595,11 +2595,11 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Razon – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Razon Price – Buy Online in Bhubaneswar",
     metaDescription:
-      "Pick the Atomberg Razon in Gloss White and Midnight Black with remote control, 1200mm sweep, online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Razon 1200mm BLDC ceiling fan with remote online in Bhubaneswar. Genuine product, home delivery from JC Enterprises.",
     description:
-      "A straightforward, remote-controlled BLDC ceiling fan in a 1200mm sweep, offered in six finishes — a solid, energy-efficient option for buyers who want Atomberg's BLDC power savings without a smart-app connection.",
+      "The Atomberg Razon is a straightforward, remote-controlled BLDC ceiling fan in a 1200mm sweep, offered in Gloss White, Midnight Black, Misty Teal, Sangria Brown, Crème Brulee, and Urban Chrome finishes. It's a solid, energy-efficient option for buyers who want Atomberg's BLDC power savings without a smart-app connection. Check the current Atomberg Razon price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -2621,7 +2621,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 42,
-    name: "Renesa Prime Crest 1400mm",
+    name: "Atomberg Renesa Prime Crest BLDC Ceiling Fan 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2633,21 +2633,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3999,
         originalPrice: 6960,
@@ -2656,7 +2656,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3999,
         originalPrice: 6960,
@@ -2665,12 +2665,14 @@ const RAW_PRODUCTS = [
         name: "Misty Teal",
         hex: "#3f6c6a",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3999,
         originalPrice: 6960,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
     metaTitle: "Atomberg Renesa Prime Crest 1400mm – Buy Online Bhubaneswar",
     metaDescription:
       "Buy the Atomberg Renesa Prime Crest 1400mm online in Bhubaneswar in Honey Maplewood and Gloss Black with remote control. Genuine, home delivery – JC Enterprises.",
@@ -2696,7 +2698,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 43,
-    name: "Renesa Prime Crest 1200mm",
+    name: "Atomberg Renesa Prime Crest BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2708,35 +2710,35 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Nordic Ashwood",
         hex: "#c9b79c",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Nordic Ash Wood– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Nordic Ash Wood– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3799,
         originalPrice: 6340,
@@ -2745,7 +2747,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3799,
         originalPrice: 6340,
@@ -2754,7 +2756,7 @@ const RAW_PRODUCTS = [
         name: "Misty Teal",
         hex: "#3f6c6a",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3799,
         originalPrice: 6340,
@@ -2763,7 +2765,7 @@ const RAW_PRODUCTS = [
         name: "Desert Pearl",
         hex: "#e6dcc9",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Desert Pearl – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Desert Pearl – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3799,
         originalPrice: 6340,
@@ -2772,12 +2774,14 @@ const RAW_PRODUCTS = [
         name: "Copper Haze",
         hex: "#a86a44",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Copper Haze – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Copper Haze – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3799,
         originalPrice: 6340,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
     metaTitle: "Atomberg Renesa Prime Crest 1200mm – Buy Online Bhubaneswar",
     metaDescription:
       "Order the Atomberg Renesa Prime Crest 1200mm in Honey Maplewood and Dark Walnut online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
@@ -2804,7 +2808,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 44,
-    name: "Renesa Prime Crest 900mm",
+    name: "Atomberg Renesa Prime Crest BLDC Ceiling Fan  900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2816,21 +2820,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3649,
         originalPrice: 6340,
@@ -2839,7 +2843,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3649,
         originalPrice: 6340,
@@ -2848,12 +2852,14 @@ const RAW_PRODUCTS = [
         name: "Misty Teal",
         hex: "#3f6c6a",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3649,
         originalPrice: 6340,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
     metaTitle: "Atomberg Renesa Prime Crest 900mm – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Renesa Prime Crest 900mm online in Bhubaneswar, Honey Maplewood and Gloss Black with remote control. Genuine, home delivery – JC Enterprises.",
@@ -2879,7 +2885,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 45,
-    name: "Renesa Prime Crest 600mm",
+    name: "Atomberg Renesa Prime Crest BLDC Ceiling Fan 600mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2891,21 +2897,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6070,
@@ -2914,7 +2920,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6070,
@@ -2923,12 +2929,14 @@ const RAW_PRODUCTS = [
         name: "Misty Teal",
         hex: "#3f6c6a",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest [sweep]mm BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6070,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
     metaTitle: "Atomberg Renesa Prime Crest 600mm – Buy Online Bhubaneswar",
     metaDescription:
       "Order the Atomberg Renesa Prime Crest 600mm online in Bhubaneswar in Honey Maplewood and Gloss Black with remote control. Genuine, home delivery – JC Enterprises.",
@@ -4652,165 +4660,184 @@ const RAW_PRODUCTS = [
     },
   },
 
-  // {
-  //   id: 69,
-  //   name: "Efficio Prime Regulator 1400mm",
-  //   category: "Fans",
-  //   categoryId: "fans",
-  //   brand: "Atomberg",
-  //   tag: "Classic Fan",
-  //   price: 3400,
-  //   originalPrice: 5900,
-  //   discount: 42,
-  //   stock: 50,
-  //   rating: 4.5,
-  //   reviews: 100,
-  //   image: "/Fan/atomberg-placeholder.webp",
-  //   badge: "Classic Fan",
-  //   colors: [
-  //     {
-  //       name: "Blaze Brown",
-  //       hex: "#6e3d25",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "Gloss White",
-  //       hex: "#fafafa",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //   ],
-  //   metaTitle: "Efficio Prime Regulator 1400mm – Buy Online Bhubaneswar",
-  //   metaDescription:
-  //     "Order the Atomberg Efficio Prime Regulator 1400mm online in Bhubaneswar in Blaze Brown and Gloss White with regulator control. Genuine, home delivery – JC Enterprises.",
-  //   description:
-  //     "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
-  //   features: [
-  //     "Genuine Atomberg classic BLDC fan",
-  //     "Regulator speed control",
-  //     "Available in 900mm, 1200mm, 1400mm sweep",
-  //     "Blaze Brown, Gloss White, Midnight Black, SS Ivory finishes",
-  //     "Energy-efficient BLDC motor",
-  //   ],
-  //   specifications: {
-  //     "Sweep Size (mm)": "1400mm",
-  //     "Motor Type": "BLDC Motor",
-  //     Voltage: "220-240V",
-  //     Frequency: "50Hz",
-  //     Warranty: "2 Years",
-  //     Color: "Blaze Brown / Gloss White",
-  //     "Control Type (Smart App / Remote / Regulator)": "Regulator",
-  //   },
-  // },
+  {
+    id: 69,
+    name: "Efficio Prime Regulator 1400mm",
+    category: "Fans",
+    categoryId: "fans",
+    brand: "Atomberg",
+    tag: "Classic Fan",
+    price: 3400,
+    originalPrice: 5900,
+    discount: 42,
+    stock: 50,
+    rating: 4.5,
+    reviews: 100,
+    image:
+      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+    badge: "Classic Fan",
+    colors: [
+      {
+        name: "Blaze Brown",
+        hex: "#6e3d25",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+      {
+        name: "Gloss White",
+        hex: "#fafafa",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+    ],
+    metaTitle: "Efficio Prime Regulator 1400mm – Buy Online Bhubaneswar",
+    metaDescription:
+      "Order the Atomberg Efficio Prime Regulator 1400mm online in Bhubaneswar in Blaze Brown and Gloss White with regulator control. Genuine, home delivery – JC Enterprises.",
+    description:
+      "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
+    features: [
+      "Genuine Atomberg classic BLDC fan",
+      "Regulator speed control",
+      "Available in 900mm, 1200mm, 1400mm sweep",
+      "Blaze Brown, Gloss White, Midnight Black, SS Ivory finishes",
+      "Energy-efficient BLDC motor",
+    ],
+    specifications: {
+      "Sweep Size (mm)": "1400mm",
+      "Motor Type": "BLDC Motor",
+      Voltage: "220-240V",
+      Frequency: "50Hz",
+      Warranty: "2 Years",
+      Color: "Blaze Brown / Gloss White",
+      "Control Type (Smart App / Remote / Regulator)": "Regulator",
+    },
+  },
 
-  // {
-  //   id: 70,
-  //   name: "Efficio Prime Regulator 1200mm",
-  //   category: "Fans",
-  //   categoryId: "fans",
-  //   brand: "Atomberg",
-  //   tag: "Classic Fan",
-  //   price: 3199,
-  //   originalPrice: 5500,
-  //   discount: 42,
-  //   stock: 50,
-  //   rating: 4.5,
-  //   reviews: 100,
-  //   image: "/Fan/atomberg-placeholder.webp",
-  //   badge: "Classic Fan",
-  //   colors: [
-  //     {
-  //       name: "Midnight Black",
-  //       hex: "#161616",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "Blaze Brown",
-  //       hex: "#6e3d25",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "SS Ivory",
-  //       hex: "#eee3cc",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "Gloss White",
-  //       hex: "#fafafa",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //   ],
-  //   metaTitle: "Efficio Prime Regulator 1200mm – Buy Online Bhubaneswar",
-  //   metaDescription:
-  //     "Order the Atomberg Efficio Prime Regulator 1200mm in Midnight Black and Blaze Brown online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
-  //   description:
-  //     "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
-  //   features: [
-  //     "Genuine Atomberg classic BLDC fan",
-  //     "Regulator speed control",
-  //     "Available in 900mm, 1200mm, 1400mm sweep",
-  //     "Blaze Brown, Gloss White, Midnight Black, SS Ivory finishes",
-  //     "Energy-efficient BLDC motor",
-  //   ],
-  //   specifications: {
-  //     "Sweep Size (mm)": "1200mm",
-  //     "Motor Type": "BLDC Motor",
-  //     Voltage: "220-240V",
-  //     Frequency: "50Hz",
-  //     Warranty: "2 Years",
-  //     Color: "Blaze Brown / Gloss White / Midnight Black / SS Ivory",
-  //     "Control Type (Smart App / Remote / Regulator)": "Regulator",
-  //   },
-  // },
+  {
+    id: 70,
+    name: "Efficio Prime Regulator 1200mm",
+    category: "Fans",
+    categoryId: "fans",
+    brand: "Atomberg",
+    tag: "Classic Fan",
+    price: 3199,
+    originalPrice: 5500,
+    discount: 42,
+    stock: 50,
+    rating: 4.5,
+    reviews: 100,
+    image:
+      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
+    badge: "Classic Fan",
+    colors: [
+      {
+        name: "Midnight Black",
+        hex: "#161616",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+      {
+        name: "Blaze Brown",
+        hex: "#6e3d25",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+      {
+        name: "SS Ivory",
+        hex: "#eee3cc",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+      {
+        name: "Gloss White",
+        hex: "#fafafa",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+    ],
+    metaTitle: "Efficio Prime Regulator 1200mm – Buy Online Bhubaneswar",
+    metaDescription:
+      "Order the Atomberg Efficio Prime Regulator 1200mm in Midnight Black and Blaze Brown online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
+    description:
+      "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
+    features: [
+      "Genuine Atomberg classic BLDC fan",
+      "Regulator speed control",
+      "Available in 900mm, 1200mm, 1400mm sweep",
+      "Blaze Brown, Gloss White, Midnight Black, SS Ivory finishes",
+      "Energy-efficient BLDC motor",
+    ],
+    specifications: {
+      "Sweep Size (mm)": "1200mm",
+      "Motor Type": "BLDC Motor",
+      Voltage: "220-240V",
+      Frequency: "50Hz",
+      Warranty: "2 Years",
+      Color: "Blaze Brown / Gloss White / Midnight Black / SS Ivory",
+      "Control Type (Smart App / Remote / Regulator)": "Regulator",
+    },
+  },
 
-  // {
-  //   id: 71,
-  //   name: "Efficio Prime Regulator 900mm",
-  //   category: "Fans",
-  //   categoryId: "fans",
-  //   brand: "Atomberg",
-  //   tag: "Classic Fan",
-  //   price: 3050,
-  //   originalPrice: 5090,
-  //   discount: 40,
-  //   stock: 50,
-  //   rating: 4.5,
-  //   reviews: 100,
-  //   image: "/Fan/atomberg-placeholder.webp",
-  //   badge: "Classic Fan",
-  //   colors: [
-  //     {
-  //       name: "Blaze Brown",
-  //       hex: "#6e3d25",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "Gloss White",
-  //       hex: "#fafafa",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //   ],
-  //   metaTitle: "Efficio Prime Regulator 900mm – Buy Online Bhubaneswar",
-  //   metaDescription:
-  //     "Atomberg's Efficio Prime Regulator 900mm — Blaze Brown and Gloss White with regulator control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
-  //   description:
-  //     "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
-  //   features: [
-  //     "Genuine Atomberg classic BLDC fan",
-  //     "Regulator speed control",
-  //     "Available in 900mm, 1200mm, 1400mm sweep",
-  //     "Blaze Brown, Gloss White, Midnight Black, SS Ivory finishes",
-  //     "Energy-efficient BLDC motor",
-  //   ],
-  //   specifications: {
-  //     "Sweep Size (mm)": "900mm",
-  //     "Motor Type": "BLDC Motor",
-  //     Voltage: "220-240V",
-  //     Frequency: "50Hz",
-  //     Warranty: "2 Years",
-  //     Color: "Blaze Brown / Gloss White",
-  //     "Control Type (Smart App / Remote / Regulator)": "Regulator",
-  //   },
-  // },
+  {
+    id: 71,
+    name: "Efficio Prime Regulator 900mm",
+    category: "Fans",
+    categoryId: "fans",
+    brand: "Atomberg",
+    tag: "Classic Fan",
+    price: 3050,
+    originalPrice: 5090,
+    discount: 40,
+    stock: 50,
+    rating: 4.5,
+    reviews: 100,
+    image:
+      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+    badge: "Classic Fan",
+    colors: [
+      {
+        name: "Blaze Brown",
+        hex: "#6e3d25",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+      {
+        name: "Gloss White",
+        hex: "#fafafa",
+        images: [
+          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+        ],
+      },
+    ],
+    metaTitle: "Efficio Prime Regulator 900mm – Buy Online Bhubaneswar",
+    metaDescription:
+      "Atomberg's Efficio Prime Regulator 900mm — Blaze Brown and Gloss White with regulator control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+    description:
+      "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
+    features: [
+      "Genuine Atomberg classic BLDC fan",
+      "Regulator speed control",
+      "Available in 900mm, 1200mm, 1400mm sweep",
+      "Blaze Brown, Gloss White, Midnight Black, SS Ivory finishes",
+      "Energy-efficient BLDC motor",
+    ],
+    specifications: {
+      "Sweep Size (mm)": "900mm",
+      "Motor Type": "BLDC Motor",
+      Voltage: "220-240V",
+      Frequency: "50Hz",
+      Warranty: "2 Years",
+      Color: "Blaze Brown / Gloss White",
+      "Control Type (Smart App / Remote / Regulator)": "Regulator",
+    },
+  },
 
   {
     id: 72,
@@ -5238,60 +5265,60 @@ const RAW_PRODUCTS = [
   //   },
   // },
 
-  // {
-  //   id: 79,
-  //   name: "SilenceAire Hi-Speed Pedestal",
-  //   category: "Fans",
-  //   categoryId: "fans",
-  //   brand: "Atomberg",
-  //   tag: "Pedestal Fan",
-  //   price: 4099,
-  //   originalPrice: 7150,
-  //   discount: 43,
-  //   stock: 50,
-  //   rating: 4.5,
-  //   reviews: 100,
-  //   image: "/Fan/atomberg-placeholder.webp",
-  //   badge: "Pedestal Fan",
-  //   colors: [
-  //     {
-  //       name: "Midnight Black",
-  //       hex: "#161616",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "Snow White",
-  //       hex: "#fbfbf9",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //     {
-  //       name: "Aegean Blue",
-  //       hex: "#2f5d78",
-  //       images: ["/Fan/atomberg-placeholder.webp"],
-  //     },
-  //   ],
-  //   metaTitle: "SilenceAire Hi-Speed Pedestal – Buy Online Bhubaneswar",
-  //   metaDescription:
-  //     "Order the Atomberg SilenceAire Hi-Speed Pedestal in Midnight Black and Snow White online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
-  //   description:
-  //     "A 400mm BLDC pedestal fan built for quiet, high-speed airflow. Remote controlled, suited to bedrooms and study spaces where noise matters as much as cooling power.",
-  //   features: [
-  //     "Genuine Atomberg SilenceAire pedestal fan",
-  //     "Remote controlled",
-  //     "400mm blade size, high-speed silent motor",
-  //     "Midnight Black, Snow White, Aegean Blue finishes",
-  //     "Energy-efficient BLDC motor",
-  //   ],
-  //   specifications: {
-  //     "Sweep Size (mm)": "400mm",
-  //     "Motor Type": "BLDC Motor",
-  //     Voltage: "220-240V",
-  //     Frequency: "50Hz",
-  //     Warranty: "2 Years",
-  //     Color: "Aegean Blue / Midnight Black / Snow White",
-  //     "Control Type (Smart App / Remote / Regulator)": "Remote",
-  //   },
-  // },
+  {
+    id: 79,
+    name: "SilenceAire Hi-Speed Pedestal",
+    category: "Fans",
+    categoryId: "fans",
+    brand: "Atomberg",
+    tag: "Pedestal Fan",
+    price: 4099,
+    originalPrice: 7150,
+    discount: 43,
+    stock: 50,
+    rating: 4.5,
+    reviews: 100,
+    image: "/allfan/Fan image 3/silenceaire_pedestal_400_black_p.webp",
+    badge: "Pedestal Fan",
+    colors: [
+      {
+        name: "Midnight Black",
+        hex: "#161616",
+        images: ["/allfan/Fan image 3/silenceaire_pedestal_400_black_p.webp"],
+      },
+      {
+        name: "Snow White",
+        hex: "#fbfbf9",
+        images: ["/allfan/Fan image 3/silenceaire_pedestal_400_white_p.webp"],
+      },
+      {
+        name: "Aegean Blue",
+        hex: "#2f5d78",
+        images: ["/allfan/Fan image 3/silenceaire_pedestal_400_blue_pl.webp"],
+      },
+    ],
+    metaTitle: "SilenceAire Hi-Speed Pedestal – Buy Online Bhubaneswar",
+    metaDescription:
+      "Order the Atomberg SilenceAire Hi-Speed Pedestal in Midnight Black and Snow White online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+    description:
+      "A 400mm BLDC pedestal fan built for quiet, high-speed airflow. Remote controlled, suited to bedrooms and study spaces where noise matters as much as cooling power.",
+    features: [
+      "Genuine Atomberg SilenceAire pedestal fan",
+      "Remote controlled",
+      "400mm blade size, high-speed silent motor",
+      "Midnight Black, Snow White, Aegean Blue finishes",
+      "Energy-efficient BLDC motor",
+    ],
+    specifications: {
+      "Sweep Size (mm)": "400mm",
+      "Motor Type": "BLDC Motor",
+      Voltage: "220-240V",
+      Frequency: "50Hz",
+      Warranty: "2 Years",
+      Color: "Aegean Blue / Midnight Black / Snow White",
+      "Control Type (Smart App / Remote / Regulator)": "Remote",
+    },
+  },
 
   {
     id: 80,
