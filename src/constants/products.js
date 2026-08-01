@@ -2633,21 +2633,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Copper Haze – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest  BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3999,
         originalPrice: 6960,
@@ -2656,7 +2656,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3999,
         originalPrice: 6960,
@@ -2710,7 +2710,7 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
@@ -2738,7 +2738,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest  BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3799,
         originalPrice: 6340,
@@ -2834,7 +2834,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest  BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3649,
         originalPrice: 6340,
@@ -2897,7 +2897,7 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Honey Maple wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
@@ -2911,7 +2911,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Crest BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Crest  BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6070,
