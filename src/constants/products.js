@@ -2808,7 +2808,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 44,
-    name: "Atomberg Renesa Prime Crest BLDC Ceiling Fan  900mm",
+    name: "Atomberg Renesa Prime Crest BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2974,28 +2974,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3004,7 +3004,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3013,7 +3013,7 @@ const RAW_PRODUCTS = [
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Pr BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3022,7 +3022,7 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Pr BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3031,7 +3031,7 @@ const RAW_PRODUCTS = [
         name: "Misty Teal",
         hex: "#3f6c6a",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Misty Teal – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3040,17 +3040,19 @@ const RAW_PRODUCTS = [
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime remote price, value BLDC fan Bhubaneswar, Renesa Prime remote fan",
     metaTitle: "Atomberg Renesa Prime Remote 1200mm – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Renesa Prime Remote 1200mm in Dark Walnut and Honey Maplewood online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Remote BLDC ceiling fan online in Bhubaneswar, 600–1200mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "A value-focused BLDC ceiling fan available in 1200mm, 900mm and 600mm sweeps, offered in wood finishes as well as gloss colours — Atomberg's signature energy savings with straightforward remote control.",
+      "The Atomberg Renesa Prime Remote is a value-focused BLDC ceiling fan available in 1200mm, 900mm, and 600mm sweeps, offered in Dark Walnut and Honey Maplewood wood finishes as well as Gloss Black, Gloss White, Pebble Grey, and Seasand Ivory. It delivers Atomberg's signature energy savings with straightforward remote control, without the premium pricing of the Elite or Halo lines. Check the current Atomberg Renesa Prime Remote price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -3072,7 +3074,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 47,
-    name: "Renesa Prime Remote 900mm",
+    name: "Atomberg Renesa Prime Remote BLDC Ceiling Fan  900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3138,11 +3140,13 @@ const RAW_PRODUCTS = [
         originalPrice: 6200,
       },
     ],
-    metaTitle: "Atomberg Renesa Prime Remote 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa prime remote price, value BLDC fan Bhubaneswar, Renesa Prime remote fan",
+    metaTitle: "Atomberg Renesa Prime Remote – Buy Online Bhubaneswar",
     metaDescription:
-      "Atomberg's Renesa Prime Remote 900mm — Dark Walnut and Honey Maplewood with remote control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Remote BLDC ceiling fan online in Bhubaneswar, 600–1200mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "A value-focused BLDC ceiling fan available in 1200mm, 900mm and 600mm sweeps, offered in wood finishes as well as gloss colours — Atomberg's signature energy savings with straightforward remote control.",
+      "  The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -3164,7 +3168,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 48,
-    name: "Renesa Prime Remote 600mm",
+    name: "Atomberg Renesa Prime Remote BLDC Ceiling Fan  600mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3176,28 +3180,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3449,
         originalPrice: 5700,
@@ -3206,7 +3210,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3449,
         originalPrice: 5700,
@@ -3215,7 +3219,7 @@ const RAW_PRODUCTS = [
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3449,
         originalPrice: 5700,
@@ -3224,17 +3228,19 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3449,
         originalPrice: 5700,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime remote price, value BLDC fan Bhubaneswar, Renesa Prime remote fan",
     metaTitle: "Atomberg Renesa Prime Remote 600mm – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop Atomberg Renesa Prime Remote 600mm in Dark Walnut and Honey Maplewood online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Crest BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A value-focused BLDC ceiling fan available in 1200mm, 900mm and 600mm sweeps, offered in wood finishes as well as gloss colours — Atomberg's signature energy savings with straightforward remote control.",
+      "The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -3256,7 +3262,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 49,
-    name: "Renesa Prime Regulator 1400mm",
+    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3268,21 +3274,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Seasand Ivory – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Seasand Ivory – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3699,
         originalPrice: 6340,
@@ -3291,17 +3297,19 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3699,
         originalPrice: 6340,
       },
     ],
-    metaTitle: "Renesa Prime Regulator 1400mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa prime regulator price, regulator BLDC ceiling fan, BLDC fan with regulator Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Renesa Prime Regulator 1400mm in Honey Maplewood and Gloss White online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Regulator BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "Pairs BLDC energy efficiency with a traditional regulator-based speed control, for buyers who prefer a wall-mounted regulator over a remote or app. Available across four sweep sizes.",
+      "The Atomberg Renesa Prime Regulator pairs BLDC energy efficiency with a traditional regulator-based speed control, for buyers who prefer a wall-mounted regulator over a remote or app. Available across four sweep sizes (600mm to 1400mm) in Honey Maplewood and various gloss colourways including Gloss White, Gloss Black, and Gloss Brown. Check the current Atomberg Renesa Prime Regulator price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Traditional regulator speed control",
@@ -3322,7 +3330,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 50,
-    name: "Renesa Prime Regulator 1200mm",
+    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3334,14 +3342,14 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
 
@@ -3349,7 +3357,7 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Seasand Ivory – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Seasand Ivory – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6200,
@@ -3358,7 +3366,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6200,
@@ -3367,17 +3375,19 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3499,
         originalPrice: 6200,
       },
     ],
-    metaTitle: "Renesa Prime Regulator 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa prime regulator price, regulator BLDC ceiling fan, BLDC fan with regulator Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Renesa Prime Regulator 1200mm online in Bhubaneswar in Honey Maplewood and Gloss Brown with regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Regulator BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "Pairs BLDC energy efficiency with a traditional regulator-based speed control, for buyers who prefer a wall-mounted regulator over a remote or app. Available across four sweep sizes.",
+      "The Atomberg Renesa Prime Regulator pairs BLDC energy efficiency with a traditional regulator-based speed control, for buyers who prefer a wall-mounted regulator over a remote or app. Available across four sweep sizes (600mm to 1400mm) in Honey Maplewood and various gloss colourways including Gloss White, Gloss Black, and Gloss Brown. Check the current Atomberg Renesa Prime Regulator price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Traditional regulator speed control",
@@ -3399,7 +3409,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 51,
-    name: "Renesa Prime Regulator 900mm",
+    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan  900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3411,21 +3421,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3349,
         originalPrice: 5630,
@@ -3434,12 +3444,15 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3349,
         originalPrice: 5630,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime regulator price, regulator BLDC ceiling fan, BLDC fan with regulator Bhubaneswar",
+
     metaTitle: "Atomberg Renesa Prime Regulator 900mm – Buy Online Bhubaneswar",
     metaDescription:
       "Shop Atomberg Renesa Prime Regulator 900mm in Honey Maplewood and Gloss White online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
@@ -3465,7 +3478,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 52,
-    name: "Renesa Prime Regulator 600mm",
+    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan  600mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3477,21 +3490,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3199,
         originalPrice: 5360,
@@ -3500,12 +3513,14 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator [sweep]mm BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3199,
         originalPrice: 5360,
       },
     ],
+    metaKeywords:
+      "atomberg renesa prime regulator price, regulator BLDC ceiling fan, BLDC fan with regulator Bhubaneswar",
     metaTitle: "Atomberg Renesa Prime Regulator 600mm – Buy Online Bhubaneswar",
     metaDescription:
       "Order the Atomberg Renesa Prime Regulator 600mm in Honey Maplewood and Gloss White online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
