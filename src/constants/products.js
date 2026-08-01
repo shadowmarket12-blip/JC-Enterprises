@@ -2192,7 +2192,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 37,
-    name: "Renesa Halo 1400mm",
+    name: "Atomberg Renesa Halo Smart BLDC Ceiling Fan 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2204,57 +2204,57 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan misty teal– JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Halo  smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
         name: "Misty Teal",
         hex: "#3f6c6a",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan misty teal– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan misty teal– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White (RG Ring)",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan Gloss white RG Ring– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan Gloss white RG Ring– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo  smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Midnight Black",
         hex: "#161616",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan midnight black– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan midnight black– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan sea sand ivory– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan sea sand ivory– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White & Black",
         hex: "#e5e5e5",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo [sweep]mm smart ceiling fan Gloss white and black– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan Gloss white and black– JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
-    metaTitle: "Atomberg Renesa Halo 1400mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Halo Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Renesa Halo 1400mm online in Bhubaneswar in Misty Teal and Gloss White (RG Ring) with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Halo smart BLDC ceiling fan online in Bhubaneswar. Ring-light design, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A smart BLDC ceiling fan with a signature ring-light (RG Ring) design around the fan body, offered in an extensive colour palette across four sweep sizes — a statement piece for living rooms and premium bedrooms.",
+      "The Atomberg Renesa Halo stands out with its signature ring-light (RG Ring) design around the fan body, offered in an extensive palette — Misty Teal, Gloss White, Blaze Brown, Midnight Black, Seasand Ivory, and more — across four sweep sizes from 600mm to 1400mm. Fully app and remote controlled, it works well as a statement piece in living rooms and premium bedrooms. Check the current Atomberg Renesa Halo price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "Signature ring-light (RG Ring) design",
@@ -2422,7 +2422,7 @@ const RAW_PRODUCTS = [
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo  smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
@@ -2506,7 +2506,7 @@ const RAW_PRODUCTS = [
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Halo smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Halo  smart ceiling fan blaze brown– JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
