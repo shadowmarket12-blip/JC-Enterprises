@@ -3086,28 +3086,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Honey Maplewood",
         hex: "#c68a3f",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Honey Maplewood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3599,
         originalPrice: 6200,
@@ -3116,7 +3116,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3599,
         originalPrice: 6200,
@@ -3125,7 +3125,7 @@ const RAW_PRODUCTS = [
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3599,
         originalPrice: 6200,
@@ -3134,7 +3134,7 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote [sweep]mm BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3599,
         originalPrice: 6200,
@@ -3478,7 +3478,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 52,
-    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan  600mm",
+    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan 600mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3546,7 +3546,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 53,
-    name: "Studio+ Smart",
+    name: "Atomberg Studio+ Smart BLDC Ceiling Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3601,7 +3601,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 54,
-    name: "Studio+ 1200mm",
+    name: "Atomberg Studio+ Smart BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3685,7 +3685,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 55,
-    name: "Studio+ 950mm",
+    name: "Atomberg Studio+ Smart BLDC Ceiling Fan 950mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3747,7 +3747,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 56,
-    name: "Studio Nexus 1400mm",
+    name: "Atomberg Studio Nexus BLDC Ceiling Fan 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3759,21 +3759,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
     badge: "Designer Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Rose Gold",
         hex: "#caa08a",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
         ],
         price: 5199,
         originalPrice: 8700,
@@ -3782,7 +3782,7 @@ const RAW_PRODUCTS = [
         name: "Regal Indigo",
         hex: "#3b3a6e",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Regal Indigo – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Regal Indigo – JC Enterprises Bhubaneswar.webp",
         ],
         price: 5199,
         originalPrice: 8700,
@@ -3791,7 +3791,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Ritz Blue – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Ritz Blue – JC Enterprises Bhubaneswar.webp",
         ],
         price: 5199,
         originalPrice: 8700,
@@ -3800,7 +3800,7 @@ const RAW_PRODUCTS = [
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Pearl White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Pearl White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 5199,
         originalPrice: 8700,
@@ -3831,7 +3831,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 57,
-    name: "Studio Nexus 1200mm",
+    name: "Atomberg Studio Nexus BLDC Ceiling Fan  1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3843,21 +3843,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
     badge: "Designer Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Rose Gold",
         hex: "#caa08a",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4999,
         originalPrice: 8400,
@@ -3866,7 +3866,7 @@ const RAW_PRODUCTS = [
         name: "Regal Indigo",
         hex: "#3b3a6e",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Regal Indigo – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Regal Indigo – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4999,
         originalPrice: 8400,
@@ -3875,7 +3875,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Ritz Blue – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Ritz Blue – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4999,
         originalPrice: 8400,
@@ -3884,7 +3884,7 @@ const RAW_PRODUCTS = [
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Pearl White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Pearl White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4999,
         originalPrice: 8400,
@@ -3893,7 +3893,7 @@ const RAW_PRODUCTS = [
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4499,
         originalPrice: 7500,
@@ -3902,7 +3902,7 @@ const RAW_PRODUCTS = [
         name: "Midnight Black",
         hex: "#161616",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Midnight Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Midnight Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4499,
         originalPrice: 7500,
@@ -3911,7 +3911,7 @@ const RAW_PRODUCTS = [
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4499,
         originalPrice: 7500,
@@ -3920,7 +3920,7 @@ const RAW_PRODUCTS = [
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4499,
         originalPrice: 7500,
@@ -3952,7 +3952,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 58,
-    name: "Studio Nexus 900mm",
+    name: "Atomberg Studio Nexus BLDC Ceiling Fan  900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3964,21 +3964,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
     badge: "Designer Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Rose Gold",
         hex: "#caa08a",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Rose Gold – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4849,
         originalPrice: 8100,
@@ -3987,7 +3987,7 @@ const RAW_PRODUCTS = [
         name: "Regal Indigo",
         hex: "#3b3a6e",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Regal Indigo – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Regal Indigo – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4849,
         originalPrice: 8100,
@@ -3996,7 +3996,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Ritz Blue – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Ritz Blue – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4849,
         originalPrice: 8100,
@@ -4005,7 +4005,7 @@ const RAW_PRODUCTS = [
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio Nexus [sweep]mm BLDC ceiling fan Pearl White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Nexus BLDC ceiling fan Pearl White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4849,
         originalPrice: 8100,
@@ -4036,7 +4036,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 59,
-    name: "Studio Ventra",
+    name: "Atomberg Studio Ventra BLDC Ceiling Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4080,11 +4080,11 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Studio Ventra – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Studio Ventra Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop the Atomberg Studio Ventra online in Bhubaneswar — 1250mm sweep, Crème Brulee and Snow White with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio Ventra 1250mm BLDC ceiling fan online in Bhubaneswar. Crème Brulee, Snow White finishes. Genuine, home delivery – JC Enterprises.",
     description:
-      "A slightly larger 1250mm sweep with a remote-controlled BLDC motor, in distinctive finishes that stand apart from the more common wood and gloss-black options.",
+      "The Atomberg Studio Ventra offers a slightly larger 1250mm sweep with a remote-controlled BLDC motor, in distinctive finishes — Crème Brulee, Snow White, Urban Chrome, and Blaze Brown — that stand apart from the more common wood and gloss-black options. Check the current Atomberg Studio Ventra price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -4105,7 +4105,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 60,
-    name: "Erica Nuvo Remote",
+    name: "Atomberg Erica Nuvo BLDC Ceiling Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4137,9 +4137,9 @@ const RAW_PRODUCTS = [
     ],
     metaTitle: "Atomberg Erica Nuvo Remote – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop Atomberg Erica Nuvo Remote in Umber Brown and Aegean Blue online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Erica Nuvo remote-control BLDC ceiling fan online in Bhubaneswar, 1200mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 1200mm BLDC ceiling fan in warm, distinctive colour choices for buyers who want their fan to complement a specific interior palette. Remote controlled for simple everyday use.",
+      "The Atomberg Erica Nuvo Remote is a 1200mm BLDC ceiling fan in Umber Brown and Aegean Blue, offering warm, distinctive colour choices for buyers who want their fan to complement a specific interior palette rather than blend into it. Remote controlled for simple everyday use. Check the current Atomberg Erica Nuvo price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -4160,7 +4160,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 61,
-    name: "Erica Nuvo Regulator",
+    name: "Atomberg Erica Nuvo BLDC Ceiling Fan with Regulator ",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4199,9 +4199,9 @@ const RAW_PRODUCTS = [
     ],
     metaTitle: "Atomberg Erica Nuvo Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Erica Nuvo Regulator in Midnight Black and Lotus Pink online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Erica Nuvo regulator BLDC ceiling fan online in Bhubaneswar, 1200mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Pairs the same 1200mm BLDC fan body with a traditional wall regulator, in Midnight Black, Lotus Pink and Snow White finishes — Lotus Pink being a distinctive choice for buyers wanting a softer accent colour.",
+      "The Atomberg Erica Nuvo Regulator variant pairs the same 1200mm BLDC fan body with a traditional wall regulator, in Midnight Black, Lotus Pink, and Snow White finishes — Lotus Pink being a distinctive choice for buyers wanting a softer accent colour. Check the current Atomberg Erica Nuvo Regulator price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Regulator speed control",
@@ -4222,7 +4222,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 62,
-    name: "Erica Signature",
+    name: "Atomberg Erica Signature BLDC Ceiling Fan with Regulator ",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4266,11 +4266,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Erica Signature – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg erica signature price, regulator BLDC fan 1230mm Bhubaneswar",
+    metaTitle: "Atomberg Erica Signature Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy Atomberg Erica Signature online in Bhubaneswar, Gloss White and Midnight Black with regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Erica Signature 1230mm BLDC ceiling fan with regulator online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 1230mm BLDC ceiling fan with regulator control — a dependable, mid-range option in the Erica family for buyers who prefer regulator control over remote or app.",
+      "The Atomberg Erica Signature is a 1230mm BLDC ceiling fan with regulator control, available in Gloss White, Midnight Black, SS Ivory, and Blaze Brown. It's a dependable, mid-range option in the Erica family for buyers who prefer regulator control over remote or app. Check the current Atomberg Erica Signature price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Regulator speed control",
