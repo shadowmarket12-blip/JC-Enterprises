@@ -2,6 +2,7 @@
 
 import {
   memo,
+  useCallback,
   useDeferredValue,
   useEffect,
   useMemo,
@@ -9,6 +10,7 @@ import {
   useState,
 } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import ProductCard from "./ProductCard";
 import {
   HiMagnifyingGlass,
@@ -393,10 +395,40 @@ export default function ProductGrid({
   initialCategory = "all",
 }) {
   const isPreview = variant === "preview";
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const [selectedCategory, setSelectedCategory] = useState(
+  const [selectedCategory, setSelectedCategoryState] = useState(
     CATEGORIES.some((c) => c.id === initialCategory) ? initialCategory : "all",
   );
+
+  // Keeps the selected category in the URL (?category=...) so that
+  // navigating to a product's detail page and then pressing the browser
+  // Back button restores this exact filter instead of resetting to "All
+  // Products". `router.replace` (not push) edits the current history entry
+  // in place, so switching categories repeatedly doesn't pile up extra Back
+  // stops - only leaving this page onto a product adds a new entry. Reading
+  // `window.location.search` at call time (rather than via useSearchParams)
+  // avoids a Suspense boundary requirement and keeps this from re-running on
+  // every render.
+  const setSelectedCategory = useCallback(
+    (categoryId) => {
+      setSelectedCategoryState(categoryId);
+
+      const params = new URLSearchParams(window.location.search);
+      if (categoryId === "all") {
+        params.delete("category");
+      } else {
+        params.set("category", categoryId);
+      }
+      const query = params.toString();
+      router.replace(`${pathname}${query ? `?${query}` : ""}`, {
+        scroll: false,
+      });
+    },
+    [pathname, router],
+  );
+
   const [selectedBrand, setSelectedBrand] = useState("all");
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
   const [sortBy, setSortBy] = useState("featured");

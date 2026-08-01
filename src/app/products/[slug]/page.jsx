@@ -17,7 +17,6 @@ import ThumbnailScroller from "@/Components/ThumbnailScroller";
 import MainProductImage from "@/Components/MainProductImage";
 import ColorSwatches from "@/Components/ColorSwatches";
 import ProductPrice from "@/Components/ProductPrice";
-import ProductSpecifications from "@/Components/ProductSpecifications";
 import ProductName from "@/Components/ProductName";
 import ProductDescription from "@/Components/ProductDescription";
 import ProductFeatures from "@/Components/ProductFeatures";
@@ -141,9 +140,6 @@ export default async function ProductPage({ params }) {
 
               {/* Key Features */}
               <ProductFeatures />
-
-              {/* Specifications */}
-              <ProductSpecifications product={product} />
 
               {/* Trust Badges */}
               <div className="grid grid-cols-3 gap-2 sm:gap-3">

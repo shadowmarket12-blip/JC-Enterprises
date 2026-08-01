@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Script from "next/script";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/navbar/Navbar";
@@ -14,15 +15,32 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "JC Enterprises",
+  title: "Best Electrical Shop in Bhubaneswar | JC Enterprises",
   description:
-    "JC Enterprises — premium quality products for your home and business.",
+    "JC Enterprises — Bhubaneswar's trusted electrical shop for 35+ years. Genuine branded products, retail & wholesale, home delivery, bulk orders available.",
+  verification: {
+    google: "2Uk8SvVeMIiZUmm-zd8zgwgPsUsEsvw_S5j19pEsDi0",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body className="min-h-full flex flex-col font-poppins">
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-M3WJMKDCZG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M3WJMKDCZG');
+          `}
+        </Script>
+
         <StyledJsxRegistry>
           <Suspense fallback={null}>
             <ScrollToTop />
