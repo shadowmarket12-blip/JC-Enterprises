@@ -2995,7 +2995,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3013,7 +3013,7 @@ const RAW_PRODUCTS = [
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Pr BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3022,7 +3022,7 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Pr BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Regulator BLDC ceiling fan Seasand Ivory – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3749,
         originalPrice: 6200,
@@ -3107,7 +3107,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3599,
         originalPrice: 6200,
@@ -3134,7 +3134,7 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Seasand Ivory – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3599,
         originalPrice: 6200,
@@ -3228,7 +3228,7 @@ const RAW_PRODUCTS = [
         name: "Seasand Ivory",
         hex: "#f0e6d2",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Seasand Ivory] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Seasand Ivory – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3449,
         originalPrice: 5700,
@@ -3546,7 +3546,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 53,
-    name: "Atomberg Studio+ Smart BLDC Ceiling Fan",
+    name: "Atomberg Studio+ BLDC Ceiling Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3565,14 +3565,14 @@ const RAW_PRODUCTS = [
         name: "Earth Brown",
         hex: "#5b3a26",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ Smart 1200mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio plus designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Marble White",
         hex: "#f2f0ec",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ Smart 1200mm designer ceiling fan in Marble White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio plus designer ceiling fan in Marble White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -3601,7 +3601,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 54,
-    name: "Atomberg Studio+ Smart BLDC Ceiling Fan 1200mm",
+    name: "Atomberg Studio + Smart BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3613,49 +3613,49 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Aegean Blue – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Studio sweepmm designer ceiling fan in Sand Grey – JC Enterprises Bhubaneswar.webp",
     badge: "Designer Fan",
     colors: [
       {
         name: "Earth Brown",
         hex: "#5b3a26",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Smart 1200mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Marble White",
         hex: "#f2f0ec",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Marble White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Smart 1200mm designer ceiling fan in Marble White – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Sand Grey",
         hex: "#9a9a92",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Sand Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio sweepmm designer ceiling fan in Sand Grey – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Aegean Blue",
         hex: "#2f5d78",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Aegean Blue – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio plus  designer ceiling fan in Aegean Blue – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Onyx Black",
         hex: "#181818",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Onyx Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio sweepmm designer ceiling fan in Onyx Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Marble White with Teakwood",
         hex: "#c9b79c",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Marble White with Teak wood – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio sweepmm designer ceiling fan in Marble White with Teak wood – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -3697,28 +3697,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Marble White with Teak wood – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Studio Smart 1200mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
     badge: "Designer Fan",
     colors: [
       {
         name: "Earth Brown",
         hex: "#5b3a26",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Smart 1200mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Marble White",
         hex: "#f2f0ec",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Marble White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio Smart 1200mm designer ceiling fan in Marble White – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Sand Grey",
         hex: "#9a9a92",
         images: [
-          "/allfan/Fan image 3/Atomberg Studio+ [sweep]mm designer ceiling fan in Sand Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Studio sweepmm designer ceiling fan in Sand Grey – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4512,21 +4512,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4567,35 +4567,35 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Midnight Black",
         hex: "#161616",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "SS Ivory",
         hex: "#eee3cc",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4636,21 +4636,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4691,21 +4691,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4746,35 +4746,35 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Midnight Black",
         hex: "#161616",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "SS Ivory",
         hex: "#eee3cc",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4815,21 +4815,21 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio Prime [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio Prime BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -4939,28 +4939,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -5001,42 +5001,42 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "SS Ivory",
         hex: "#eee3cc",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in SS Ivory – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -5077,28 +5077,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -5139,28 +5139,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
     badge: "Classic Fan",
     colors: [
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Ikano [sweep]mm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Ikano sweepmm BLDC ceiling fan with remote in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -5664,28 +5664,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss Black – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss Black – JC Enterprises Bhubaneswar.webp",
     badge: "Exhaust Fan",
     colors: [
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -5724,28 +5724,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss Brown – JC Enterprises Bhubaneswar.webp",
     badge: "Exhaust Fan",
     colors: [
       {
         name: "Gloss White",
         hex: "#fafafa",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss White – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss White – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss Black – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Gloss Brown",
         hex: "#4a2f1e",
         images: [
-          "/allfan/Fan image 4/Atomberg Efficio [sweep]mm exhaust fan in Gloss Brown – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 4/Atomberg Efficio sweepmm exhaust fan in Gloss Brown – JC Enterprises Bhubaneswar.webp",
         ],
       },
     ],
@@ -5837,28 +5837,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
+      "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
         ],
       },
       {
         name: "Golden Oakwood",
         hex: "#8a6432",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Golden Oakwood – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Golden Oakwood – JC Enterprises Bhubaneswar - Copy.webp",
         ],
       },
       {
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Pearl Grey – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Pearl Grey – JC Enterprises Bhubaneswar - Copy.webp",
         ],
         price: 5133,
         originalPrice: 8700,
@@ -5867,7 +5867,7 @@ const RAW_PRODUCTS = [
         name: "Sand Grey",
         hex: "#9a9a92",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Sand Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Sand Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 5133,
         originalPrice: 8700,
@@ -5876,7 +5876,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Ritz Blue – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Ritz Blue – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 5133,
         originalPrice: 8700,
@@ -5885,7 +5885,7 @@ const RAW_PRODUCTS = [
         name: "Earth Brown",
         hex: "#6b4a34",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Earth Brown – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Earth Brown – JC Enterprises Bhubaneswar - Copy.webp",
         ],
         price: 5133,
         originalPrice: 8700,
@@ -5929,28 +5929,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+      "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Golden Oakwood",
         hex: "#8a6432",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Golden Oakwood – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Golden Oakwood – JC Enterprises Bhubaneswar.webp",
         ],
       },
       {
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Pearl Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Pearl Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4956,
         originalPrice: 8400,
@@ -5959,7 +5959,7 @@ const RAW_PRODUCTS = [
         name: "Rose Gold",
         hex: "#caa08a",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Rose Gold – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Rose Gold – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4956,
         originalPrice: 8400,
@@ -5968,7 +5968,7 @@ const RAW_PRODUCTS = [
         name: "Sand Grey",
         hex: "#9a9a92",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Sand Grey – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Sand Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4956,
         originalPrice: 8400,
@@ -5977,7 +5977,7 @@ const RAW_PRODUCTS = [
         name: "Regal Indigo",
         hex: "#3b3a6e",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Regal Indigo – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Regal Indigo – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4956,
         originalPrice: 8400,
@@ -5986,7 +5986,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Ritz Blue – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Ritz Blue – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4956,
         originalPrice: 8400,
@@ -5995,7 +5995,7 @@ const RAW_PRODUCTS = [
         name: "Earth Brown",
         hex: "#6b4a34",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [SmartRemote] in Earth Brown – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan SmartRemote in Earth Brown – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4956,
         originalPrice: 8400,
@@ -6004,7 +6004,7 @@ const RAW_PRODUCTS = [
         name: "Midnight Black",
         hex: "#161616",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [Remote] in Midnight Black – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan Remote in Midnight Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4425,
         originalPrice: 7500,
@@ -6013,7 +6013,7 @@ const RAW_PRODUCTS = [
         name: "Pebble Grey",
         hex: "#b0aea6",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [Remote] in Pebble Grey – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan Remote in Pebble Grey – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4425,
         originalPrice: 7500,
@@ -6022,7 +6022,7 @@ const RAW_PRODUCTS = [
         name: "Blaze Brown",
         hex: "#6e3d25",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [Remote] in Blaze Brown – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan Remote in Blaze Brown – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4425,
         originalPrice: 7500,
@@ -6031,7 +6031,7 @@ const RAW_PRODUCTS = [
         name: "Snow White",
         hex: "#fbfbf9",
         images: [
-          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan [Remote] in Snow White – JC Enterprises Bhubaneswar.webp",
+          "/Fan2/Atomberg Renesa Elite 1200 mm BLDC ceiling fan Remote in Snow White – JC Enterprises Bhubaneswar.webp",
         ],
         price: 4425,
         originalPrice: 7500,
@@ -6075,28 +6075,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
+      "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar - Copy.webp",
         ],
       },
       {
         name: "Golden Oakwood",
         hex: "#8a6432",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Golden Oakwood – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Golden Oakwood – JC Enterprises Bhubaneswar - Copy.webp",
         ],
       },
       {
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Pearl Grey – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Pearl Grey – JC Enterprises Bhubaneswar - Copy.webp",
         ],
         price: 4779,
         originalPrice: 8100,
@@ -6105,7 +6105,7 @@ const RAW_PRODUCTS = [
         name: "Sand Grey",
         hex: "#9a9a92",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Sand Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Sand Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4779,
         originalPrice: 8100,
@@ -6114,7 +6114,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Ritz Blue – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Ritz Blue – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4779,
         originalPrice: 8100,
@@ -6123,7 +6123,7 @@ const RAW_PRODUCTS = [
         name: "Earth Brown",
         hex: "#6b4a34",
         images: [
-          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan [SmartRemote] in Earth Brown – JC Enterprises Bhubaneswar - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 900 mm BLDC ceiling fan SmartRemote in Earth Brown – JC Enterprises Bhubaneswar - Copy.webp",
         ],
         price: 4779,
         originalPrice: 8100,
@@ -6167,28 +6167,28 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+      "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar - Copy - Copy.webp",
     badge: "Smart Ceiling Fan",
     colors: [
       {
         name: "Dark Walnut",
         hex: "#4a2f22",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Dark Wallnut – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Dark Wallnut – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
       },
       {
         name: "Golden Oakwood",
         hex: "#8a6432",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Golden Oakwood – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Golden Oakwood – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
       },
       {
         name: "Pearl White",
         hex: "#f5f5f4",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Pearl Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Pearl Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4661,
         originalPrice: 7900,
@@ -6197,7 +6197,7 @@ const RAW_PRODUCTS = [
         name: "Sand Grey",
         hex: "#9a9a92",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Sand Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Sand Grey – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4661,
         originalPrice: 7900,
@@ -6206,7 +6206,7 @@ const RAW_PRODUCTS = [
         name: "Ritz Blue",
         hex: "#274472",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Ritz Blue – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Ritz Blue – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4661,
         originalPrice: 7900,
@@ -6215,7 +6215,7 @@ const RAW_PRODUCTS = [
         name: "Earth Brown",
         hex: "#6b4a34",
         images: [
-          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan [SmartRemote] in Earth Brown – JC Enterprises Bhubaneswar - Copy - Copy.webp",
+          "/Fan2/Atomberg Renesa Elite 600 mm BLDC ceiling fan SmartRemote in Earth Brown – JC Enterprises Bhubaneswar - Copy - Copy.webp",
         ],
         price: 4661,
         originalPrice: 7900,
