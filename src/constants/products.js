@@ -3180,7 +3180,7 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
     badge: "BLDC Ceiling Fan",
     colors: [
       {
@@ -3201,7 +3201,7 @@ const RAW_PRODUCTS = [
         name: "Gloss Black",
         hex: "#141414",
         images: [
-          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black] – JC Enterprises Bhubaneswar.webp",
+          "/allfan/Fan image 3/Atomberg Renesa Prime Remote BLDC ceiling fan Gloss Black – JC Enterprises Bhubaneswar.webp",
         ],
         price: 3449,
         originalPrice: 5700,
