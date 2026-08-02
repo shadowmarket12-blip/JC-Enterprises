@@ -3558,7 +3558,7 @@ const RAW_PRODUCTS = [
     rating: 4.5,
     reviews: 100,
     image:
-      "/allfan/Fan image 3/Atomberg Studio+ Smart 1200mm designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
+      "/allfan/Fan image 3/Atomberg Studio plus designer ceiling fan in Earth Brown – JC Enterprises Bhubaneswar.webp",
     badge: "Designer Fan",
     colors: [
       {
