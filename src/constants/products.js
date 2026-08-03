@@ -1393,7 +1393,7 @@ const RAW_PRODUCTS = [
   // ============================================================
   {
     id: 26,
-    name: "Emperion Magna",
+    name: "Atomberg Emperion Magna 1280mm Smart BLDC Ceiling Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1441,17 +1441,18 @@ const RAW_PRODUCTS = [
         stock: 5,
       },
     ],
-    metaTitle: "Atomberg Emperion Magna – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Emperion Magna BLDC Fan | Buy Online – JC Enterprises",
     metaDescription:
-      "Buy the Atomberg Emperion Magna 1200mm sweep online in Bhubaneswar in Amberlight Teak, Pearl White and more shades. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Emperion Magna 1280mm smart BLDC ceiling fan online in Bhubaneswar. 5-star rated, app + remote control. Genuine product, local delivery.",
     description:
-      "Energy-efficient BLDC ceiling fan with remote control, delivering superior air delivery and silent operation.",
+      "Looking for the best BLDC ceiling fan for your living room? The Atomberg Emperion Magna is a premium 1280mm smart ceiling fan with app control, built for homes that want luxury styling without the electricity bill. As a designer wooden finish ceiling fan, it suits modern and traditional interiors alike, while the energy-efficient BLDC motor cuts power consumption by up to 65% compared to a regular fan. Control it from the Atomberg Home App or the included silent remote — adjust speed, set timers, or dim the 12W integrated underlight across three lighting modes. Whisper-quiet operation makes it a strong fit for bedrooms and living rooms alike. Check the current Atomberg Emperion Magna price and buy the genuine model with 3+2 year warranty support through JC Enterprises, with quick local delivery across Bhubaneswar and Odisha.",
     features: [
-      "1200mm sweep size",
-      "Remote control operation",
-      "350 RPM motor speed",
-      "Double ball bearing",
-      "2-year warranty",
+      "BEE 5-star rated BLDC motor",
+      "App + remote controlled",
+      "12W LED underlight, 3 modes",
+      "Save up to 65% on electricity",
+      "Whisper-silent operation",
+      "3+2 year warranty",
     ],
     specifications: {
       "Sweep Size (mm)": "1200mm",
@@ -1468,7 +1469,7 @@ const RAW_PRODUCTS = [
   },
   {
     id: 27,
-    name: "Emperion Linea",
+    name: "Atomberg Emperion Linea 1250mm Smart BLDC Ceiling Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1516,17 +1517,18 @@ const RAW_PRODUCTS = [
         stock: 32,
       },
     ],
-    metaTitle: "Atomberg Emperion Linea – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Emperion Linea 1250mm BLDC Fan – JC Enterprises",
     metaDescription:
-      "Shop the Atomberg Emperion Linea online in Bhubaneswar — 400mm sweep, Antique Goldleaf, Pearl White and more shades. Genuine, home delivery – JC Enterprises.",
+      "Atomberg Emperion Linea 1250mm smart ceiling fan online in Bhubaneswar at JC Enterprises. 5-star BLDC motor, app control. Genuine product, local delivery.",
     description:
-      "Powerful high-speed table fan with a rust-proof body, ideal for home and office use.",
+      "Looking for an energy saving ceiling fan for your bedroom that still looks premium? The Atomberg Emperion Linea is a 1250mm BLDC ceiling fan that brings the same energy-saving technology as the Magna in a slightly more compact sweep, finished with clean linear detailing that suits contemporary interiors. The 5-star rated motor consumes a fraction of the power of a conventional fan while still delivering strong, consistent airflow. Operate it through the Atomberg Home App or the bundled remote, with full control over speed, timers, and the built-in LED underlight. Check the latest Atomberg Emperion Linea price and buy the genuine model — backed by manufacturer warranty and after-sales support from JC Enterprises, with quick local delivery across Bhubaneswar and Odisha.",
     features: [
-      "400mm blade sweep",
-      "3-speed control",
-      "Rust-proof powder coating",
-      "High air thrust motor",
-      "2-year warranty",
+      "BEE 5-star rated BLDC motor",
+      "App + remote controlled",
+      "Integrated LED underlight",
+      "Up to 65% energy savings",
+      "Sleek linear design",
+      "3+2 year warranty",
     ],
     specifications: {
       "Sweep Size (mm)": "400mm",
@@ -1543,7 +1545,7 @@ const RAW_PRODUCTS = [
   },
   {
     id: 28,
-    name: "Renesa Elite",
+    name: "Atomberg Renesa Elite 1400mm BLDC Ceiling Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1608,17 +1610,18 @@ const RAW_PRODUCTS = [
         },
       },
     ],
-    metaTitle: "Atomberg Renesa Elite – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Elite 1400mm BLDC Fan – JC Enterprises",
     metaDescription:
-      "The Atomberg Renesa Elite (1200mm sweep) is available online in Bhubaneswar in Dark Walnut, Golden Oakwood and more shades. Genuine, home delivery – JC Enterprises.",
+      "Atomberg Renesa Elite 1400mm ceiling fan in Bhubaneswar – 5-star BLDC motor, Moonbeam LED night light. Genuine, local delivery – JC Enterprises.",
     description:
-      "Anti-dust coated ceiling fan with a decorative finish, built for strong air delivery and easy maintenance.",
+      "Searching for the best BLDC ceiling fan under 10000 that still looks like a designer piece? The Atomberg Renesa Elite is a sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and contrast highlight ring for a distinctive look on any ceiling. Its 5-star rated BLDC motor consumes just 35W at top speed — up to 65% less than an unrated fan — while still delivering strong 250 CMM air delivery. This ceiling fan with night light comes with a Smart IR Remote for Boost mode, Sleep mode, timers, and speed control at a click, plus a Moonbeam LED that doubles as a soft night light and blinks to confirm remote commands. Check the current Atomberg Renesa Elite price — it runs reliably even during voltage fluctuations (165V–285V) and installs on standard, low, or false ceilings, with quick local delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
-      "1200mm sweep size",
-      "Anti-dust powder coating",
-      "High air delivery",
-      "Double ball bearing",
-      "2-year warranty",
+      "BEE 5-star rated BLDC motor, 35W",
+      "250 CMM high air delivery",
+      "Smart IR remote — Boost, Sleep & timer modes",
+      "Moonbeam LED night light",
+      "Stable on voltage fluctuation (165V–285V)",
+      "3+2 year warranty",
     ],
     specifications: {
       "Sweep Size (mm)": "1200mm",
@@ -1635,7 +1638,7 @@ const RAW_PRODUCTS = [
   },
   {
     id: 29,
-    name: "Aris Illusia ",
+    name: "Atomberg Aris Illusia 1250mm Silent Smart BLDC Ceiling Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1700,17 +1703,18 @@ const RAW_PRODUCTS = [
         },
       },
     ],
-    metaTitle: "Atomberg Aris Illusia – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Aris Illusia Silent BLDC Fan – JC Enterprises",
     metaDescription:
-      "Order the Atomberg Aris Illusia online in Bhubaneswar: 1200mm sweep in Glacier Blue, Pearl White and more shades. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Aris Illusia 1250mm silent ceiling fan online in Bhubaneswar. Rose Gold, Pearl White & Glacier Blue. Genuine, local delivery – JC Enterprises.",
     description:
-      "Anti-dust coated ceiling fan with a decorative finish, built for strong air delivery and easy maintenance.",
+      "If you're after a genuinely silent ceiling fan for your bedroom, the Atomberg Aris Illusia is part of Atomberg's dedicated Silent Fans series, engineered as a noiseless BLDC fan that doesn't sacrifice airflow — a natural fit for bedrooms, nurseries, and even a ceiling fan for your home theatre, where every decibel matters. It's finished in a premium gloss metallic tone (Rose Gold, Pearl White, or Glacier Blue) that adds a sophisticated touch to designer interiors. The efficient BLDC motor draws just 41W, stays stable through voltage fluctuations, and runs smoothly on inverter backup. Check the current Atomberg Aris Illusia price and control speed and settings through the Atomberg Home App for a fully connected, quiet-cooling experience — with quick local delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
-      "1200mm sweep size",
-      "Anti-dust powder coating",
-      "High air delivery",
-      "Double ball bearing",
-      "2-year warranty",
+      "Whisper-quiet silent series motor",
+      "BLDC motor, only 41W consumption",
+      "Stable on inverter backup & voltage fluctuation",
+      "App-controlled",
+      "Premium gloss metallic finish",
+      "3+2 year warranty",
     ],
     specifications: {
       "Sweep Size (mm)": "1200mm",
@@ -1732,7 +1736,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 30,
-    name: "Aris Starlight",
+    name: "Atomberg Aris Starlight Smart BLDC Ceiling Fan 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1766,11 +1770,11 @@ const RAW_PRODUCTS = [
         originalPrice: 14640,
       },
     ],
-    metaTitle: "Atomberg Aris Starlight 1400mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Aris Starlight Price – Buy Online in Bhubaneswar",
     metaDescription:
-      "): Buy Atomberg Aris Starlight smart BLDC ceiling fan online in Bhubaneswar. Premium wood-finish designs, 900–1400mm sweep. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Aris Starlight smart BLDC ceiling fan online in Bhubaneswar. Premium wood-finish designs, 900–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A premium smart BLDC ceiling fan with a genuine wood-finish look, fully app and remote controlled through the Atomberg Home App, suited to large living rooms and premium interiors that want strong airflow with a designer finish.",
+      "Searching for a premium smart ceiling fan with a genuine wood-finish look? The Atomberg Aris Starlight is a top-tier smart BLDC fan available in 1400mm, 1200mm, and 900mm sweeps, with rich Dark Teakwood and Marble White finishes plus Stellar Black, Umber Brown, and Tuscan Gold options on select sizes. Fully app and remote controlled through the Atomberg Home App, it suits large living rooms and premium interiors that want both strong airflow and a designer look. Check the current Atomberg Aris Starlight price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -1791,7 +1795,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 31,
-    name: "Aris Starlight 1200mm",
+    name: "Atomberg Aris Starlight Smart BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1850,11 +1854,11 @@ const RAW_PRODUCTS = [
         originalPrice: 14300,
       },
     ],
-    metaTitle: "Atomberg Aris Starlight 1200mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Aris Starlight Price – Buy Online in Bhubaneswar",
     metaDescription:
       "Buy Atomberg Aris Starlight smart BLDC ceiling fan online in Bhubaneswar. Premium wood-finish designs, 900–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A premium smart BLDC ceiling fan with a genuine wood-finish look, fully app and remote controlled through the Atomberg Home App, suited to large living rooms and premium interiors that want strong airflow with a designer finish.",
+      "Searching for a premium smart ceiling fan with a genuine wood-finish look? The Atomberg Aris Starlight is a top-tier smart BLDC fan available in 1400mm, 1200mm, and 900mm sweeps, with rich Dark Teakwood and Marble White finishes plus Stellar Black, Umber Brown, and Tuscan Gold options on select sizes. Fully app and remote controlled through the Atomberg Home App, it suits large living rooms and premium interiors that want both strong airflow and a designer look. Check the current Atomberg Aris Starlight price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -1876,7 +1880,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 32,
-    name: "Aris Starlight 900mm",
+    name: "Atomberg Aris Starlight Smart BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1908,11 +1912,11 @@ const RAW_PRODUCTS = [
         originalPrice: 14300,
       },
     ],
-    metaTitle: "Atomberg Aris Starlight 900mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Aris Starlight Price – Buy Online in Bhubaneswar",
     metaDescription:
       "Buy Atomberg Aris Starlight 900mm online in Bhubaneswar, Dark Teakwood and Marble White with Smart App control. Genuine, home delivery – JC Enterprises.",
     description:
-      "A premium smart BLDC ceiling fan with a genuine wood-finish look, fully app and remote controlled through the Atomberg Home App, suited to large living rooms and premium interiors that want strong airflow with a designer finish.",
+      "Searching for a premium smart ceiling fan with a genuine wood-finish look? The Atomberg Aris Starlight is a top-tier smart BLDC fan available in 1400mm, 1200mm, and 900mm sweeps, with rich Dark Teakwood and Marble White finishes plus Stellar Black, Umber Brown, and Tuscan Gold options on select sizes. Fully app and remote controlled through the Atomberg Home App, it suits large living rooms and premium interiors that want both strong airflow and a designer look. Check the current Atomberg Aris Starlight price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -1933,7 +1937,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 33,
-    name: "Aris Gladius 1200mm",
+    name: "Atomberg Aris Gladius Smart BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -1963,11 +1967,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Aris Gladius 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg aris gladius price, smart BLDC fan Bhubaneswar, minimal design ceiling fan",
+    metaTitle: "Atomberg Aris Gladius Price – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Aris Gladius smart BLDC ceiling fan online in Bhubaneswar. Pearl White & Sand Grey finishes. Genuine, home delivery – JC Enterprises.",
     description:
-      "A smart BLDC ceiling fan built for a clean, minimal look in Pearl White and Sand Grey, fully controllable through the Atomberg Home App and remote — a straightforward fit for bedrooms and living spaces.",
+      "The Atomberg Aris Gladius is a smart BLDC ceiling fan built for a clean, minimal look, offered in Pearl White and Sand Grey across both 1200mm and 900mm sweeps. It's fully controllable through the Atomberg Home App and remote, making it a straightforward fit for bedrooms and living spaces that want smart control without an elaborate design statement. Check the current Atomberg Aris Gladius price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -1988,7 +1994,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 34,
-    name: "Aris Gladius 900mm",
+    name: "Atomberg Aris Gladius Smart BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2018,11 +2024,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Aris Gladius 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg aris gladius price, smart BLDC fan Bhubaneswar, minimal design ceiling fan",
+    metaTitle: "Atomberg Aris Gladius Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Aris Gladius 900mm online in Bhubaneswar in Pearl White and Sand Grey with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Aris Gladius smart BLDC ceiling fan online in Bhubaneswar. Pearl White & Sand Grey finishes. Genuine, home delivery – JC Enterprises.",
     description:
-      "A smart BLDC ceiling fan built for a clean, minimal look in Pearl White and Sand Grey, fully controllable through the Atomberg Home App and remote — a straightforward fit for bedrooms and living spaces.",
+      "The Atomberg Aris Gladius is a smart BLDC ceiling fan built for a clean, minimal look, offered in Pearl White and Sand Grey across both 1200mm and 900mm sweeps. It's fully controllable through the Atomberg Home App and remote, making it a straightforward fit for bedrooms and living spaces that want smart control without an elaborate design statement. Check the current Atomberg Aris Gladius price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -2043,7 +2051,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 35,
-    name: "Aris Contour 1200mm",
+    name: "Atomberg Aris Contour Smart BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2111,11 +2119,13 @@ const RAW_PRODUCTS = [
         originalPrice: 11400,
       },
     ],
-    metaTitle: "Atomberg Aris Contour 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg aris contour price, sculpted design smart fan, BLDC fan Bhubaneswar",
+    metaTitle: "Atomberg Aris Contour Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop the Atomberg Aris Contour 1200mm online in Bhubaneswar, offered in Smokewood and Regent Grey with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Aris Contour smart BLDC ceiling fan online in Bhubaneswar. Smokewood, Regent Grey & more finishes. Genuine, home delivery – JC Enterprises.",
     description:
-      "A smart BLDC ceiling fan with a sculpted blade profile, available in Smokewood as well as Regent Grey, Marble White, Midnight Black, Umber Brown and Ritz Blue — app and remote controlled for contemporary interiors.",
+      "The Atomberg Aris Contour brings a sculpted blade profile to Atomberg's smart fan lineup, available in Smokewood as well as Regent Grey, Marble White, Midnight Black, Umber Brown, and Ritz Blue across 1200mm and 900mm sweeps. App and remote controlled, it fits contemporary interiors looking for a design-forward smart fan. Check the current Atomberg Aris Contour price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -2137,7 +2147,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 36,
-    name: "Aris Contour 900mm",
+    name: "Atomberg Aris Contour Smart BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -2167,11 +2177,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Aris Contour 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg aris contour price, sculpted design smart fan, BLDC fan Bhubaneswar",
+    metaTitle: "Atomberg Aris Contour Price – Buy Online Bhubaneswar",
     metaDescription:
-      "The Atomberg Aris Contour 900mm is available online in Bhubaneswar in Regent Grey and Marble White with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Aris Contour smart BLDC ceiling fan online in Bhubaneswar. Smokewood, Regent Grey & more finishes. Genuine, home delivery – JC Enterprises.",
     description:
-      "A smart BLDC ceiling fan with a sculpted blade profile, available in Smokewood as well as Regent Grey, Marble White, Midnight Black, Umber Brown and Ritz Blue — app and remote controlled for contemporary interiors.",
+      "The Atomberg Aris Contour brings a sculpted blade profile to Atomberg's smart fan lineup, available in Smokewood as well as Regent Grey, Marble White, Midnight Black, Umber Brown, and Ritz Blue across 1200mm and 900mm sweeps. App and remote controlled, it fits contemporary interiors looking for a design-forward smart fan. Check the current Atomberg Aris Contour price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "App + remote controlled",
@@ -2250,6 +2262,8 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg renesa halo price, ring light ceiling fan, smart designer fan Bhubaneswar",
     metaTitle: "Atomberg Renesa Halo Price – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Renesa Halo smart BLDC ceiling fan online in Bhubaneswar. Ring-light design, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
@@ -2363,7 +2377,9 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "): Atomberg Renesa Halo Price – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa halo price, ring light ceiling fan, smart designer fan Bhubaneswar",
+    metaTitle: "Atomberg Renesa Halo Price – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Renesa Halo smart BLDC ceiling fan online in Bhubaneswar. Ring-light design, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
@@ -2447,11 +2463,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg renesa halo price, ring light ceiling fan, smart designer fan Bhubaneswar",
     metaTitle: "Atomberg Renesa Halo 900mm – Buy Online Bhubaneswar",
     metaDescription:
-      "Atomberg's Renesa Halo 900mm — Misty Teal and Gloss White (RG Ring) with Smart App control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Halo smart BLDC ceiling fan online in Bhubaneswar. Ring-light design, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      ": The Atomberg Renesa Halo stands out with its signature ring-light (RG Ring) design around the fan body, offered in an extensive palette — Misty Teal, Gloss White, Blaze Brown, Midnight Black, Seasand Ivory, and more — across four sweep sizes from 600mm to 1400mm. Fully app and remote controlled, it works well as a statement piece in living rooms and premium bedrooms. Check the current Atomberg Renesa Halo price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
+      "The Atomberg Renesa Halo stands out with its signature ring-light (RG Ring) design around the fan body, offered in an extensive palette — Misty Teal, Gloss White, Blaze Brown, Midnight Black, Seasand Ivory, and more — across four sweep sizes from 600mm to 1400mm. Fully app and remote controlled, it works well as a statement piece in living rooms and premium bedrooms. Check the current Atomberg Renesa Halo price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg smart BLDC fan",
       "Signature ring-light (RG Ring) design",
@@ -2531,9 +2549,11 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg renesa halo price, ring light ceiling fan, smart designer fan Bhubaneswar",
     metaTitle: "Atomberg Renesa Halo Price – Buy Online Bhubaneswar",
     metaDescription:
-      "): Buy Atomberg Renesa Halo smart BLDC ceiling fan online in Bhubaneswar. Ring-light design, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Halo smart BLDC ceiling fan online in Bhubaneswar. Ring-light design, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
       "The Atomberg Renesa Halo stands out with its signature ring-light (RG Ring) design around the fan body, offered in an extensive palette — Misty Teal, Gloss White, Blaze Brown, Midnight Black, Seasand Ivory, and more — across four sweep sizes from 600mm to 1400mm. Fully app and remote controlled, it works well as a statement piece in living rooms and premium bedrooms. Check the current Atomberg Renesa Halo price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
@@ -2595,6 +2615,7 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords: "atomberg razon price, remote control BLDC fan Bhubaneswar",
     metaTitle: "Atomberg Razon Price – Buy Online in Bhubaneswar",
     metaDescription:
       "Buy Atomberg Razon 1200mm BLDC ceiling fan with remote online in Bhubaneswar. Genuine product, home delivery from JC Enterprises.",
@@ -2677,12 +2698,12 @@ const RAW_PRODUCTS = [
     metaDescription:
       "Buy the Atomberg Renesa Prime Crest 1400mm online in Bhubaneswar in Honey Maplewood and Gloss Black with remote control. Genuine, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled BLDC ceiling fan available across four sweep sizes, from a compact 600mm to a large 1400mm, in warm wood finishes or contemporary gloss colours.",
+      "The Atomberg Razon is a straightforward, remote-controlled BLDC ceiling fan in a 1200mm sweep, offered in Gloss White, Midnight Black, Misty Teal, Sangria Brown, Crème Brulee, and Urban Chrome finishes. It's a solid, energy-efficient option for buyers who want Atomberg's BLDC power savings without a smart-app connection. Check the current Atomberg Razon price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
-      "Available in 600mm, 900mm, 1200mm, 1400mm sweep",
-      "Wood-finish and gloss colour options",
+      "1200mm sweep",
+      "Six colour options",
       "Energy-efficient BLDC motor",
     ],
     specifications: {
@@ -2782,11 +2803,11 @@ const RAW_PRODUCTS = [
     ],
     metaKeywords:
       "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
-    metaTitle: "Atomberg Renesa Prime Crest 1200mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Crest – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Renesa Prime Crest 1200mm in Honey Maplewood and Dark Walnut online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Crest BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled BLDC ceiling fan available across four sweep sizes, from a compact 600mm to a large 1400mm, in warm wood finishes or contemporary gloss colours.",
+      "The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -2860,11 +2881,11 @@ const RAW_PRODUCTS = [
     ],
     metaKeywords:
       "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
-    metaTitle: "Atomberg Renesa Prime Crest 900mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Crest – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy Atomberg Renesa Prime Crest 900mm online in Bhubaneswar, Honey Maplewood and Gloss Black with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Crest BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled BLDC ceiling fan available across four sweep sizes, from a compact 600mm to a large 1400mm, in warm wood finishes or contemporary gloss colours.",
+      "The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -2937,11 +2958,11 @@ const RAW_PRODUCTS = [
     ],
     metaKeywords:
       "atomberg renesa prime crest price, BLDC fan multiple sizes Bhubaneswar, wood finish remote fan",
-    metaTitle: "Atomberg Renesa Prime Crest 600mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Crest – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Renesa Prime Crest 600mm online in Bhubaneswar in Honey Maplewood and Gloss Black with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Crest BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled BLDC ceiling fan available across four sweep sizes, from a compact 600mm to a large 1400mm, in warm wood finishes or contemporary gloss colours.",
+      "The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -2962,7 +2983,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 46,
-    name: "Renesa Prime Remote 1200mm",
+    name: "Atomberg Renesa Prime Remote BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3048,7 +3069,7 @@ const RAW_PRODUCTS = [
     ],
     metaKeywords:
       "atomberg renesa prime remote price, value BLDC fan Bhubaneswar, Renesa Prime remote fan",
-    metaTitle: "Atomberg Renesa Prime Remote 1200mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Remote – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Renesa Prime Remote BLDC ceiling fan online in Bhubaneswar, 600–1200mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
@@ -3074,7 +3095,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 47,
-    name: "Atomberg Renesa Prime Remote BLDC Ceiling Fan  900mm",
+    name: "Atomberg Renesa Prime Remote BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3146,7 +3167,7 @@ const RAW_PRODUCTS = [
     metaDescription:
       "Buy Atomberg Renesa Prime Remote BLDC ceiling fan online in Bhubaneswar, 600–1200mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "  The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
+      "The Atomberg Renesa Prime Crest brings BLDC energy efficiency to a remote-controlled fan available across four sweep sizes, from a compact 600mm to a large 1400mm — useful for matching room size without moving out of the Renesa Prime family. Choose from warm Honey Maplewood and Dark Walnut wood finishes or Gloss Black, Gloss White, and Misty Teal for a more contemporary look. Check the current Atomberg Renesa Prime Crest price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Remote controlled",
@@ -3409,7 +3430,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 51,
-    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan  900mm",
+    name: "Atomberg Renesa Prime Regulator BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3452,12 +3473,11 @@ const RAW_PRODUCTS = [
     ],
     metaKeywords:
       "atomberg renesa prime regulator price, regulator BLDC ceiling fan, BLDC fan with regulator Bhubaneswar",
-
-    metaTitle: "Atomberg Renesa Prime Regulator 900mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop Atomberg Renesa Prime Regulator 900mm in Honey Maplewood and Gloss White online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Regulator BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "Pairs BLDC energy efficiency with a traditional regulator-based speed control, for buyers who prefer a wall-mounted regulator over a remote or app. Available across four sweep sizes.",
+      "The Atomberg Renesa Prime Remote is a value-focused BLDC ceiling fan available in 1200mm, 900mm, and 600mm sweeps, offered in Dark Walnut and Honey Maplewood wood finishes as well as Gloss Black, Gloss White, Pebble Grey, and Seasand Ivory. It delivers Atomberg's signature energy savings with straightforward remote control, without the premium pricing of the Elite or Halo lines. Check the current Atomberg Renesa Prime Remote price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Traditional regulator speed control",
@@ -3521,11 +3541,11 @@ const RAW_PRODUCTS = [
     ],
     metaKeywords:
       "atomberg renesa prime regulator price, regulator BLDC ceiling fan, BLDC fan with regulator Bhubaneswar",
-    metaTitle: "Atomberg Renesa Prime Regulator 600mm – Buy Online Bhubaneswar",
+    metaTitle: "Atomberg Renesa Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Renesa Prime Regulator 600mm in Honey Maplewood and Gloss White online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Prime Regulator BLDC ceiling fan online in Bhubaneswar, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "Pairs BLDC energy efficiency with a traditional regulator-based speed control, for buyers who prefer a wall-mounted regulator over a remote or app. Available across four sweep sizes.",
+      "The Atomberg Renesa Prime Remote is a value-focused BLDC ceiling fan available in 1200mm, 900mm, and 600mm sweeps, offered in Dark Walnut and Honey Maplewood wood finishes as well as Gloss Black, Gloss White, Pebble Grey, and Seasand Ivory. It delivers Atomberg's signature energy savings with straightforward remote control, without the premium pricing of the Elite or Halo lines. Check the current Atomberg Renesa Prime Remote price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg BLDC fan",
       "Traditional regulator speed control",
@@ -3546,7 +3566,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 53,
-    name: "Atomberg Studio+ BLDC Ceiling Fan",
+    name: "Atomberg Studio+ BLDC Ceiling Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3576,11 +3596,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Studio+ Smart – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg studio plus price, designer BLDC fan remote Bhubaneswar",
+    metaTitle: "Atomberg Studio+ Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Studio+ Smart online in Bhubaneswar: 1200mm sweep in Earth Brown and Marble White with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio+ BLDC ceiling fan online in Bhubaneswar, 950mm & 1200mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 1200mm designer BLDC ceiling fan with full app and remote control, offered in Earth Brown and Marble White finishes — smart features with a clean, understated look for living rooms and premium bedrooms.",
+      "The Atomberg Studio+ is a remote-controlled designer BLDC ceiling fan available in 1200mm and 950mm sweeps, with a wide colour range including Earth Brown, Marble White, Sand Grey, Aegean Blue, Onyx Black, and a Marble White with Teakwood combination on the larger size. It suits buyers who want the Studio design language without the Smart app control of Studio+ Smart. Check the current Atomberg Studio+ price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer smart fan",
       "App + remote controlled",
@@ -3659,11 +3681,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg studio plus price, designer BLDC fan remote Bhubaneswar",
     metaTitle: "Atomberg Studio+ 1200mm – Buy Online Bhubaneswar",
     metaDescription:
-      "Get the Atomberg Studio+ 1200mm online in Bhubaneswar, finished in Earth Brown and Marble White with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio+ BLDC ceiling fan online in Bhubaneswar, 950mm & 1200mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled designer BLDC ceiling fan available in 1200mm and 950mm sweeps, with a wide colour range for buyers who want the Studio design language without Smart app control.",
+      "The Atomberg Studio+ is a remote-controlled designer BLDC ceiling fan available in 1200mm and 950mm sweeps, with a wide colour range including Earth Brown, Marble White, Sand Grey, Aegean Blue, Onyx Black, and a Marble White with Teakwood combination on the larger size. It suits buyers who want the Studio design language without the Smart app control of Studio+ Smart. Check the current Atomberg Studio+ price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -3722,11 +3746,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Studio+ 950mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg studio plus price, designer BLDC fan remote Bhubaneswar",
+    metaTitle: "Atomberg Studio+ 1200mm – Buy Online Bhubaneswar",
     metaDescription:
-      "Atomberg's Studio+ 950mm — Earth Brown, Marble White and more shades with remote control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio+ BLDC ceiling fan online in Bhubaneswar, 950mm & 1200mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled designer BLDC ceiling fan available in 1200mm and 950mm sweeps, with a wide colour range for buyers who want the Studio design language without Smart app control.",
+      "The Atomberg Studio+ is a remote-controlled designer BLDC ceiling fan available in 1200mm and 950mm sweeps, with a wide colour range including Earth Brown, Marble White, Sand Grey, Aegean Blue, Onyx Black, and a Marble White with Teakwood combination on the larger size. It suits buyers who want the Studio design language without the Smart app control of Studio+ Smart. Check the current Atomberg Studio+ price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -3806,11 +3832,13 @@ const RAW_PRODUCTS = [
         originalPrice: 8700,
       },
     ],
-    metaTitle: "Atomberg Studio Nexus 1400mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg studio nexus price, premium designer ceiling fan Bhubaneswar, smart BLDC fan large sweep",
+    metaTitle: "Atomberg Studio Nexus Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Now available online in Bhubaneswar: the Atomberg Studio Nexus 1400mm in Dark Walnut and Rose Gold with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio Nexus BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 900–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A premium designer BLDC fan spanning 1400mm, 1200mm and 900mm sweeps, in both app-controlled Smart versions and a remote-only variant — built for living rooms wanting a large, statement-making fan with smart-home integration.",
+      "The Atomberg Studio Nexus is a premium designer BLDC fan spanning 1400mm, 1200mm, and 900mm sweeps, in both app-controlled Smart versions (Dark Walnut, Rose Gold, Regal Indigo, Ritz Blue, Pearl White) and a remote-only variant (Blaze Brown, Midnight Black, Pebble Grey, Gloss White) on the 1200mm size. It's built for living rooms wanting a large, statement-making fan with genuine smart-home integration. Check the current Atomberg Studio Nexus price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan, Smart and Remote versions",
       "App + remote controlled on Smart variants",
@@ -3831,7 +3859,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 57,
-    name: "Atomberg Studio Nexus BLDC Ceiling Fan  1200mm",
+    name: "Atomberg Studio Nexus BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -3926,11 +3954,13 @@ const RAW_PRODUCTS = [
         originalPrice: 7500,
       },
     ],
-    metaTitle: "Atomberg Studio Nexus 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg studio nexus price, premium designer ceiling fan Bhubaneswar, smart BLDC fan large sweep",
+    metaTitle: "Atomberg Studio Nexus Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Pick the Atomberg Studio Nexus 1200mm in Dark Walnut and Rose Gold with Smart App & remote control, online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio Nexus BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 900–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A premium designer BLDC fan spanning 1400mm, 1200mm and 900mm sweeps, in both app-controlled Smart versions and a remote-only variant — built for living rooms wanting a large, statement-making fan with smart-home integration.",
+      "The Atomberg Studio Nexus is a premium designer BLDC fan spanning 1400mm, 1200mm, and 900mm sweeps, in both app-controlled Smart versions (Dark Walnut, Rose Gold, Regal Indigo, Ritz Blue, Pearl White) and a remote-only variant (Blaze Brown, Midnight Black, Pebble Grey, Gloss White) on the 1200mm size. It's built for living rooms wanting a large, statement-making fan with genuine smart-home integration. Check the current Atomberg Studio Nexus price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan, Smart and Remote versions",
       "App + remote controlled on Smart variants",
@@ -3952,7 +3982,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 58,
-    name: "Atomberg Studio Nexus BLDC Ceiling Fan  900mm",
+    name: "Atomberg Studio Nexus BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4011,11 +4041,13 @@ const RAW_PRODUCTS = [
         originalPrice: 8100,
       },
     ],
-    metaTitle: "Atomberg Studio Nexus 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg studio nexus price, premium designer ceiling fan Bhubaneswar, smart BLDC fan large sweep",
+    metaTitle: "Atomberg Studio Nexus Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Studio Nexus 900mm online in Bhubaneswar in Dark Walnut, Rose Gold and more shades with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio Nexus BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 900–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A premium designer BLDC fan spanning 1400mm, 1200mm and 900mm sweeps, in both app-controlled Smart versions and a remote-only variant — built for living rooms wanting a large, statement-making fan with smart-home integration.",
+      "The Atomberg Studio Nexus is a premium designer BLDC fan spanning 1400mm, 1200mm, and 900mm sweeps, in both app-controlled Smart versions (Dark Walnut, Rose Gold, Regal Indigo, Ritz Blue, Pearl White) and a remote-only variant (Blaze Brown, Midnight Black, Pebble Grey, Gloss White) on the 1200mm size. It's built for living rooms wanting a large, statement-making fan with genuine smart-home integration. Check the current Atomberg Studio Nexus price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan, Smart and Remote versions",
       "App + remote controlled on Smart variants",
@@ -4080,6 +4112,8 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg studio ventra price, designer fan Crème Brulee, 1250mm ceiling fan Bhubaneswar",
     metaTitle: "Atomberg Studio Ventra Price – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Studio Ventra 1250mm BLDC ceiling fan online in Bhubaneswar. Crème Brulee, Snow White finishes. Genuine, home delivery – JC Enterprises.",
@@ -4135,6 +4169,8 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg erica nuvo price, remote BLDC ceiling fan Bhubaneswar",
     metaTitle: "Atomberg Erica Nuvo Remote – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Erica Nuvo remote-control BLDC ceiling fan online in Bhubaneswar, 1200mm sweep. Genuine, home delivery – JC Enterprises.",
@@ -4160,7 +4196,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 61,
-    name: "Atomberg Erica Nuvo BLDC Ceiling Fan with Regulator ",
+    name: "Atomberg Erica Nuvo BLDC Ceiling Fan with Regulator",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4197,6 +4233,8 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg erica nuvo regulator price, regulator ceiling fan Bhubaneswar, Lotus Pink ceiling fan",
     metaTitle: "Atomberg Erica Nuvo Regulator – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Erica Nuvo regulator BLDC ceiling fan online in Bhubaneswar, 1200mm sweep. Genuine product, home delivery – JC Enterprises.",
@@ -4222,7 +4260,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 62,
-    name: "Atomberg Erica Signature BLDC Ceiling Fan with Regulator ",
+    name: "Atomberg Erica Signature BLDC Ceiling Fan with Regulator",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4293,7 +4331,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 63,
-    name: "Erica Meta",
+    name: "Atomberg Erica Meta BLDC Ceiling Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4337,11 +4375,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Erica Meta – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg erica meta price, affordable BLDC ceiling fan Bhubaneswar",
+    metaTitle: "Atomberg Erica Meta Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Atomberg's Erica Meta — 1230mm sweep, Midnight Black and Blaze Brown with remote control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Erica Meta 1230mm BLDC ceiling fan with remote online in Bhubaneswar. Genuine product, home delivery – JC Enterprises.",
     description:
-      "A remote-controlled 1230mm BLDC ceiling fan — a straightforward, well-priced option in the Erica range for everyday bedrooms and living spaces.",
+      "The Atomberg Erica Meta is a remote-controlled 1230mm BLDC ceiling fan in Midnight Black, Blaze Brown, SS Ivory, and Gloss White — a straightforward, well-priced option in the Erica range for everyday bedrooms and living spaces. Check the current Atomberg Erica Meta price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -4362,7 +4402,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 64,
-    name: "Erica Artesia",
+    name: "Atomberg Erica Artesia BLDC Ceiling Fan with Remote ",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4406,11 +4446,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg erica artesia price, Erica series BLDC fan Bhubaneswar",
     metaTitle: "Atomberg Erica Artesia – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Erica Artesia in Midnight Black and Blaze Brown online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Erica Artesia 1230mm BLDC ceiling fan with remote online in Bhubaneswar. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Shares the same 1230mm sweep and remote control as the Erica Meta, offering an alternate blade and body styling within the same Erica price bracket.",
+      "The Atomberg Erica Artesia shares the same 1230mm sweep and remote control as the Erica Meta, in Midnight Black, Blaze Brown, SS Ivory, and Gloss White finishes, offering an alternate blade or body styling within the same Erica price bracket. Check the current Atomberg Erica Artesia price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -4431,7 +4473,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 65,
-    name: "Erica Viso",
+    name: "Atomberg Erica Viso BLDC Ceiling Fan with Remote 1230mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4475,11 +4517,12 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Erica Viso – Buy Online Bhubaneswar",
+    metaKeywords: "",
+    metaTitle: "Atomberg Erica Viso Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Pick the Atomberg Erica Viso in Gloss White and Midnight Black with remote control, 1230mm sweep, online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Erica Viso 1230mm BLDC ceiling fan with remote online in Bhubaneswar. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Completes the Erica trio at a 1230mm sweep with remote control, giving buyers a third styling choice within the same specs and price point as the Meta and Artesia.",
+      "The Atomberg Erica Viso completes the Erica trio, again at a 1230mm sweep with remote control, in Gloss White, Midnight Black, SS Ivory, and Blaze Brown. It gives buyers a third styling choice within the same specs and price point as the Meta and Artesia. Check the current Atomberg Erica Viso price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg designer fan",
       "Remote controlled",
@@ -4500,7 +4543,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 66,
-    name: "Efficio Prime 1400mm",
+    name: "Atomberg Efficio Prime BLDC Ceiling Fan with Remote 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4530,11 +4573,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Efficio Prime 1400mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio prime price, classic BLDC ceiling fan Bhubaneswar",
+    metaTitle: "Atomberg Efficio Prime Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Efficio Prime 1400mm online in Bhubaneswar in Blaze Brown and Gloss White with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Prime BLDC ceiling fan online in Bhubaneswar, 900–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A classic-styled, remote-controlled BLDC ceiling fan available across three sweep sizes — a dependable everyday fan for buyers who want Atomberg's energy savings in a familiar, no-frills design.",
+      "The Atomberg Efficio Prime is a classic-styled, remote-controlled BLDC ceiling fan available across three sweep sizes — 1400mm, 1200mm, and 900mm — in Blaze Brown, Gloss White, Midnight Black, and SS Ivory. It's a dependable everyday fan for buyers who want Atomberg's energy savings in a familiar, no-frills design. Check the current Atomberg Efficio Prime price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -4555,7 +4600,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 67,
-    name: "Efficio Prime 1200mm",
+    name: "Atomberg Efficio Prime BLDC Ceiling Fan with Remote 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4599,11 +4644,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Efficio Prime 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio prime price, classic BLDC ceiling fan Bhubaneswar",
+    metaTitle: "Atomberg Efficio Prime Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop the Atomberg Efficio Prime 1200mm online in Bhubaneswar, offered in Midnight Black and Blaze Brown with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Prime BLDC ceiling fan online in Bhubaneswar, 900–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A classic-styled, remote-controlled BLDC ceiling fan available across three sweep sizes — a dependable everyday fan for buyers who want Atomberg's energy savings in a familiar, no-frills design.",
+      "The Atomberg Efficio Prime is a classic-styled, remote-controlled BLDC ceiling fan available across three sweep sizes — 1400mm, 1200mm, and 900mm — in Blaze Brown, Gloss White, Midnight Black, and SS Ivory. It's a dependable everyday fan for buyers who want Atomberg's energy savings in a familiar, no-frills design. Check the current Atomberg Efficio Prime price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -4624,7 +4671,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 68,
-    name: "Efficio Prime 900mm",
+    name: "atomberg efficio prime price, classic BLDC ceiling fan Bhubaneswar 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4654,11 +4701,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Efficio Prime 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio prime price, classic BLDC ceiling fan Bhubaneswar",
+    metaTitle: "Atomberg Efficio Prime Price – Buy Online Bhubaneswar",
     metaDescription:
-      "The Atomberg Efficio Prime 900mm is available online in Bhubaneswar in Blaze Brown and Gloss White with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Prime BLDC ceiling fan online in Bhubaneswar, 900–1400mm sweep, remote controlled. Genuine, home delivery – JC Enterprises.",
     description:
-      "A classic-styled, remote-controlled BLDC ceiling fan available across three sweep sizes — a dependable everyday fan for buyers who want Atomberg's energy savings in a familiar, no-frills design.",
+      "The Atomberg Efficio Prime is a classic-styled, remote-controlled BLDC ceiling fan available across three sweep sizes — 1400mm, 1200mm, and 900mm — in Blaze Brown, Gloss White, Midnight Black, and SS Ivory. It's a dependable everyday fan for buyers who want Atomberg's energy savings in a familiar, no-frills design. Check the current Atomberg Efficio Prime price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -4679,7 +4728,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 69,
-    name: "Efficio Prime Regulator 1400mm",
+    name: "Atomberg Efficio Prime BLDC Ceiling Fan with Regulator 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4709,11 +4758,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Efficio Prime Regulator 1400mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio prime regulator price, regulator fan replacement Bhubaneswar",
+    metaTitle: "Atomberg Efficio Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Efficio Prime Regulator 1400mm online in Bhubaneswar in Blaze Brown and Gloss White with regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Prime regulator BLDC ceiling fan online in Bhubaneswar, 900–1400mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
+      "The Atomberg Efficio Prime Regulator variant offers the same classic body and colour range — Blaze Brown, Gloss White, Midnight Black, SS Ivory — across 1400mm, 1200mm, and 900mm sweeps, with traditional regulator speed control instead of remote. A good fit for buyers replacing an older regulator-based fan with a BLDC upgrade. Check the current Atomberg Efficio Prime Regulator price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Regulator speed control",
@@ -4734,7 +4785,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 70,
-    name: "Efficio Prime Regulator 1200mm",
+    name: "Atomberg Efficio Prime BLDC Ceiling Fan with Regulator 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4778,11 +4829,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Efficio Prime Regulator 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio prime regulator price, regulator fan replacement Bhubaneswar",
+    metaTitle: "Atomberg Efficio Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Efficio Prime Regulator 1200mm in Midnight Black and Blaze Brown online in Bhubaneswar, regulator control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Prime regulator BLDC ceiling fan online in Bhubaneswar, 900–1400mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
+      "The Atomberg Efficio Prime Regulator variant offers the same classic body and colour range — Blaze Brown, Gloss White, Midnight Black, SS Ivory — across 1400mm, 1200mm, and 900mm sweeps, with traditional regulator speed control instead of remote. A good fit for buyers replacing an older regulator-based fan with a BLDC upgrade. Check the current Atomberg Efficio Prime Regulator price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Regulator speed control",
@@ -4803,7 +4856,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 71,
-    name: "Efficio Prime Regulator 900mm",
+    name: "Atomberg Efficio Prime BLDC Ceiling Fan with Regulator 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4833,11 +4886,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Efficio Prime Regulator 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio prime regulator price, regulator fan replacement Bhubaneswar",
+    metaTitle: "Atomberg Efficio Prime Regulator – Buy Online Bhubaneswar",
     metaDescription:
-      "Atomberg's Efficio Prime Regulator 900mm — Blaze Brown and Gloss White with regulator control — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Prime regulator BLDC ceiling fan online in Bhubaneswar, 900–1400mm sweep. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Offers the same classic body and colour range with traditional regulator speed control instead of remote — a good fit for buyers replacing an older regulator-based fan with a BLDC upgrade.",
+      "The Atomberg Efficio Prime Regulator variant offers the same classic body and colour range — Blaze Brown, Gloss White, Midnight Black, SS Ivory — across 1400mm, 1200mm, and 900mm sweeps, with traditional regulator speed control instead of remote. A good fit for buyers replacing an older regulator-based fan with a BLDC upgrade. Check the current Atomberg Efficio Prime Regulator price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Regulator speed control",
@@ -4858,7 +4913,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 72,
-    name: "Ikano Stylique",
+    name: "Atomberg Ikano Stylique BLDC Ceiling Fan with Remote ",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4902,11 +4957,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg ikano stylique price, entry level BLDC fan Bhubaneswar",
     metaTitle: "Atomberg Ikano Stylique – Buy Online Bhubaneswar",
     metaDescription:
       "Shop Atomberg Ikano Stylique in Gloss White and Gloss Black online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 1200mm remote-controlled BLDC ceiling fan sitting in Atomberg's Classic Fans range as an accessible entry point into BLDC energy savings.",
+      "The Atomberg Ikano Stylique is a 1200mm remote-controlled BLDC ceiling fan in Gloss White, Gloss Black, Pebble Grey, and Seasand Ivory, sitting in Atomberg's Classic Fans range as an accessible entry point into BLDC energy savings. Check the current Atomberg Ikano Stylique price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -4927,7 +4984,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 73,
-    name: "Ikano 1400mm",
+    name: "Atomberg Ikano BLDC Ceiling Fan with Remote 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -4964,11 +5021,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Ikano 1400mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg ikano price, budget BLDC ceiling fan Bhubaneswar, small ceiling fan 650mm",
+    metaTitle: "Atomberg Ikano Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Pick the Atomberg Ikano 1400mm in Gloss Black, Gloss Brown and more shades with remote control, online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Ikano BLDC ceiling fan online in Bhubaneswar, 650–1400mm sweep, remote controlled, from ₹4,400 MRP. Genuine, home delivery – JC Enterprises.",
     description:
-      "The most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size — a practical, budget-friendly way to bring BLDC energy savings into smaller rooms.",
+      "The Atomberg Ikano is the most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size, all remote controlled, in Gloss Black, Gloss Brown, Gloss White, Pebble Grey, and SS Ivory. It's a practical, budget-friendly way to bring Atomberg's BLDC energy savings into smaller rooms or secondary spaces. Check the current Atomberg Ikano price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -4989,7 +5048,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 74,
-    name: "Ikano 1200mm",
+    name: "Atomberg Ikano BLDC Ceiling Fan with Remote 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5040,11 +5099,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Ikano 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg ikano price, budget BLDC ceiling fan Bhubaneswar, small ceiling fan 650mm",
+    metaTitle: "Atomberg Ikano Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Ikano 1200mm online in Bhubaneswar in Gloss Black, Gloss Brown and more shades with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Ikano BLDC ceiling fan online in Bhubaneswar, 650–1400mm sweep, remote controlled, from ₹4,400 MRP. Genuine, home delivery – JC Enterprises.",
     description:
-      "The most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size — a practical, budget-friendly way to bring BLDC energy savings into smaller rooms.",
+      "The Atomberg Ikano is the most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size, all remote controlled, in Gloss Black, Gloss Brown, Gloss White, Pebble Grey, and SS Ivory. It's a practical, budget-friendly way to bring Atomberg's BLDC energy savings into smaller rooms or secondary spaces. Check the current Atomberg Ikano price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -5065,7 +5126,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 75,
-    name: "Ikano 900mm",
+    name: "Atomberg Ikano BLDC Ceiling Fan with Remote 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5102,11 +5163,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Ikano 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg ikano price, budget BLDC ceiling fan Bhubaneswar, small ceiling fan 650mm",
+    metaTitle: "Atomberg Ikano Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop the Atomberg Ikano 900mm online in Bhubaneswar, offered in Gloss Black, Gloss Brown and more shades with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Ikano BLDC ceiling fan online in Bhubaneswar, 650–1400mm sweep, remote controlled, from ₹4,400 MRP. Genuine, home delivery – JC Enterprises.",
     description:
-      "The most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size — a practical, budget-friendly way to bring BLDC energy savings into smaller rooms.",
+      "The Atomberg Ikano is the most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size, all remote controlled, in Gloss Black, Gloss Brown, Gloss White, Pebble Grey, and SS Ivory. It's a practical, budget-friendly way to bring Atomberg's BLDC energy savings into smaller rooms or secondary spaces. Check the current Atomberg Ikano price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -5127,7 +5190,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 76,
-    name: "Ikano 650mm",
+    name: "Atomberg Ikano BLDC Ceiling Fan with Remote 650mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5164,11 +5227,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Ikano 650mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg ikano price, budget BLDC ceiling fan Bhubaneswar, small ceiling fan 650mm",
+    metaTitle: "Atomberg Ikano Price – Buy Online Bhubaneswar",
     metaDescription:
-      "The Atomberg Ikano 650mm is available online in Bhubaneswar in Gloss Black, Gloss Brown and more shades with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Ikano BLDC ceiling fan online in Bhubaneswar, 650–1400mm sweep, remote controlled, from ₹4,400 MRP. Genuine, home delivery – JC Enterprises.",
     description:
-      "The most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size — a practical, budget-friendly way to bring BLDC energy savings into smaller rooms.",
+      "The Atomberg Ikano is the most accessible fan in the Classic range, spanning four sweep sizes from a compact 650mm bedroom fan up to a full 1400mm size, all remote controlled, in Gloss Black, Gloss Brown, Gloss White, Pebble Grey, and SS Ivory. It's a practical, budget-friendly way to bring Atomberg's BLDC energy savings into smaller rooms or secondary spaces. Check the current Atomberg Ikano price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg classic BLDC fan",
       "Remote controlled",
@@ -5284,7 +5349,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 79,
-    name: "SilenceAire Hi-Speed Pedestal",
+    name: "Atomberg SilenceAire Hi-Speed Pedestal Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5314,11 +5379,13 @@ const RAW_PRODUCTS = [
         images: ["/allfan/Fan image 3/silenceaire_pedestal_400_blue_pl.webp"],
       },
     ],
-    metaTitle: "SilenceAire Hi-Speed Pedestal – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg silenceaire pedestal price, silent pedestal fan Bhubaneswar, quiet BLDC pedestal fan",
+    metaTitle: "Atomberg SilenceAire Pedestal Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg SilenceAire Hi-Speed Pedestal in Midnight Black and Snow White online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg SilenceAire Hi-Speed pedestal fan online in Bhubaneswar, 400mm, remote controlled, silent operation. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 400mm BLDC pedestal fan built for quiet, high-speed airflow. Remote controlled, suited to bedrooms and study spaces where noise matters as much as cooling power.",
+      "The Atomberg SilenceAire Hi-Speed Pedestal is a 400mm BLDC pedestal fan built for quiet, high-speed airflow, in Midnight Black, Snow White, and Aegean Blue. Remote controlled, it's suited to bedrooms and study spaces where noise matters as much as cooling power. Check the current Atomberg SilenceAire Hi-Speed Pedestal price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg SilenceAire pedestal fan",
       "Remote controlled",
@@ -5339,7 +5406,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 80,
-    name: "SilenceAire Hi-Speed Wall",
+    name: "Atomberg SilenceAire Hi-Speed Wall Fan",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5369,11 +5436,13 @@ const RAW_PRODUCTS = [
         images: ["/allfan/Fan image 3/silenceaire_wall_fan_plis_blue_1.webp"],
       },
     ],
-    metaTitle: "Atomberg SilenceAire Hi-Speed Wall – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg silenceaire wall fan price, silent wall fan Bhubaneswar",
+    metaTitle: "Atomberg SilenceAire Wall Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy Atomberg SilenceAire Hi-Speed Wall online in Bhubaneswar, Midnight Black and Snow White with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg SilenceAire Hi-Speed wall fan online in Bhubaneswar, 400mm, remote controlled, silent operation. Genuine, home delivery – JC Enterprises.",
     description:
-      "Brings the same quiet, high-speed BLDC motor to a wall-mounted 400mm fan, remote controlled — a practical choice for kitchens and workspaces needing strong airflow without added noise.",
+      "The Atomberg SilenceAire Hi-Speed Wall brings the same quiet, high-speed BLDC motor to a wall-mounted 400mm fan, in Midnight Black, Snow White, and Aegean Blue, remote controlled. A practical choice for kitchens and workspaces needing strong airflow without added noise. Check the current Atomberg SilenceAire Hi-Speed Wall price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg SilenceAire wall fan",
       "Remote controlled",
@@ -5394,7 +5463,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 81,
-    name: "Renesa Pedestal",
+    name: "Atomberg Renesa Pedestal Fan with Remote ",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5424,11 +5493,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Renesa Pedestal – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa pedestal price, BLDC pedestal fan Bhubaneswar",
+    metaTitle: "Atomberg Renesa Pedestal Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop Atomberg Renesa Pedestal in Midnight Black and Snow White online in Bhubaneswar, remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa pedestal fan online in Bhubaneswar, 400mm, remote controlled, Midnight Black & Snow White. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 400mm BLDC pedestal fan, remote controlled, extending the trusted Renesa name into a floor-standing format for rooms needing supplementary airflow alongside a ceiling fan.",
+      "The Atomberg Renesa Pedestal is a 400mm BLDC pedestal fan in Midnight Black and Snow White, remote controlled, extending the trusted Renesa name into a floor-standing format for rooms needing supplementary airflow alongside a ceiling fan. Check the current Atomberg Renesa Pedestal price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg Renesa pedestal fan",
       "Remote controlled",
@@ -5449,7 +5520,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 82,
-    name: "Renesa Wall",
+    name: "Atomberg Renesa Wall Fan with Remote",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5479,11 +5550,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Renesa Wall – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa wall fan price, wall mounted BLDC fan Bhubaneswar",
+    metaTitle: "Atomberg Renesa Wall Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Renesa Wall 400mm blade size online in Bhubaneswar in Midnight Black and Snow White with remote control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa wall fan online in Bhubaneswar, 400mm, remote controlled, Midnight Black & Snow White. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 400mm BLDC wall-mounted fan, remote controlled, offering the same Renesa reliability in a compact wall-fixed format for kitchens, balconies and smaller rooms.",
+      "The Atomberg Renesa Wall is a 400mm BLDC wall-mounted fan in Midnight Black and Snow White, remote controlled, offering the same Renesa reliability in a compact wall-fixed format for kitchens, balconies, and smaller rooms. Check the current Atomberg Renesa Wall price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg Renesa wall fan",
       "Remote controlled",
@@ -5504,7 +5577,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 83,
-    name: "Studio+ Exhaust Fan",
+    name: "Atomberg Studio+ Exhaust Fan — 150mm, Brushed Steel",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5527,11 +5600,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords:
+      "atomberg studio plus exhaust fan price, brushed steel exhaust fan Bhubaneswar",
     metaTitle: "Atomberg Studio+ Exhaust Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Shop the Atomberg Studio+ Exhaust Fan online in Bhubaneswar — 150mm size, Brushed Steel. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio+ 150mm exhaust fan online in Bhubaneswar, Brushed Steel finish. Genuine product, home delivery – JC Enterprises.",
     description:
-      "A 150mm exhaust fan in a premium Brushed Steel finish, designed for bathrooms and kitchens that want a metallic, upscale look rather than a plain plastic grille.",
+      "The Atomberg Studio+ Exhaust Fan is a 150mm exhaust fan in a premium Brushed Steel finish, designed for bathrooms and kitchens that want a metallic, upscale look rather than a plain plastic grille. Check the current Atomberg Studio+ Exhaust Fan price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg exhaust fan",
       "150mm size",
@@ -5550,7 +5625,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 84,
-    name: "Studio Exhaust Fan",
+    name: "Atomberg Studio Exhaust Fan — 150mm, Multiple Finishes",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5628,11 +5703,13 @@ const RAW_PRODUCTS = [
         originalPrice: 3400,
       },
     ],
+    metaKeywords:
+      "atomberg studio exhaust fan price, exhaust fan finish options Bhubaneswar",
     metaTitle: "Atomberg Studio Exhaust Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "The Atomberg Studio Exhaust Fan (150mm size) is available online in Bhubaneswar in Brushed Steel, Dark Wood and more shades. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Studio 150mm exhaust fan online in Bhubaneswar — Brushed Steel, Dark Wood, Matte Black, gloss options. Genuine, home delivery – JC Enterprises.",
     description:
-      "A 150mm exhaust fan offering the widest finish choice in the range — a flexible option for matching bathroom or kitchen fittings across different budgets.",
+      "The Atomberg Studio Exhaust Fan is a 150mm exhaust fan offering the widest finish choice in the range — Brushed Steel, Dark Wood, Matte Black, Orion Gold, and Brushed Rosegold on the premium tier, or Gloss White, Gloss Black, and Gloss Brown on the value tier. A flexible option for matching bathroom or kitchen fittings across different budgets. Check the current Atomberg Studio Exhaust Fan price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg exhaust fan",
       "150mm size",
@@ -5652,7 +5729,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 85,
-    name: "Efficio Exhaust Fan 200mm",
+    name: "Atomberg Efficio Exhaust Fan 200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5689,11 +5766,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Efficio Exhaust Fan 200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio exhaust fan price, 200mm exhaust fan Bhubaneswar",
+    metaTitle: "Atomberg Efficio Exhaust Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Order the Atomberg Efficio Exhaust Fan 200mm online in Bhubaneswar in Gloss White, Gloss Black and more shades. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio exhaust fan online in Bhubaneswar, 150mm & 200mm, Gloss White/Black/Brown. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Available in both 200mm and 150mm sizes, giving buyers a choice between stronger extraction for larger bathrooms and a compact option for smaller spaces.",
+      "The Atomberg Efficio Exhaust Fan is available in both 200mm and 150mm sizes, in Gloss White, Gloss Black, and Gloss Brown, giving buyers a choice between stronger extraction (200mm) for larger bathrooms and a compact 150mm option for smaller spaces. Check the current Atomberg Efficio Exhaust Fan price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg exhaust fan",
       "Available in 150mm and 200mm",
@@ -5712,7 +5791,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 86,
-    name: "Efficio Exhaust Fan 150mm",
+    name: "Atomberg Efficio Exhaust Fan 150mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5749,11 +5828,13 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
-    metaTitle: "Atomberg Efficio Exhaust Fan 150mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg efficio exhaust fan price, 200mm exhaust fan Bhubaneswar",
+    metaTitle: "Atomberg Efficio Exhaust Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Get the Atomberg Efficio Exhaust Fan 150mm online in Bhubaneswar, finished in Gloss White, Gloss Black and more shades. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio exhaust fan online in Bhubaneswar, 150mm & 200mm, Gloss White/Black/Brown. Genuine product, home delivery – JC Enterprises.",
     description:
-      "Available in both 200mm and 150mm sizes, giving buyers a choice between stronger extraction for larger bathrooms and a compact option for smaller spaces.",
+      "The Atomberg Efficio Exhaust Fan is available in both 200mm and 150mm sizes, in Gloss White, Gloss Black, and Gloss Brown, giving buyers a choice between stronger extraction (200mm) for larger bathrooms and a compact 150mm option for smaller spaces. Check the current Atomberg Efficio Exhaust Fan price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg exhaust fan",
       "Available in 150mm and 200mm",
@@ -5772,7 +5853,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 87,
-    name: "Efficio Orb Exhaust Fan",
+    name: "Atomberg Efficio Orb Exhaust Fan — 150mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5802,11 +5883,12 @@ const RAW_PRODUCTS = [
         ],
       },
     ],
+    metaKeywords: "atomberg efficio orb price, budget exhaust fan Bhubaneswar",
     metaTitle: "Atomberg Efficio Orb Exhaust Fan – Buy Online Bhubaneswar",
     metaDescription:
-      "Atomberg's Efficio Orb Exhaust Fan — 150mm size, Gloss White and Gloss Black — is now online in Bhubaneswar. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Efficio Orb 150mm exhaust fan online in Bhubaneswar, Gloss White & Gloss Black. Genuine, home delivery – JC Enterprises.",
     description:
-      "The most affordable exhaust fan in the range, a compact 150mm fan — a simple, budget-friendly choice for smaller bathrooms and utility spaces.",
+      "The Atomberg Efficio Orb is the most affordable exhaust fan in the range, a compact 150mm fan in Gloss White or Gloss Black — a simple, budget-friendly choice for smaller bathrooms and utility spaces. Check the current Atomberg Efficio Orb price and buy the genuine model with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg exhaust fan",
       "150mm size",
@@ -5825,7 +5907,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 88,
-    name: "Renesa Elite 1400mm",
+    name: "Atomberg Renesa Elite BLDC Ceiling Fan 1400mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -5891,11 +5973,13 @@ const RAW_PRODUCTS = [
         originalPrice: 8700,
       },
     ],
-    metaTitle: "Atomberg Renesa Elite 1400mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa elite price, best BLDC ceiling fan under 10000, Renesa Elite Bhubaneswar",
+    metaTitle: "Atomberg Renesa Elite Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Now available online in Bhubaneswar: the Atomberg Renesa Elite 1400mm in Dark Walnut and Golden Oakwood with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Elite BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, app-controlled through the Atomberg Home App across the widest sweep range in Atomberg's lineup.",
+      "Searching for the best BLDC ceiling fan under 10000 that still looks like a designer piece? The Atomberg Renesa Elite is a sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, available across the widest sweep range in Atomberg's lineup — 1400mm, 1200mm, 900mm, and 600mm — in both app-controlled Smart versions and remote-only variants, in finishes from Dark Walnut and Golden Oakwood to Pearl White, Rose Gold, and Midnight Black. Check the current Atomberg Renesa Elite price and choose the sweep, finish, and control type that fits your room, with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg Renesa Elite, Smart version",
       "Moonbeam LED night light",
@@ -5917,7 +6001,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 89,
-    name: "Renesa Elite 1200mm",
+    name: "Atomberg Renesa Elite BLDC Ceiling Fan 1200mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -6037,11 +6121,13 @@ const RAW_PRODUCTS = [
         originalPrice: 7500,
       },
     ],
-    metaTitle: "Atomberg Renesa Elite 1200mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa elite price, best BLDC ceiling fan under 10000, Renesa Elite Bhubaneswar",
+    metaTitle: "Atomberg Renesa Elite Price – Buy Online Bhubaneswar",
     metaDescription:
-      "): Buy Atomberg Renesa Elite BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Elite BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, available in both app-controlled Smart versions and a remote-only variant at 1200mm.",
+      "Searching for the best BLDC ceiling fan under 10000 that still looks like a designer piece? The Atomberg Renesa Elite is a sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, available across the widest sweep range in Atomberg's lineup — 1400mm, 1200mm, 900mm, and 600mm — in both app-controlled Smart versions and remote-only variants, in finishes from Dark Walnut and Golden Oakwood to Pearl White, Rose Gold, and Midnight Black. Check the current Atomberg Renesa Elite price and choose the sweep, finish, and control type that fits your room, with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg Renesa Elite, available in Smart and Remote versions",
       "Moonbeam LED night light on Smart variants",
@@ -6063,7 +6149,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 90,
-    name: "Renesa Elite 900mm",
+    name: "Atomberg Renesa Elite BLDC Ceiling Fan 900mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -6129,11 +6215,13 @@ const RAW_PRODUCTS = [
         originalPrice: 8100,
       },
     ],
-    metaTitle: "Atomberg Renesa Elite 900mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa elite price, best BLDC ceiling fan under 10000, Renesa Elite Bhubaneswar",
+    metaTitle: "Atomberg Renesa Elite Price – Buy Online Bhubaneswar",
     metaDescription:
-      "Buy the Atomberg Renesa Elite 900mm online in Bhubaneswar in Dark Walnut and Golden Oakwood with Smart App control. Genuine, home delivery – JC Enterprises.",
+      "Buy Atomberg Renesa Elite BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, app-controlled through the Atomberg Home App at a 900mm sweep.",
+      "Searching for the best BLDC ceiling fan under 10000 that still looks like a designer piece? The Atomberg Renesa Elite is a sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, available across the widest sweep range in Atomberg's lineup — 1400mm, 1200mm, 900mm, and 600mm — in both app-controlled Smart versions and remote-only variants, in finishes from Dark Walnut and Golden Oakwood to Pearl White, Rose Gold, and Midnight Black. Check the current Atomberg Renesa Elite price and choose the sweep, finish, and control type that fits your room, with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg Renesa Elite, Smart version",
       "Moonbeam LED night light",
@@ -6155,7 +6243,7 @@ const RAW_PRODUCTS = [
 
   {
     id: 91,
-    name: "Renesa Elite 600mm",
+    name: "Atomberg Renesa Elite BLDC Ceiling Fan 600mm",
     category: "Fans",
     categoryId: "fans",
     brand: "Atomberg",
@@ -6221,11 +6309,13 @@ const RAW_PRODUCTS = [
         originalPrice: 7900,
       },
     ],
-    metaTitle: "Atomberg Renesa Elite 600mm – Buy Online Bhubaneswar",
+    metaKeywords:
+      "atomberg renesa elite price, best BLDC ceiling fan under 10000, Renesa Elite Bhubaneswar",
+    metaTitle: "Atomberg Renesa Elite Price – Buy Online Bhubaneswar",
     metaDescription:
       "Buy Atomberg Renesa Elite BLDC ceiling fan online in Bhubaneswar — Smart and Remote versions, 600–1400mm sweep. Genuine, home delivery – JC Enterprises.",
     description:
-      "A sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, app-controlled through the Atomberg Home App at a compact 600mm sweep.",
+      "Searching for the best BLDC ceiling fan under 10000 that still looks like a designer piece? The Atomberg Renesa Elite is a sleek designer ceiling fan pairing a modern silhouette with a transparent diffuser and Moonbeam LED night light, available across the widest sweep range in Atomberg's lineup — 1400mm, 1200mm, 900mm, and 600mm — in both app-controlled Smart versions and remote-only variants, in finishes from Dark Walnut and Golden Oakwood to Pearl White, Rose Gold, and Midnight Black. Check the current Atomberg Renesa Elite price and choose the sweep, finish, and control type that fits your room, with home delivery across Bhubaneswar and Odisha through JC Enterprises.",
     features: [
       "Genuine Atomberg Renesa Elite, Smart version",
       "Moonbeam LED night light",
